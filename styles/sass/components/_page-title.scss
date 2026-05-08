@@ -1,0 +1,61 @@
+.page-title {
+	min-height: 180px;
+	position: relative;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	border-bottom: 1px solid #F0F0F0;
+}
+
+.page-title .breadcumb-wrap {
+	text-align: left;
+}
+
+.page-title .breadcumb-wrap ol {
+	padding-left: 0;
+	margin-bottom: 0;
+}
+
+.page-title .breadcumb-wrap ol li {
+	display: inline-block;
+	padding: 0px 5px;
+	padding-right: 20px;
+	color: #233D50;
+	position: relative;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 30px;
+}
+
+.page-title .breadcumb-wrap ol li:last-child {
+	padding-right: 0;
+}
+
+.page-title .breadcumb-wrap ol li:after {
+	content: "\e649";
+	font-family: 'themify';
+	position: absolute;
+	right: 0;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	font-size: 12px;
+}
+
+.page-title .breadcumb-wrap ol li:last-child span {
+	color: #233D50;
+}
+
+.page-title .breadcumb-wrap ol li:last-child:after {
+	display: none;
+}
+
+.page-title .breadcumb-wrap ol li a {
+	color: #233D50;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+}
+
+.page-title .breadcumb-wrap ol li a:hover {
+	color: #83B735;
+}

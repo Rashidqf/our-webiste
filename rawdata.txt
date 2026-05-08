@@ -1,0 +1,284 @@
+Trading-Automation.png
+
+Trading Automation System
+Advanced Multi-Account Trading Automation Platform
+Developed a comprehensive trading automation system that combines modern web technologies with Python-based browser automation to create a robust, scalable solution for managing multiple trading accounts simultaneously. The system features real-time communication, automated order execution, and advanced risk management capabilities.
+
+The platform integrates React frontend with Node.js backend and Python automation bot, providing a seamless experience for traders to manage their portfolios, execute trades, and monitor market conditions in real-time. The system supports bulk operations through CSV import/export functionality and implements sophisticated anti-detection measures for reliable trading platform interaction.
+
+Built with enterprise-grade architecture, the system handles concurrent operations through multi-threading, ensures data integrity with MongoDB, and provides real-time updates via Socket.IO integration. The solution demonstrates expertise in full-stack development, financial technology, and automated trading systems.
+
+Technology Stack & Architecture
+The project was built using a modern microservices architecture with clear separation of concerns across frontend, backend, and automation components.
+
+Frontend Development
+React 18 with Redux Toolkit for state management, Material-UI for component library, and Tailwind CSS for styling. Implemented responsive design with real-time data updates using Socket.IO client integration.
+
+Backend Development
+Node.js with Express.js framework, MongoDB for database management, and Socket.IO for real-time communication. RESTful API design with comprehensive endpoints for account, order, and trade management.
+
+Python Automation Bot
+FastAPI-based bot with Selenium WebDriver for Chrome automation, implementing anti-detection measures and session management across multiple trading accounts for reliable platform interaction.
+
+Key Features & Capabilities
+Multi-Account Management System
+CSV import/export for bulk account operations
+Account creation, updates, and management
+Primary/Secondary account classification
+Real-time account status monitoring
+Advanced Trading Operations
+Automated order placement and execution
+Trade management with partial exits and amendments
+Stop-loss and take-profit automation
+Multi-threading for concurrent operations
+CSV Import/Export System
+Bulk account creation from CSV files
+Account updates via CSV import
+Data validation and error handling
+Export functionality for reporting
+Real-time Communication
+Socket.IO integration for live updates
+Real-time order status changes
+Account synchronization
+Event-driven architecture
+Browser Automation (Python Bot)
+Selenium WebDriver for trading platform interaction
+Headless Chrome operation
+Anti-detection measures
+Session management across multiple accounts
+API Architecture
+RESTful API design with comprehensive endpoints
+Account, Order, and Trade management APIs
+Database operations with MongoDB
+Error handling and validation
+Technical Expertise Demonstrated
+This project showcases comprehensive expertise in full-stack development, financial technology, and automated trading systems. The solution demonstrates proficiency in React + Node.js + Python integration, real-time applications with WebSocket communication, database design and API development, multi-threading and concurrent programming, CSV processing and bulk operations, and modern deployment practices.    
+
+
+SpeakSmart.png
+
+SpeakSmart - AI-Powered Real-Time English Conversation Platform
+SpeakSmart: Advanced AI-Powered English Learning Platform
+SpeakSmart is an advanced AI-powered web application designed to help English learners practice real-time spoken conversations in a natural, interactive way. The platform connects directly with Thinkific (a leading online course platform) to provide a seamless experience for students, allowing them to improve their speaking skills with personalized AI conversation partners.
+
+The application features real-time AI conversation capabilities powered by OpenAI models, enabling users to converse naturally while the AI listens, understands, and replies vocally. The platform supports dynamic flow control, including an optional "continuous mode" where users do not need to click to speak each time.
+
+Built with modern web technologies including React.js, Node.js, and Flask, SpeakSmart provides a comprehensive solution for English language learning with seamless integration capabilities and cross-platform compatibility.
+
+Key Features of SpeakSmart Platform
+The SpeakSmart platform includes a comprehensive set of features designed to provide an immersive and effective English learning experience through AI-powered conversations.
+
+Real-Time AI Conversation
+Built using advanced OpenAI models for live voice-based interaction. Users can converse in real time; the AI listens, understands, and replies vocally with natural language processing capabilities.
+
+Voice and Speech Features
+Real-time speech-to-text and text-to-speech processing optimized for desktop and Android devices. Special care taken to handle Safari on Mac and iOS for consistent recording functionality.
+
+Thinkific Integration
+Seamless Single Sign-On (SSO) integration with Thinkific using Google Sheets and Google API. Automatic account creation for students with secure password management and frictionless login transitions.
+
+Advanced Technical Capabilities
+SpeakSmart leverages cutting-edge technologies to provide a robust and scalable English learning platform with advanced AI capabilities and seamless user experience.
+
+Cross-Platform Compatibility
+Accessible on all modern browsers and devices with responsive design. Provides smooth UI/UX experiences regardless of platform, ensuring consistent functionality across desktop, Android, and iOS devices.
+
+Dynamic Transcript Page
+Displays the entire conversation history after ending a session, allowing users to review and learn from their interaction. Shows correct names for a more personal experience and learning reinforcement.
+
+Customizable AI Personalities
+Students can choose different AI speaking partners and difficulty levels at the start of each session. Provides personalized learning experiences tailored to individual skill levels and preferences.
+
+Technology Stack and Development Architecture
+SpeakSmart is built using modern web technologies and cloud services to ensure optimal performance, scalability, and reliability for real-time AI conversations.
+
+Frontend Technologies
+React.js for dynamic user interface components, JavaScript for client-side functionality, and Tailwind CSS for modern, responsive styling and optimal user experience across all devices.
+
+Backend Technologies
+Node.js and Express.js for robust server-side functionality, Flask for additional API layers, and comprehensive integration with OpenAI APIs for advanced AI capabilities.
+
+AI & Voice Integration
+OpenAI APIs for speech and text models, Web Speech API and WebRTC for recording and playback, Google Sheets API and Thinkific API for seamless integrations and user management.
+
+
+Pocket-Coach-AI.png
+
+Pocket Coach AI - Intelligent Business Idea Development Platform
+Pocket Coach AI: Intelligent Business Idea Development Platform
+Pocket Coach AI is an intelligent, AI-powered platform designed to help users develop and refine their business ideas. It acts as a personal business coach, guiding users through the stages of ideation, planning, and market insight generation with advanced AI capabilities and personalized guidance.
+
+The platform features an interactive chat interface powered by OpenAI's Assistants API, offering personalized guidance and real-time feedback. Users can engage in natural conversations with the AI coach to explore their business ideas, receive strategic advice, and develop actionable plans for their entrepreneurial journey.
+
+Built with modern web technologies including Next.js, React, and MongoDB, Pocket Coach AI provides a comprehensive solution for business idea development with advanced AI capabilities and seamless user experience.
+
+Key Features of Pocket Coach AI Platform
+The Pocket Coach AI platform includes a comprehensive set of features designed to provide an immersive and effective business development experience through AI-powered coaching and analysis.
+
+Conversational AI Coach
+An interactive chat interface powered by OpenAI's Assistants API, offering personalized guidance and real-time feedback. Users can engage in natural conversations to explore business ideas and receive strategic advice for their entrepreneurial journey.
+
+Multi-Provider Authentication
+Secure user authentication with NextAuth.js, supporting Google, Apple, and email/password login. Provides seamless and secure access to the platform with multiple login options for user convenience.
+
+Idea Viability Scoring (vScore)
+A real-time scoring system that evaluates the viability of a business idea based on user input and conversation history. Provides objective analysis and insights to help users understand the potential of their business concepts.
+
+Advanced AI Capabilities
+Pocket Coach AI leverages cutting-edge technologies to provide a robust and scalable business development platform with advanced AI capabilities and intelligent analysis.
+
+Automated Insight Generation
+Uses Langbase and Relevance AI to generate weekly, industry-specific insights and project reports. Provides users with valuable market intelligence and trend analysis to inform their business decisions.
+
+AI-Powered Teammates
+Users can add AI "employees" with different specialties (e.g., marketing, finance, tech) to collaborate on their project. Enables virtual team collaboration and specialized expertise for comprehensive business planning.
+
+Rich User Interface
+A modern, responsive interface built with Next.js, Shadcn UI, and Tailwind CSS for a clean and intuitive experience. Provides seamless navigation and optimal user experience across all devices.
+
+Technology Stack and Development Architecture
+Pocket Coach AI is built using modern web technologies and cloud services to ensure optimal performance, scalability, and reliability for business idea development.
+
+Frontend Technologies
+Next.js and React for dynamic user interface components, Redux Toolkit for state management, Shadcn UI for modern components, and Tailwind CSS for responsive styling and optimal user experience across all devices.
+
+Backend Technologies
+Next.js API Routes and Node.js for robust server-side functionality, MongoDB with Mongoose for flexible data storage, and comprehensive integration with OpenAI APIs for advanced AI capabilities.
+
+AI & Deployment
+OpenAI Assistants API for conversational AI, Langbase and Perplexity API for advanced AI integration, Cloudinary for media management, and VPS deployment for optimal control and scalability.
+
+
+aipoweredrecruitmentautomation.png
+
+
+AI Powered Recruitment Automation
+Advanced Middleware Solution for Intelligent Recruitment
+This project is an advanced middleware solution designed to bridge the gap between a Salesforce Applicant Tracking System (ATS) and the intelligent capabilities of Azure OpenAI. Its mission is to revolutionize recruitment workflows by automating candidate matching and proposal generation.
+
+The system addresses two key recruitment challenges: Intelligent Candidate Sourcing and Automated Proposal Generation. It automatically analyzes new job vacancies and identifies the best matches from a large candidate database, considering skills, experience, availability, location, and more. For high-potential matches, it dynamically creates personalized proposal texts or adapts resumes—reducing manual recruiter effort and increasing consistency and quality.
+
+The middleware acts as a central hub, coordinating communication between Salesforce, Azure OpenAI, and a vector database for lightning-fast semantic search.
+
+Key Features
+The system provides comprehensive AI-powered recruitment automation with advanced matching capabilities and automated proposal generation.
+
+AI-Powered Job Matching
+Deep semantic analysis of job descriptions and resumes using OpenAI's language models. Supports matching a single job against hundreds of candidates in one request with multi-criteria analysis including skills, experience, geographic proximity, working hours, salary expectations, availability, and past assignments.
+
+Dynamic Proposal Generation
+Generates tailored proposal texts aligned with each job's unique requirements. Creates personalized proposal texts or adapts resumes for high-potential matches, reducing manual recruiter effort and increasing consistency and quality.
+
+Scalable Architecture
+Built with FastAPI for smooth integration with Salesforce or other systems. Features asynchronous, containerized architecture built for modern cloud environments with a lightweight web dashboard for monitoring system activity and managing AI instructions.
+
+Technology Stack
+A modern stack chosen for performance, scalability, and developer ergonomics:
+
+Backend: Python, FastAPI, Uvicorn
+AI & Data Science: Azure OpenAI Service (gpt-4.1, text-embedding-3-small), Pinecone Vector Database, Pydantic, NLTK & Scikit-learn
+Database: SQLAlchemy with SQLite
+Frontend: HTML, CSS, JavaScript with Jinja2 templating
+Deployment: Docker, Git & GitHub, Dotenv
+
+Architectural Design
+The system uses a modern, service-oriented architecture for modularity and scalability. The API Gateway (FastAPI) serves as the entry point for all client requests, handling routing, validation, and authentication. The Service Layer includes MatchingService for coordinating matching workflow, OpenAIService for managing Azure OpenAI interactions, VectorDBService for handling vector DB operations via Pinecone, and DocumentProcessor for extracting and cleaning content from various file formats.
+
+The Data Layer consists of Pinecone for storing vectorized resumes and job descriptions, and SQLite for storing persistent app data and assistant instructions. Full asynchronous workflow support enables high-concurrency processing with minimal blocking.
+
+
+Daylily.png
+
+
+Daylily Interactive 3D AI Sales Assistant - Shopify App
+Daylily: Interactive 3D AI Sales Assistant for E-commerce
+I developed Daylily: Interactive 3D AI Sales Assistant, a powerful Shopify application designed to transform e-commerce customer engagement through an interactive 3D AI avatar. This app combines advanced AI, real-time product memory, and intelligent analytics to help merchants drive more conversions and improve customer experiences.
+
+The platform features a fully interactive avatar built using Heygen, which acts as a virtual sales representative. Natural language understanding powered by Langbase enables human-like conversations with customers, while the system uses memory modules to deeply understand and memorize each store's product catalog and customer interactions.
+
+Built with modern web technologies including React.js, Node.js, and MongoDB, Daylily provides a comprehensive solution for e-commerce automation with advanced AI capabilities and seamless Shopify integration.
+
+Key Features of Daylily AI Sales Assistant
+The Daylily platform includes a comprehensive set of features designed to provide an immersive and effective e-commerce experience through AI-powered customer engagement.
+
+3D AI Avatar Assistant
+Fully interactive avatar built using Heygen, which acts as a virtual sales representative. Natural language understanding powered by Langbase enables human-like conversations with customers for personalized shopping experiences.
+
+Product Memory & Personalization
+Uses Langbase memory modules to deeply understand and memorize each store's product catalog and customer interactions. Provides personalized product recommendations and targeted upselling suggestions based on user behavior.
+
+Shopify Integration
+Seamless installation via Shopify Embedded App SDK and OAuth. Real-time product data synchronization using Shopify Storefront and Admin APIs for comprehensive e-commerce functionality.
+
+Advanced Business Features
+Daylily leverages cutting-edge technologies to provide a robust and scalable e-commerce automation platform with advanced AI capabilities and intelligent business logic.
+
+Custom Billing Logic
+Micro-interactions under 1 minute are charged at $0.10 per interaction. Interactions longer than 1 minute are billed at $0.20 per minute. Automatic 2% commission deduction on successful product purchases as success fees.
+
+Advanced Admin Dashboard
+Accessible via dedicated admin portal with comprehensive analytics. Real-time session tracking, conversion metrics, revenue impact reports, and exportable data for business analysis and decision-making.
+
+Mobile-Responsive Design
+Fully mobile-responsive ensuring a consistent experience across all devices. Built-in fallback logic to ensure smooth performance even during API or AI service interruptions.
+
+Technology Stack and Development Architecture
+Daylily is built using modern web technologies and cloud services to ensure optimal performance, scalability, and reliability for e-commerce AI automation.
+
+Frontend Technologies
+React.js for dynamic user interface components, Three.js for 3D avatar rendering, Tailwind CSS for modern styling, and comprehensive mobile-responsive design for optimal user experience across all devices.
+
+Backend Technologies
+Node.js and Express.js for robust server-side functionality, MongoDB for flexible data storage, and comprehensive integration with Shopify APIs for seamless e-commerce functionality.
+
+AI & Deployment
+Langbase for conversation intelligence and memory-based product personalization, Heygen for lifelike speaking avatars, AWS and Vercel for scalable cloud deployment, and comprehensive Shopify integration with OAuth.
+
+
+
+AI-Product-Designer.png
+
+Shopify AI Product Designer App - Interactive Design Platform
+Shopify AI Product Designer App: Advanced Design Platform
+A sophisticated Shopify private app that empowers customers to design personalized products using AI-driven image generation and editing tools. Built with a modern React + Remix stack, this app seamlessly integrates with Shopify for a smooth user experience and streamlined product management.
+
+This full-stack application combines advanced canvas design tools with AI services to offer an interactive product customization experience directly inside Shopify storefronts. Designed for scalability and flexibility, it allows both desktop and mobile users to create, preview, and order custom-designed products with AI-powered capabilities.
+
+Built with modern web technologies including React 18, TypeScript, and Remix.js, the Shopify AI Product Designer App provides a comprehensive solution for e-commerce customization with advanced AI capabilities and seamless Shopify integration.
+
+Key Features of AI Product Designer Platform
+The Shopify AI Product Designer App includes a comprehensive set of features designed to provide an immersive and effective product customization experience through AI-powered design tools.
+
+Design Studio
+Interactive canvas with drag-and-drop editing support for text, shapes, and custom images. Real-time preview with instant feedback on design updates. Multi-view design capability to switch between front/back views of products.
+
+AI Image Generation
+Create original artwork using OpenAI (DALL·E 3) and ImagineAPI. AI image editing with natural language prompts for modifying existing images. Aspect ratio control and filter effects for enhanced design capabilities.
+
+Shopify Integration
+Theme extension embedded directly within product pages. Product sync with custom designs and order metadata. Customer dashboard for managing saved designs and order management for fulfillment tracking.
+
+Advanced AI Capabilities
+The Shopify AI Product Designer App leverages cutting-edge technologies to provide a robust and scalable design platform with advanced AI capabilities and intelligent design tools.
+
+AI Capabilities
+Prompt enhancement using Langbase to optimize and enrich user prompts. AI editing tools for mask, blend, and enhance visuals based on user instructions. Advanced AI integration for comprehensive design assistance and automation.
+
+Text Editor
+Custom fonts, colors, shadow, and transformation effects for comprehensive text customization. Advanced typography tools for creating professional and personalized product designs with rich text formatting capabilities.
+
+Internationalization
+Multi-language UI supporting English and German with dynamic language switching. Responsive design fully optimized for mobile and tablet devices for seamless cross-platform experience.
+
+Technology Stack and Development Architecture
+The Shopify AI Product Designer App is built using modern web technologies and cloud services to ensure optimal performance, scalability, and reliability for AI-powered design tools.
+
+Frontend Technologies
+React 18 with TypeScript for type-safe development, Tailwind CSS for modern styling, Vite as build tool, React-Konva and Fabric.js for canvas rendering, and React-i18next for translations.
+
+Backend Technologies
+Remix for full-stack rendering and API routes, Node.js v18.20+ for server-side functionality, Prisma with SQLite for lightweight data storage, and comprehensive Shopify app authentication with OAuth 2.0.
+
+AI & Deployment
+OpenAI (DALL·E 3) for image generation, ImagineAPI for alternative AI-generated assets, Multer and Formidable for file uploads, and comprehensive Shopify integration for seamless e-commerce functionality.
+

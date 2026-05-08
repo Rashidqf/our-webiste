@@ -1,0 +1,130 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+Theme Name:     Pixor | Creative Digital Agency Template
+Version:        1.0.0
+-------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+
+1. General
+	1.1 Theme Reset Style
+	1.2 Global Elements
+
+2. header
+	2.1 topbar
+	2.2 navigation
+
+3. content
+	3.1 hero-section
+	3.2 partners
+	3.3 about-section
+	3.4 service-section
+	3.5 text-animation
+	3.6 project-section
+	3.7 marquee-section
+	3.8 fanfuct-section
+	3.9 award-section
+	3.10 project-title
+	3.11 testimonial-section
+	3.12 marquee-section-s2
+	3.13 team-section
+	3.14 blog-section
+
+4. footer-section
+
+5. Home-style-2
+   5.1 marquee-section-s3
+   5.2 about-section-s2
+   5.3 service-section-s2
+   5.4 award-section-s2
+   5.5 fanfuct-section-s2
+   5.6 project-section-s2
+   5.7 team-section-s2
+   5.8 marquee-section-s4
+   5.9 blog-section-s2
+   5.10 contact-section
+
+6. Home-style-3
+   6.1 about-section-s3
+   6.2 service-section-s3
+   6.3 project-section-s3
+   6.4 partners-section-s2
+   6.5 award-section-s3
+   6.6 team-section-s3
+   6.7 work-and-marquee-text
+   6.8 testimonial-section-s2
+   6.9 blog-section-s3
+   6.10 contact-section-s2
+
+
+
+7. project-single-page
+
+8.service-single
+
+9. team-single
+
+10. contact-page
+
+11.blog-pg-section
+
+12. blog-single-section
+
+13. error-404-section
+
+----------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------
+1. General
+----------------------------------------------------------------*/
+
+// helpers
+@import "helpers/variables";
+@import "helpers/functions";
+@import "helpers/mixins";
+
+// base
+@import "base/base";
+
+
+// components
+@import "components/section-title";
+@import "components/buttons";
+@import "components/form";
+@import "components/social-links";
+@import "components/page-title";
+@import "components/preloader";
+@import "components/blog-sidebar";
+@import "components/pagination";
+
+// layout
+@import "layout/header";
+@import "layout/hero-slider";
+@import "layout/footer";
+
+// components
+@import "components/sticky-header";
+
+
+// page
+@import "page/home-default";
+@import "page/home-style-2";
+@import "page/home-style-3";
+@import "page/project-single";
+@import "page/service-single";
+@import "page/team-single";
+@import "page/contact";
+
+
+@import "page/_blog";
+
+@import "page/_blog-single";
+@import "page/404";
+
+
+
+
