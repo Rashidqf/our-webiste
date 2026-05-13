@@ -4,6 +4,10 @@ import pimg3 from "/public/images/projects_banner/Pocket-Coach-AI.png";
 import pimg4 from "/public/images/projects_banner/aipoweredrecruitmentautomation.png";
 import pimg5 from "/public/images/projects_banner/Daylily.png";
 import pimg6 from "/public/images/projects_banner/AI-Product-Designer.png";
+import pimg7 from "/public/images/projects_banner/moonline-ai.png";
+import pimg8 from "/public/images/projects_banner/lumera-skin-ai.png";
+import pimg9 from "/public/images/projects_banner/CynCity.png";
+import pimg10 from "/public/images/projects_banner/Custom-Neon-Sign.png";
 
 const Projects = [
     {
@@ -281,6 +285,190 @@ const Projects = [
             {
                 title: "Global-ready UX",
                 text: "Localization and responsive layouts cover desktop and mobile shoppers.",
+            },
+        ],
+    },
+    {
+        id: "7",
+        slug: "moonline-ai-voice-agent-restaurants",
+        title: "Moonline",
+        tagline: "AI Voice Agent for Restaurants",
+        title2: "AI Voice",
+        title3: "Automation",
+        subtitle: "React · Next.js · NestJS · PostgreSQL",
+        subtitle2: "POS & VoIP integrations",
+        pimg1: pimg7,
+        date: "2025",
+        location: "Remote",
+        tags: ["Voice AI", "Next.js"],
+        client: "Restaurant technology partner",
+        projectType: "AI voice agent & admin dashboard",
+        website: { label: "—", href: null },
+        detailIntro: [
+            "Moonline is an AI-powered voice agent built for restaurants. It automates phone answering, reservations, order-taking, and FAQs using natural, human-like conversations—available 24/7 so no call goes unanswered.",
+            "The platform listens with context, remembers preferences where appropriate, and integrates with POS, delivery, and phone systems so it can act as a central automation hub for front-of-house operations.",
+            "A real-time admin dashboard surfaces call analytics, transcripts, sentiment, and performance metrics to help operators tune behavior and measure impact.",
+        ],
+        detailOverviewHeading: "Architecture & goals",
+        detailOverviewBody: [
+            "Frontend built with React and Next.js for responsive operator dashboards; backend services on Node and NestJS with PostgreSQL for sessions, analytics, and integration metadata.",
+            "Voice stack combines speech-to-text and text-to-speech with AI processing for intent recognition, memory-backed personalization, and response generation aligned to each restaurant’s menu and policies.",
+        ],
+        detailHighlightBullets: [
+            "Human-like voice handling for reservations, orders, menu questions, and complaints with optional staff handoff",
+            "AI memory for repeat callers, tone configuration, and brand-consistent answers",
+            "Real-time analytics: call logs, daily/weekly stats, recordings, and transcripts",
+            "Integrations with POS, delivery platforms, CRM, loyalty, and VoIP providers",
+        ],
+        detailResultsHeading: "Business impact",
+        detailResultsLead:
+            "Targets zero missed calls, higher conversion on phone orders and bookings, roughly 70% reduction in manual phone workload, and lower operational cost versus dedicated phone coverage.",
+        detailOutcomePoints: [
+            {
+                title: "Revenue & service",
+                text: "More orders and reservations captured with intelligent upsell paths and consistent service quality.",
+            },
+            {
+                title: "Operational clarity",
+                text: "Dashboards and exports give leadership visibility into volume, intent, and outcomes.",
+            },
+        ],
+    },
+    {
+        id: "8",
+        slug: "lumera-ai-smart-skin-analysis",
+        title: "Lumera AI",
+        tagline: "Smart Skin Analysis & Skincare App",
+        title2: "UI/UX",
+        title3: "Beauty-tech",
+        subtitle: "Figma · AI skincare flows · Design system",
+        subtitle2: "Portfolio-ready mobile UI",
+        pimg1: pimg8,
+        date: "2025",
+        location: "Remote",
+        tags: ["Figma", "Mobile UI"],
+        client: "Beauty & health-tech concept",
+        projectType: "Figma app UI — skin AI & store",
+        website: { label: "—", href: null },
+        detailIntro: [
+            "Lumera AI is a premium mobile app UI designed in Figma: an end-to-end journey from AI-based skin scanning to detailed skin health reports and personalized product recommendations.",
+            "The experience blends clarity and calm—percentage-based skin metrics (acne, dryness, wrinkles, overall health), tailored product suggestions with usage duration, and flows for user profiles, storefront, and admin management.",
+            "The work demonstrates a complete ecosystem in one cohesive file: splash and onboarding, scanning, reports, store, and admin tooling for catalog updates.",
+        ],
+        detailOverviewHeading: "Design scope",
+        detailOverviewBody: [
+            "Soft pastel palette, minimal typography, and custom cards, charts, and navigation patterns suited to dermatology and skincare startups.",
+            "Screens cover camera-based scan entry, results dashboards, smart suggestions, patient-style home summaries, category-filtered product store, and admin add/edit product flows.",
+        ],
+        detailHighlightBullets: [
+            "AI skin scan flow with intuitive camera UX",
+            "Skin reports with clear percentage breakdowns and condition callouts",
+            "Smart product recommendations with suggested treatment duration",
+            "Built-in store UI with filters plus admin panel for products and pricing",
+        ],
+        detailResultsHeading: "Tools & positioning",
+        detailResultsLead:
+            "Figma-only delivery focused on beauty-tech branding, engagement, and a startup-ready visual system without production code.",
+        detailOutcomePoints: [
+            {
+                title: "Trust & clarity",
+                text: "Visual hierarchy keeps medical-adjacent data approachable and scannable.",
+            },
+            {
+                title: "Go-to-market ready",
+                text: "Structured flows map cleanly to engineering handoff for AI skincare products.",
+            },
+        ],
+    },
+    {
+        id: "9",
+        slug: "cyncity-ai-health-wellness-platform",
+        title: "CynCity",
+        tagline: "AI-Powered Health & Wellness Platform",
+        title2: "Health",
+        title3: "Wearables",
+        subtitle: "React · NestJS · SwiftUI · PostgreSQL",
+        subtitle2: "Apple Watch & web dashboard",
+        pimg1: pimg9,
+        date: "2025",
+        location: "Remote",
+        tags: ["Wearables", "NestJS"],
+        client: "Wellness & performance product",
+        projectType: "Mobile, watch, web & backend platform",
+        website: { label: "—", href: null },
+        detailIntro: [
+            "CynCity is a health and performance platform that combines wearable data, real-time sync, and AI-driven insights across fitness, sleep, stress, nutrition, and mental well-being.",
+            "Native iOS with SwiftUI, a dedicated Apple Watch experience, and a React web dashboard give users and professionals layered views of vitals, workouts, recovery, and coaching.",
+            "A NestJS backend with PostgreSQL ingests and processes sensor streams at scale, powering predictive analytics, anomaly detection, fatigue and stress modeling, and personalized wellness plans.",
+        ],
+        detailOverviewHeading: "Platform capabilities",
+        detailOverviewBody: [
+            "Wearable integration covers heart rate, steps, stress proxies, temperature, sleep stages, and workout telemetry with Bluetooth sync and Apple Watch sensor paths.",
+            "AI layers provide coaching suggestions, smart alerts, sleep efficiency scoring, activity intensity graphs, breathing exercises, and offline-friendly caching with push notifications.",
+        ],
+        detailHighlightBullets: [
+            "Real-time wearable sync with Apple Watch–level depth",
+            "AI health insights, predictive fatigue/stress signals, and personalized plans",
+            "Sleep cycle detection with deep/light insights and optimization tips",
+            "SwiftUI iOS app plus React/Next.js web for coaches and power users",
+        ],
+        detailResultsHeading: "Impact",
+        detailResultsLead:
+            "Designed for athletes, health-conscious users, and everyday optimizers who need seamless tracking, motivating insights, and global-ready scalability.",
+        detailOutcomePoints: [
+            {
+                title: "Actionable routines",
+                text: "Users improve habits with automated tracking and guided wellness tools.",
+            },
+            {
+                title: "Unified ecosystem",
+                text: "Wrist, phone, and web stay aligned through a resilient, optimized data pipeline.",
+            },
+        ],
+    },
+    {
+        id: "10",
+        slug: "custom-neon-sign-tool-shopify-ai",
+        title: "Custom Neon Sign Tool",
+        tagline: "AI Design Platform for Shopify",
+        title2: "Shopify",
+        title3: "Generative design",
+        subtitle: "React · Remix · MySQL · AI",
+        subtitle2: "Embedded merchant app",
+        pimg1: pimg10,
+        date: "2025",
+        location: "Remote",
+        tags: ["Shopify", "Remix"],
+        client: "Custom neon & signage merchants",
+        projectType: "Embedded Shopify design & pricing app",
+        website: { label: "—", href: null },
+        detailIntro: [
+            "The Custom Neon Sign Tool lets shoppers design neon signs on the storefront with live glow preview, typography controls, wall mockups, and artwork uploads converted into neon-ready artwork with AI assistance.",
+            "AI validates manufacturability, suggests neon-friendly revisions, and estimates pricing from dimensions, font complexity, colors, materials, LED tubing, and mount options—reducing production errors and support load.",
+            "Fully embedded in Shopify, the app syncs variants, pricing, and order metadata so merchants receive print-ready assets and structured production data.",
+        ],
+        detailOverviewHeading: "Product surface",
+        detailOverviewBody: [
+            "React canvas rendering with real-time neon simulation, responsive layouts across desktop and mobile, and mockups on brick, concrete, bedroom, and product scenes.",
+            "Remix-powered APIs, MySQL for sessions and saved layers, and automated pricing engine tied into checkout flows.",
+        ],
+        detailHighlightBullets: [
+            "Live neon text designer with fonts, spacing, stroke, and multi-color glow",
+            "AI image-to-neon conversion with feasibility checks and bendability guidance",
+            "Shopify-embedded experience with variant and order sync",
+            "Dynamic pricing from size, materials, complexity, and mount selections",
+        ],
+        detailResultsHeading: "Merchant outcomes",
+        detailResultsLead:
+            "Improves conversion through interactive customization, cuts rework with AI validation, and elevates customer confidence via accurate previews and instant quotes.",
+        detailOutcomePoints: [
+            {
+                title: "Fewer errors",
+                text: "Print-ready outputs and validation reduce costly remakes.",
+            },
+            {
+                title: "Better buying journey",
+                text: "Transparent pricing and immersive previews increase trust and completion rates.",
             },
         ],
     },

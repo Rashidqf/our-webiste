@@ -1,284 +1,389 @@
-Trading-Automation.png
+Moonline – AI Voice Agent for Restaurants
+Automate phone answering, reservations, and order-taking with human-like AI. Available 24/7 to handle customer calls, reduce missed opportunities, and enhance restaurant operations with intelligent voice conversations.
 
-Trading Automation System
-Advanced Multi-Account Trading Automation Platform
-Developed a comprehensive trading automation system that combines modern web technologies with Python-based browser automation to create a robust, scalable solution for managing multiple trading accounts simultaneously. The system features real-time communication, automated order execution, and advanced risk management capabilities.
+Learn More
 
-The platform integrates React frontend with Node.js backend and Python automation bot, providing a seamless experience for traders to manage their portfolios, execute trades, and monitor market conditions in real-time. The system supports bulk operations through CSV import/export functionality and implements sophisticated anti-detection measures for reliable trading platform interaction.
+Project Overview
+Moonline is an advanced AI-powered voice agent built specifically for restaurants. It automates phone answering, order-taking, reservation management, customer inquiries, and more — all using natural, human-like conversations.
 
-Built with enterprise-grade architecture, the system handles concurrent operations through multi-threading, ensures data integrity with MongoDB, and provides real-time updates via Socket.IO integration. The solution demonstrates expertise in full-stack development, financial technology, and automated trading systems.
+The platform listens, understands context, remembers customer preferences, and responds intelligently like a trained restaurant staff member. With 24/7 availability, Moonline eliminates missed calls, reduces workload for restaurant teams, and enhances customer service through fast and accurate voice interactions.
 
-Technology Stack & Architecture
-The project was built using a modern microservices architecture with clear separation of concerns across frontend, backend, and automation components.
+Category
+AI Voice & Restaurant & Automation
 
-Frontend Development
-React 18 with Redux Toolkit for state management, Material-UI for component library, and Tailwind CSS for styling. Implemented responsive design with real-time data updates using Socket.IO client integration.
+Technologies
+React & NextJS & AI & Voice APIs & PostgreSQL
 
-Backend Development
-Node.js with Express.js framework, MongoDB for database management, and Socket.IO for real-time communication. RESTful API design with comprehensive endpoints for account, order, and trade management.
+Project Goals
+Create a fully automated voice agent like a human receptionist
+Natural conversations handling complex requests
 
-Python Automation Bot
-FastAPI-based bot with Selenium WebDriver for Chrome automation, implementing anti-detection measures and session management across multiple trading accounts for reliable platform interaction.
+Handle all restaurant calls 24/7
+Reservations, orders, menu questions, special requests
 
-Key Features & Capabilities
-Multi-Account Management System
-CSV import/export for bulk account operations
-Account creation, updates, and management
-Primary/Secondary account classification
-Real-time account status monitoring
-Advanced Trading Operations
-Automated order placement and execution
-Trade management with partial exits and amendments
-Stop-loss and take-profit automation
-Multi-threading for concurrent operations
-CSV Import/Export System
-Bulk account creation from CSV files
-Account updates via CSV import
-Data validation and error handling
-Export functionality for reporting
-Real-time Communication
-Socket.IO integration for live updates
-Real-time order status changes
-Account synchronization
-Event-driven architecture
-Browser Automation (Python Bot)
-Selenium WebDriver for trading platform interaction
-Headless Chrome operation
-Anti-detection measures
-Session management across multiple accounts
-API Architecture
-RESTful API design with comprehensive endpoints
-Account, Order, and Trade management APIs
-Database operations with MongoDB
-Error handling and validation
-Technical Expertise Demonstrated
-This project showcases comprehensive expertise in full-stack development, financial technology, and automated trading systems. The solution demonstrates proficiency in React + Node.js + Python integration, real-time applications with WebSocket communication, database design and API development, multi-threading and concurrent programming, CSV processing and bulk operations, and modern deployment practices.    
+Build AI memory for personalization
+Provide an extremely fast and intelligent automation solution that reduces manual workload by 70%.
 
+Provide real-time admin dashboard
+Call analytics, performance metrics, and insights
 
-SpeakSmart.png
+Reduce operational costs and missed calls
+Eliminate expensive staff for phone duty
 
-SpeakSmart - AI-Powered Real-Time English Conversation Platform
-SpeakSmart: Advanced AI-Powered English Learning Platform
-SpeakSmart is an advanced AI-powered web application designed to help English learners practice real-time spoken conversations in a natural, interactive way. The platform connects directly with Thinkific (a leading online course platform) to provide a seamless experience for students, allowing them to improve their speaking skills with personalized AI conversation partners.
+Enable seamless platform integrations
+Connect with POS, delivery, and phone systems
 
-The application features real-time AI conversation capabilities powered by OpenAI models, enabling users to converse naturally while the AI listens, understands, and replies vocally. The platform supports dynamic flow control, including an optional "continuous mode" where users do not need to click to speak each time.
-
-Built with modern web technologies including React.js, Node.js, and Flask, SpeakSmart provides a comprehensive solution for English language learning with seamless integration capabilities and cross-platform compatibility.
-
-Key Features of SpeakSmart Platform
-The SpeakSmart platform includes a comprehensive set of features designed to provide an immersive and effective English learning experience through AI-powered conversations.
-
-Real-Time AI Conversation
-Built using advanced OpenAI models for live voice-based interaction. Users can converse in real time; the AI listens, understands, and replies vocally with natural language processing capabilities.
-
-Voice and Speech Features
-Real-time speech-to-text and text-to-speech processing optimized for desktop and Android devices. Special care taken to handle Safari on Mac and iOS for consistent recording functionality.
-
-Thinkific Integration
-Seamless Single Sign-On (SSO) integration with Thinkific using Google Sheets and Google API. Automatic account creation for students with secure password management and frictionless login transitions.
-
-Advanced Technical Capabilities
-SpeakSmart leverages cutting-edge technologies to provide a robust and scalable English learning platform with advanced AI capabilities and seamless user experience.
-
-Cross-Platform Compatibility
-Accessible on all modern browsers and devices with responsive design. Provides smooth UI/UX experiences regardless of platform, ensuring consistent functionality across desktop, Android, and iOS devices.
-
-Dynamic Transcript Page
-Displays the entire conversation history after ending a session, allowing users to review and learn from their interaction. Shows correct names for a more personal experience and learning reinforcement.
-
-Customizable AI Personalities
-Students can choose different AI speaking partners and difficulty levels at the start of each session. Provides personalized learning experiences tailored to individual skill levels and preferences.
-
-Technology Stack and Development Architecture
-SpeakSmart is built using modern web technologies and cloud services to ensure optimal performance, scalability, and reliability for real-time AI conversations.
-
-Frontend Technologies
-React.js for dynamic user interface components, JavaScript for client-side functionality, and Tailwind CSS for modern, responsive styling and optimal user experience across all devices.
-
-Backend Technologies
-Node.js and Express.js for robust server-side functionality, Flask for additional API layers, and comprehensive integration with OpenAI APIs for advanced AI capabilities.
-
-AI & Voice Integration
-OpenAI APIs for speech and text models, Web Speech API and WebRTC for recording and playback, Google Sheets API and Thinkific API for seamless integrations and user management.
-
-
-Pocket-Coach-AI.png
-
-Pocket Coach AI - Intelligent Business Idea Development Platform
-Pocket Coach AI: Intelligent Business Idea Development Platform
-Pocket Coach AI is an intelligent, AI-powered platform designed to help users develop and refine their business ideas. It acts as a personal business coach, guiding users through the stages of ideation, planning, and market insight generation with advanced AI capabilities and personalized guidance.
-
-The platform features an interactive chat interface powered by OpenAI's Assistants API, offering personalized guidance and real-time feedback. Users can engage in natural conversations with the AI coach to explore their business ideas, receive strategic advice, and develop actionable plans for their entrepreneurial journey.
-
-Built with modern web technologies including Next.js, React, and MongoDB, Pocket Coach AI provides a comprehensive solution for business idea development with advanced AI capabilities and seamless user experience.
-
-Key Features of Pocket Coach AI Platform
-The Pocket Coach AI platform includes a comprehensive set of features designed to provide an immersive and effective business development experience through AI-powered coaching and analysis.
-
-Conversational AI Coach
-An interactive chat interface powered by OpenAI's Assistants API, offering personalized guidance and real-time feedback. Users can engage in natural conversations to explore business ideas and receive strategic advice for their entrepreneurial journey.
-
-Multi-Provider Authentication
-Secure user authentication with NextAuth.js, supporting Google, Apple, and email/password login. Provides seamless and secure access to the platform with multiple login options for user convenience.
-
-Idea Viability Scoring (vScore)
-A real-time scoring system that evaluates the viability of a business idea based on user input and conversation history. Provides objective analysis and insights to help users understand the potential of their business concepts.
-
-Advanced AI Capabilities
-Pocket Coach AI leverages cutting-edge technologies to provide a robust and scalable business development platform with advanced AI capabilities and intelligent analysis.
-
-Automated Insight Generation
-Uses Langbase and Relevance AI to generate weekly, industry-specific insights and project reports. Provides users with valuable market intelligence and trend analysis to inform their business decisions.
-
-AI-Powered Teammates
-Users can add AI "employees" with different specialties (e.g., marketing, finance, tech) to collaborate on their project. Enables virtual team collaboration and specialized expertise for comprehensive business planning.
-
-Rich User Interface
-A modern, responsive interface built with Next.js, Shadcn UI, and Tailwind CSS for a clean and intuitive experience. Provides seamless navigation and optimal user experience across all devices.
-
-Technology Stack and Development Architecture
-Pocket Coach AI is built using modern web technologies and cloud services to ensure optimal performance, scalability, and reliability for business idea development.
-
-Frontend Technologies
-Next.js and React for dynamic user interface components, Redux Toolkit for state management, Shadcn UI for modern components, and Tailwind CSS for responsive styling and optimal user experience across all devices.
-
-Backend Technologies
-Next.js API Routes and Node.js for robust server-side functionality, MongoDB with Mongoose for flexible data storage, and comprehensive integration with OpenAI APIs for advanced AI capabilities.
-
-AI & Deployment
-OpenAI Assistants API for conversational AI, Langbase and Perplexity API for advanced AI integration, Cloudinary for media management, and VPS deployment for optimal control and scalability.
-
-
-aipoweredrecruitmentautomation.png
-
-
-AI Powered Recruitment Automation
-Advanced Middleware Solution for Intelligent Recruitment
-This project is an advanced middleware solution designed to bridge the gap between a Salesforce Applicant Tracking System (ATS) and the intelligent capabilities of Azure OpenAI. Its mission is to revolutionize recruitment workflows by automating candidate matching and proposal generation.
-
-The system addresses two key recruitment challenges: Intelligent Candidate Sourcing and Automated Proposal Generation. It automatically analyzes new job vacancies and identifies the best matches from a large candidate database, considering skills, experience, availability, location, and more. For high-potential matches, it dynamically creates personalized proposal texts or adapts resumes—reducing manual recruiter effort and increasing consistency and quality.
-
-The middleware acts as a central hub, coordinating communication between Salesforce, Azure OpenAI, and a vector database for lightning-fast semantic search.
-
+Project Gallery
 Key Features
-The system provides comprehensive AI-powered recruitment automation with advanced matching capabilities and automated proposal generation.
+Human-Like AI Voice Agent
+Answers calls instantly 24/7 with natural language processing. Understands accents and speech variations. Handles reservations, menu questions, hours, and FAQs with contextual awareness.
 
-AI-Powered Job Matching
-Deep semantic analysis of job descriptions and resumes using OpenAI's language models. Supports matching a single job against hundreds of candidates in one request with multi-criteria analysis including skills, experience, geographic proximity, working hours, salary expectations, availability, and past assignments.
-
-Dynamic Proposal Generation
-Generates tailored proposal texts aligned with each job's unique requirements. Creates personalized proposal texts or adapts resumes for high-potential matches, reducing manual recruiter effort and increasing consistency and quality.
-
-Scalable Architecture
-Built with FastAPI for smooth integration with Salesforce or other systems. Features asynchronous, containerized architecture built for modern cloud environments with a lightweight web dashboard for monitoring system activity and managing AI instructions.
-
-Technology Stack
-A modern stack chosen for performance, scalability, and developer ergonomics:
-
-Backend: Python, FastAPI, Uvicorn
-AI & Data Science: Azure OpenAI Service (gpt-4.1, text-embedding-3-small), Pinecone Vector Database, Pydantic, NLTK & Scikit-learn
-Database: SQLAlchemy with SQLite
-Frontend: HTML, CSS, JavaScript with Jinja2 templating
-Deployment: Docker, Git & GitHub, Dotenv
-
-Architectural Design
-The system uses a modern, service-oriented architecture for modularity and scalability. The API Gateway (FastAPI) serves as the entry point for all client requests, handling routing, validation, and authentication. The Service Layer includes MatchingService for coordinating matching workflow, OpenAIService for managing Azure OpenAI interactions, VectorDBService for handling vector DB operations via Pinecone, and DocumentProcessor for extracting and cleaning content from various file formats.
-
-The Data Layer consists of Pinecone for storing vectorized resumes and job descriptions, and SQLite for storing persistent app data and assistant instructions. Full asynchronous workflow support enables high-concurrency processing with minimal blocking.
-
-
-Daylily.png
-
-
-Daylily Interactive 3D AI Sales Assistant - Shopify App
-Daylily: Interactive 3D AI Sales Assistant for E-commerce
-I developed Daylily: Interactive 3D AI Sales Assistant, a powerful Shopify application designed to transform e-commerce customer engagement through an interactive 3D AI avatar. This app combines advanced AI, real-time product memory, and intelligent analytics to help merchants drive more conversions and improve customer experiences.
-
-The platform features a fully interactive avatar built using Heygen, which acts as a virtual sales representative. Natural language understanding powered by Langbase enables human-like conversations with customers, while the system uses memory modules to deeply understand and memorize each store's product catalog and customer interactions.
-
-Built with modern web technologies including React.js, Node.js, and MongoDB, Daylily provides a comprehensive solution for e-commerce automation with advanced AI capabilities and seamless Shopify integration.
-
-Key Features of Daylily AI Sales Assistant
-The Daylily platform includes a comprehensive set of features designed to provide an immersive and effective e-commerce experience through AI-powered customer engagement.
-
-3D AI Avatar Assistant
-Fully interactive avatar built using Heygen, which acts as a virtual sales representative. Natural language understanding powered by Langbase enables human-like conversations with customers for personalized shopping experiences.
-
-Product Memory & Personalization
-Uses Langbase memory modules to deeply understand and memorize each store's product catalog and customer interactions. Provides personalized product recommendations and targeted upselling suggestions based on user behavior.
-
-Shopify Integration
-Seamless installation via Shopify Embedded App SDK and OAuth. Real-time product data synchronization using Shopify Storefront and Admin APIs for comprehensive e-commerce functionality.
-
-Advanced Business Features
-Daylily leverages cutting-edge technologies to provide a robust and scalable e-commerce automation platform with advanced AI capabilities and intelligent business logic.
-
-Custom Billing Logic
-Micro-interactions under 1 minute are charged at $0.10 per interaction. Interactions longer than 1 minute are billed at $0.20 per minute. Automatic 2% commission deduction on successful product purchases as success fees.
+AI With Memory
+Learns customer behavior and preferences over time. Remembers regular callers and their favorite orders. Adjusts tone and responses to match customer intent for personalized service.
 
 Advanced Admin Dashboard
-Accessible via dedicated admin portal with comprehensive analytics. Real-time session tracking, conversion metrics, revenue impact reports, and exportable data for business analysis and decision-making.
+Real-time call logs and analytics. Daily/weekly call stats with sentiment analysis and intent tracking. Audio recordings, transcripts, and performance metrics in one place.
 
-Mobile-Responsive Design
-Fully mobile-responsive ensuring a consistent experience across all devices. Built-in fallback logic to ensure smooth performance even during API or AI service interruptions.
+Full Restaurant Call Handling
+Take orders and manage reservations. Handle complaints and provide store information. Explain menu items and suggest popular dishes with seamless staff transfer.
 
-Technology Stack and Development Architecture
-Daylily is built using modern web technologies and cloud services to ensure optimal performance, scalability, and reliability for e-commerce AI automation.
+Third-Party Integrations
+Connect with POS systems, online ordering platforms, and delivery services. Integrate with CRM, loyalty systems, and VoIP providers. Becomes a central automation hub.
 
-Frontend Technologies
-React.js for dynamic user interface components, Three.js for 3D avatar rendering, Tailwind CSS for modern styling, and comprehensive mobile-responsive design for optimal user experience across all devices.
+AI Behavior Customization
+Customize AI answers and brand tone. Configure menu items and opening hours. Set reservation rules, delivery instructions, and upsell suggestions for unique branding.
 
-Backend Technologies
-Node.js and Express.js for robust server-side functionality, MongoDB for flexible data storage, and comprehensive integration with Shopify APIs for seamless e-commerce functionality.
+Tech Stack
+Frontend
+React & NextJS & Dashboard UI
 
-AI & Deployment
-Langbase for conversation intelligence and memory-based product personalization, Heygen for lifelike speaking avatars, AWS and Vercel for scalable cloud deployment, and comprehensive Shopify integration with OAuth.
+Voice Engine
+Speech-to-Text & Text-to-Speech
+
+Database
+PostgreSQL & Analytics
+
+Backend
+Node & NestJS & API Routes
+
+Platform Architecture
+Moonline combines advanced AI, voice processing, and real-time analytics for comprehensive restaurant automation
+
+Phone Call
+Voice Recognition
+AI Processing
+Response Generation
+Analytics
+Business Impact
+Zero Missed Calls
+24/7 availability ensures every customer call gets answered instantly
+
+Increased Revenue
+More orders and reservations with intelligent handling and upselling
+
+Reduced Staff Workload
+Eliminate manual phone duty and focus on customer experience
+
+Moonline – AI Voice for Restaurants
+The next generation of restaurant automation. With human-like voice conversations, intelligent memory, real-time analytics, and seamless integrations, Moonline transforms how restaurants handle customer calls and operations.
 
 
 
-AI-Product-Designer.png
 
-Shopify AI Product Designer App - Interactive Design Platform
-Shopify AI Product Designer App: Advanced Design Platform
-A sophisticated Shopify private app that empowers customers to design personalized products using AI-driven image generation and editing tools. Built with a modern React + Remix stack, this app seamlessly integrates with Shopify for a smooth user experience and streamlined product management.
 
-This full-stack application combines advanced canvas design tools with AI services to offer an interactive product customization experience directly inside Shopify storefronts. Designed for scalability and flexibility, it allows both desktop and mobile users to create, preview, and order custom-designed products with AI-powered capabilities.
 
-Built with modern web technologies including React 18, TypeScript, and Remix.js, the Shopify AI Product Designer App provides a comprehensive solution for e-commerce customization with advanced AI capabilities and seamless Shopify integration.
 
-Key Features of AI Product Designer Platform
-The Shopify AI Product Designer App includes a comprehensive set of features designed to provide an immersive and effective product customization experience through AI-powered design tools.
 
-Design Studio
-Interactive canvas with drag-and-drop editing support for text, shapes, and custom images. Real-time preview with instant feedback on design updates. Multi-view design capability to switch between front/back views of products.
 
-AI Image Generation
-Create original artwork using OpenAI (DALL·E 3) and ImagineAPI. AI image editing with natural language prompts for modifying existing images. Aspect ratio control and filter effects for enhanced design capabilities.
 
-Shopify Integration
-Theme extension embedded directly within product pages. Product sync with custom designs and order metadata. Customer dashboard for managing saved designs and order management for fulfillment tracking.
 
-Advanced AI Capabilities
-The Shopify AI Product Designer App leverages cutting-edge technologies to provide a robust and scalable design platform with advanced AI capabilities and intelligent design tools.
 
-AI Capabilities
-Prompt enhancement using Langbase to optimize and enrich user prompts. AI editing tools for mask, blend, and enhance visuals based on user instructions. Advanced AI integration for comprehensive design assistance and automation.
+Lumera AI – Smart Skin Analysis & Skincare App
+A modern and premium mobile app UI designed in Figma that blends AI-powered skin analysis with personalized skincare recommendations. A complete beauty-tech experience focused on clarity, accuracy, and elegance.
 
-Text Editor
-Custom fonts, colors, shadow, and transformation effects for comprehensive text customization. Advanced typography tools for creating professional and personalized product designs with rich text formatting capabilities.
+Primary CTA: view case study / get started (placeholder for marketing hero)
 
-Internationalization
-Multi-language UI supporting English and German with dynamic language switching. Responsive design fully optimized for mobile and tablet devices for seamless cross-platform experience.
 
-Technology Stack and Development Architecture
-The Shopify AI Product Designer App is built using modern web technologies and cloud services to ensure optimal performance, scalability, and reliability for AI-powered design tools.
+Project Overview
+Lumera AI is a thoughtfully crafted skincare mobile application UI designed in Figma. The project showcases an end-to-end user journey, from AI-based skin scanning to detailed skin health reports and personalized product recommendations. The design combines beauty, technology, and usability into a clean and intuitive interface that feels both professional and calming.
 
-Frontend Technologies
-React 18 with TypeScript for type-safe development, Tailwind CSS for modern styling, Vite as build tool, React-Konva and Fabric.js for canvas rendering, and React-i18next for translations.
+Users can scan their skin using the phone camera to analyze conditions such as acne, dryness, wrinkles, and overall skin health. The app then presents percentage-based reports and intelligently suggests suitable skincare products along with recommended usage duration.
 
-Backend Technologies
-Remix for full-stack rendering and API routes, Node.js v18.20+ for server-side functionality, Prisma with SQLite for lightweight data storage, and comprehensive Shopify app authentication with OAuth 2.0.
+Figma UI Design + AI Skincare + Beauty-Tech
 
-AI & Deployment
-OpenAI (DALL·E 3) for image generation, ImagineAPI for alternative AI-generated assets, Multer and Formidable for file uploads, and comprehensive Shopify integration for seamless e-commerce functionality.
+Project Goals
+AI-Driven Skin Analysis
+Create a visually clear and user-friendly interface for AI-powered skin scanning.
+
+Portfolio-Ready UI
+Deliver a professional design suitable for startups and UI/UX inspiration.
+
+Personalized Skincare Experience
+Design flows that make product recommendations feel tailored and result-focused.
+
+Premium & Minimal Aesthetic
+Use soft colors and clean layouts to build trust and calmness.
+
+Complete App Ecosystem
+Showcase user, store, and admin flows in one unified design.
+
+Project Gallery
+Get Started
+Splash Screen 01
+Splash Screen 02
+Splash Screen 03
+Home
+Client Profile
+Store
+iPhone 16 Pro Max - 28
+Key Features
+AI Skin Scan
+A clean camera interface that allows users to scan their skin and initiate AI analysis smoothly and intuitively.
+
+Skin Reports
+Displays detailed percentage-based skin health results including acne, dryness, wrinkles, and overall condition.
+
+Smart Suggestions
+AI-based product recommendations with usage duration for a more personalized skincare routine.
+
+User Dashboard
+A patient-style dashboard showing user profiles, last check dates, and skin issues at a glance.
+
+Product Store
+A built-in skincare store UI with category filters, product cards, and smooth navigation.
+
+Admin Panel
+Add product screens for managing product images, names, descriptions, and pricing efficiently.
+
+Tech Stack
+Design Tool
+Figma
+
+Typography
+Clean modern fonts
+
+Color Theme
+Calm pastel tones
+
+Design Style
+Minimal, Soft, Premium UI
+
+Components
+Custom cards, buttons, charts,
+
+Business Impact
+Strong Beauty-Tech Branding
+Creates a professional and trustworthy skincare experience.
+
+High User Engagement
+Interactive UI keeps users engaged with their skin health.
+
+Startup Ready Design
+Perfect for AI skincare, dermatology, and health-tech products.
+
+Lumera Skin AI
+A premium Figma UI design that transforms AI-powered skin analysis into a visually elegant and user-friendly skincare experience
+
+
+
+
+
+CynCity – AI-Powered Health & Wellness Platform
+An advanced health and performance optimization platform that transforms how users track and improve their daily routines. Combines wearable integration, real-time data analysis, and AI insights for fitness, sleep, stress, and mental well-being. Now also includes a fully integrated Apple Watch app for seamless on-wrist health tracking and real-time insights.
+Learn More
+
+Project Overview
+CynCity is an advanced health and performance optimization platform designed to transform how users track, understand, and improve their daily routines. Built as a wearable-integrated wellness companion, CynCity collects real-time data, analyzes it with AI, and provides personalized insights on fitness, sleep, stress, nutrition, and mental well-being. The system includes a highly interactive mobile app, a smart wearable device ecosystem, and an intelligent backend that automatically processes user data.
+
+With the addition of the Apple Watch app, users can now monitor their health directly from their wrist with instant data syncing and on-the-go wellness insights. The goal is to make health tracking seamless, actionable, and motivating—bringing professional-level insights to everyday users through advanced AI analysis and personalized recommendations.
+
+Category
+Health • Wearables • AI
+
+Technologies
+React • NestJS • SwiftUI • PostgreSQL
+
+Project Goals
+Wearable Integration
+Build a smart health platform powered by AI with real-time monitoring using wearable sensors for comprehensive health tracking, now expanded with full Apple Watch integration.
+
+AI Health Insights
+Provide AI-powered personalized recommendations and predictive analytics for fatigue, stress, and performance optimization.
+
+Daily Habit Improvement
+Help users improve daily habits through personalized recommendations and automated tracking for sleep, activity, and wellness.
+
+Mobile Excellence
+Deliver an engaging and modern mobile experience with SwiftUI for seamless native iOS performance, real-time sync, and enhanced Apple Watch support.
+
+Scalable Backend
+Create a scalable backend for large-scale wearable data processing with NestJS and PostgreSQL optimization.
+
+Global Wellness
+Serve athletes, health-conscious individuals, and everyday users wanting to optimize their daily performance globally.
+
+Project Gallery
+Key Features
+Wearable Integration
+Real-time live data sync from wearable sensors monitoring heart rate, step count, stress level, temperature, and more with Bluetooth connectivity — now including direct Apple Watch sensor data integration.
+
+AI Health Insights
+AI analyzes lifestyle patterns with predictive analytics, AI-based coaching suggestions, smart alerts, and personalized wellness plans.
+
+Sleep Tracking
+Automatically detects sleep cycles, provides deep vs light sleep insights, calculates sleep efficiency, and suggests optimization strategies.
+
+Fitness Monitoring
+Daily movement goals, automated workout tracking, activity intensity graphs, health scoring based on effort and recovery — with added Apple Watch workout integration.
+
+Stress & Wellness
+Stress detection from heart rate patterns, breathing exercises, guided relaxation sessions, and personalized mental health recommendations.
+
+Mobile & Web Apps
+Native iOS app with SwiftUI, web dashboard with React+NextJS for professionals, offline data caching, real-time notifications, and a dedicated Apple Watch app for instant on-wrist insights and activity tracking.
+
+Tech Stack
+Mobile
+SwiftUI iOS
+
+Frontend
+React & NextJS
+
+Backend
+NestJS
+
+Database
+PostgreSQL
+
+Health AI & Wearable Architecture
+CynCity leverages advanced AI models, real-time wearable data processing, and optimized database architecture for seamless health tracking, intelligent insights, and personalized wellness recommendations.
+Wearable Sync
+Real-time Data
+AI Analysis
+Pattern Detection
+Smart Alerts
+Business Impact
+Improved Lifestyle
+Users improve lifestyle performance with actionable AI insights
+
+Effortless Tracking
+Track health effortlessly with automatic wearable data collection
+
+Better Well-being
+Reduce stress and stay motivated with guided wellness tools
+
+CynCity
+A cutting-edge, AI-powered wellness ecosystem built for the future of personal health. It combines wearable technology, intelligent insights, Apple Watch connectivity, and beautifully designed applications to deliver a powerful platform that helps users live healthier, more balanced lives.
+
+
+
+Custom Neon Sign Tool – AI Design Platform
+Create stunning custom neon signs with real-time preview, AI-powered optimization, and automated pricing. Fully embedded Shopify solution for seamless customer experience and production workflow.
+
+Learn More
+
+Project Overview
+The Custom Neon Sign Tool is an advanced AI-powered design system built for Shopify merchants, allowing users to create fully customizable neon signs directly on the store’s website. Designed for ease-of-use, the tool enables customers to type custom text, choose neon colors, adjust styles, preview wall mockups, upload artwork, and generate real-time neon sign designs.
+
+The platform leverages AI to enhance visuals, guide users to the best neon configurations, optimize artwork for neon production, and estimate pricing based on size, style, and materials. This tool dramatically improves conversions, reduces design errors, and automates the neon sign customization workflow for the merchant.
+
+Category
+Shopify & Design Tool & AI Art
+
+Technologies
+React & Remix & MySQL & AI
+
+Project Goals
+Provide a full custom neon design experience inside Shopify
+Seamless integration with complete design workflow
+
+Enable real-time neon preview with color glow simulation
+Live visual feedback for design decisions
+
+Enable text-based neon creation with customizable fonts
+Selectable fonts and styles optimized for neon
+
+Integrate AI to optimize designs for manufacturability
+Smart validation and improvement suggestions
+
+Allow image uploads and neon-style conversion
+Transform artwork into neon-compatible graphics
+
+Automate pricing based on size, style, and materials
+Dynamic cost calculation for instant quotes
+
+Key Features
+Real-Time Neon Text Designer
+Users type custom text and instantly see neon effect with multiple colors and glow simulation. Adjustable fonts, size, spacing, and stroke width optimized for neon tubing with wall mockups and room previews.
+
+AI-Powered Neon Conversion
+Converts user-uploaded images into neon-styled artwork with AI feasibility evaluation. Auto-optimizes line thickness and bendability with smart suggestions for neon-friendly revisions on complex designs.
+
+Fully Responsive & Shopify Integration
+Works smoothly on desktop, mobile, and tablets. Seamlessly embedded Shopify app that syncs product variants, pricing, and order details automatically.
+
+Mockup Preview System
+Users preview neon signs on concrete walls, brick backgrounds, bedroom scenes, and product mockups. Realistic lighting effects generated in real-time for accurate visualization.
+
+Automated Pricing Engine
+Calculates price dynamically based on dimensions, font complexity, neon color, production materials, LED tubing type, and mount options with instant cost estimates.
+
+Artwork & Data Management
+Saves user designs, layers, and configurations. Stores order-ready neon files for merchant production. MySQL database handles sessions, metadata, and history efficiently.
+
+Tech Stack
+Frontend
+React & Canvas Rendering
+
+Backend
+Remix & Scalable API
+
+AI Layer
+Image Processing & Optimization
+
+Database
+MySQL & Optimized
+
+Platform Architecture
+Custom Neon Sign Tool leverages modern web technologies and AI for seamless design creation and production
+
+ 
+User Design
+AI Validation
+Pricing Engine
+Data Storage
+Shopify Order
+Business Impact
+Increased Conversions
+Interactive design flow improves customer engagement and purchase intent
+
+Reduced Production Errors
+AI validation ensures accurate, print-ready designs first time
+
+Enhanced Customer Experience
+Real-time preview and automated pricing drive satisfaction and loyalty
+
+Custom Neon Sign Tool
+A powerful AI-enhanced Shopify app for creating custom neon signs. With real-time preview, intelligent optimization, dynamic pricing, and seamless production integration, it transforms the custom neon buying experience for merchants and customers.
+
+
+---
+## Site integration (api/projects.js) — May 2026
+
+Home page (`pages/index.js`, `pages/home/index.js`) passes `limit={6}` to `ProjectSection`: only the **first six** projects in the array appear there. `/project` shows **all** projects (no limit).
+
+| id | title | slug (project-single URL) | banner file |
+|----|--------|-----------------------------|---------------|
+| 1 | Trading Automation System | trading-automation-system | Trading-Automation.png |
+| 2 | SpeakSmart | speaksmart | SpeakSmart.png |
+| 3 | Pocket Coach AI | pocket-coach-ai | Pocket-Coach-AI.png |
+| 4 | AI Powered Recruitment Automation | ai-powered-recruitment-automation | aipoweredrecruitmentautomation.png |
+| 5 | Daylily | daylily-shopify-ai-assistant | Daylily.png |
+| 6 | Shopify AI Product Designer | shopify-ai-product-designer | AI-Product-Designer.png |
+| 7 | Moonline | moonline-ai-voice-agent-restaurants | moonline-ai.png |
+| 8 | Lumera AI | lumera-ai-smart-skin-analysis | lumera-skin-ai.png |
+| 9 | CynCity | cyncity-ai-health-wellness-platform | CynCity.png |
+| 10 | Custom Neon Sign Tool | custom-neon-sign-tool-shopify-ai | Custom-Neon-Sign.png |
+
+To surface a new project on the **home** grid, move it into the first six entries in `api/projects.js` or increase `limit`.
 

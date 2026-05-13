@@ -27,7 +27,7 @@ const HomePage = () => {
             <About />
             <ServiceSection hclass={'service-section section-padding'} />
             <MarqueeSection />
-            <ProjectSection hclass={'project-section section-padding'} />
+            <ProjectSection hclass={'project-section section-padding'} limit={6} />
             <MarqueeSectionS2 />
             <FunFact />
             <AwardSection />

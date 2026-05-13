@@ -8,6 +8,11 @@ const ClickHandler = () => {
 }
 
 const ProjectSection = (props) => {
+    const projects =
+        typeof props.limit === "number" && props.limit > 0
+            ? Projects.slice(0, props.limit)
+            : Projects;
+
     return (
         <section className={"" +props.hclass}>
             <div className="container">
@@ -29,7 +34,7 @@ const ProjectSection = (props) => {
                 <div className="sortable-gallery">
                     <div className="gallery-filters"></div>
                     <div className="row gallery-container">
-                        {Projects.map((project, item) => (
+                        {projects.map((project, item) => (
                             <div className="col col-lg-6 col-12 scroll-text-animation" data-animation="fade_from_bottom" key={project.slug || item}>
                             <div className="project-card">
                                     <Image
@@ -41,9 +46,11 @@ const ProjectSection = (props) => {
                                     />
                                     <div className="text">
                                         <h2><Link onClick={ClickHandler} href={`/project-single/${project.slug}`}>{project.title}</Link></h2>
-                                        {(project.tags || []).slice(0, 2).map((tag) => (
-                                            <span key={tag}>{tag}</span>
-                                        ))}
+                                        <div className="project-tags">
+                                            {(project.tags || []).slice(0, 2).map((tag) => (
+                                                <span key={tag}>{tag}</span>
+                                            ))}
+                                        </div>
                                     </div>
                             </div>
                         </div>
