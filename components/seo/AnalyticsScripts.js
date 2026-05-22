@@ -13,6 +13,8 @@ const GSC_VERIFICATION = normalizeGscVerification(
   process.env.NEXT_PUBLIC_GSC_VERIFICATION
 );
 
+const BING_VERIFICATION = process.env.NEXT_PUBLIC_BING_VERIFICATION;
+
 /** GA4, Search Console verification, Facebook Pixel — enable via .env */
 export default function AnalyticsScripts() {
   return (
@@ -20,6 +22,11 @@ export default function AnalyticsScripts() {
       {/* SEO: Google Search Console verification */}
       {GSC_VERIFICATION ? (
         <meta name="google-site-verification" content={GSC_VERIFICATION} />
+      ) : null}
+
+      {/* SEO: Bing Webmaster Tools verification */}
+      {BING_VERIFICATION ? (
+        <meta name="msvalidate.01" content={BING_VERIFICATION} />
       ) : null}
 
       {/* SEO: Google Analytics 4 */}
