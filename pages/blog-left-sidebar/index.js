@@ -1,11 +1,12 @@
 import React, { Fragment } from "react";
-import Head from "next/head";
+import SeoHead from "../../components/seo/SeoHead";
+import { PAGE_META } from "../../lib/seo/pageMeta";
 import NavbarS2 from "../../components/NavbarS2/NavbarS2";
 import PageTitle from "../../components/pagetitle/PageTitle";
 import BlogList from "../../components/BlogList/BlogList";
 import Scrollbar from "../../components/scrollbar/scrollbar";
 import Footer from "../../components/footer/Footer";
-import Logo from "/public/images/logo-2.svg";
+import Logo from "/public/images/logo.png";
 import { getBlogListPageProps } from "../../lib/getBlogListPageProps";
 
 export async function getServerSideProps(context) {
@@ -15,9 +16,12 @@ export async function getServerSideProps(context) {
 const BlogPageLeft = ({ blogs, total, totalPages, page, dbError }) => {
   return (
     <Fragment>
-      <Head>
-        <title>Blog | Ryzonix</title>
-      </Head>
+      <SeoHead
+        title={PAGE_META.blog.title}
+        description={PAGE_META.blog.description}
+        keywords={PAGE_META.blog.keywords}
+        canonicalPath="/blog"
+      />
       <NavbarS2 hclass={"wpo-site-header wpo-site-header-s4"} Logo={Logo} />
       <PageTitle pagesub={"Blog"} />
       <BlogList

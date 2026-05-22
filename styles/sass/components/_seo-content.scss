@@ -1,0 +1,140 @@
+.seo-content-section--light {
+    background: transparent;
+    color: rgba(18, 23, 37, 0.85);
+
+    .seo-content-section__title,
+    h2,
+    h3 {
+        color: #121725;
+    }
+
+    a:not(.theme-btn) {
+        color: $theme-primary-color;
+
+        &:hover {
+            color: $theme-primary-dark;
+        }
+    }
+}
+
+.seo-content-section {
+    color: rgba(255, 255, 255, 0.85);
+    background: #121725;
+
+    &__title {
+        font-size: clamp(1.5rem, 3vw, 2.25rem);
+        font-weight: 700;
+        margin-bottom: 1rem;
+        color: $white;
+    }
+
+    &__lead {
+        font-size: 1.125rem;
+        margin-bottom: 2rem;
+        max-width: 52rem;
+    }
+
+    h2,
+    h3 {
+        color: $white;
+        margin: 1.75rem 0 0.75rem;
+        font-size: 1.25rem;
+    }
+
+    p {
+        max-width: 52rem;
+        line-height: 1.7;
+        margin-bottom: 1rem;
+    }
+
+    ul {
+        margin: 0 0 1.25rem 1.25rem;
+        max-width: 52rem;
+
+        li {
+            margin-bottom: 0.35rem;
+        }
+    }
+
+    a:not(.theme-btn) {
+        color: $light-grern;
+        text-decoration: underline;
+        text-underline-offset: 2px;
+
+        &:hover {
+            color: $theme-primary-color-s2;
+        }
+    }
+
+    &__cta {
+        margin-top: 2rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.12);
+    }
+}
+
+.seo-service-block {
+    margin-bottom: 2.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    &__cta {
+        display: inline-flex;
+        margin-top: 0.5rem;
+    }
+}
+
+.seo-faq {
+    color: rgba(255, 255, 255, 0.85);
+
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1.25rem;
+        color: $white;
+    }
+
+    &__item {
+        margin-bottom: 1.25rem;
+        max-width: 48rem;
+    }
+
+    dt {
+        font-weight: 600;
+        color: $white;
+        margin-bottom: 0.35rem;
+    }
+
+    dd {
+        margin: 0;
+        line-height: 1.65;
+    }
+}
+
+.hero-section .hero-seo-h1 {
+    font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.hero-section .hero-seo-tagline {
+    font-size: 1rem;
+    opacity: 0.9;
+    max-width: 28rem;
+}

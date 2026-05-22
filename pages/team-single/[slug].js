@@ -1,10 +1,13 @@
 import React, { Fragment } from 'react';
 import { useRouter } from 'next/router'
+import SeoHead from '../../components/seo/SeoHead';
+import { formatTitle } from '../../lib/seo/site';
+import { buildBreadcrumbJsonLd } from '../../lib/seo/breadcrumbs';
 import Teams from '../../api/team';
 import NavbarS2 from '../../components/NavbarS2/NavbarS2';
 import Footer from '../../components/footer/Footer';
 import Scrollbar from '../../components/scrollbar/scrollbar';
-import Logo from '/public/images/logo-2.svg';
+import Logo from '/public/images/logo.png';
 import Image from 'next/image';
 
 
@@ -13,9 +16,20 @@ const TeamSinglePage = (props) => {
     const router = useRouter()
 
     const TeamSingles = Teams.find(item => item.slug === router.query.slug)
+    const memberName = TeamSingles?.title || 'Team member';
 
     return (
         <Fragment>
+            <SeoHead
+                title={formatTitle(memberName)}
+                description={`${memberName} at Ryzonix—IT services and web development team.`}
+                keywords={`${memberName}, Ryzonix team, web development`}
+                canonicalPath={TeamSingles ? `/team-single/${TeamSingles.slug}` : '/team'}
+                jsonLd={TeamSingles ? [buildBreadcrumbJsonLd([
+                    { name: 'Team', path: '/team' },
+                    { name: memberName, path: `/team-single/${TeamSingles.slug}` },
+                ])] : []}
+            />
             <NavbarS2 hclass={'wpo-site-header wpo-site-header-s4'} Logo={Logo} />
 
             <div className="team-pg-area section-padding pt-0">
@@ -25,7 +39,7 @@ const TeamSinglePage = (props) => {
                             <div className="row align-items-center">
                                 <div className="col-lg-6">
                                     <div className="team-info-img">
-                                        <Image src={TeamSingles?.Sime} alt="" />
+                                        <Image src={TeamSingles?.Sime} alt={`${memberName} – Ryzonix team`} width={600} height={600} loading="lazy" />
                                     </div>
                                 </div>
                                 <div className="col-lg-6">

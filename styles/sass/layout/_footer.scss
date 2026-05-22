@@ -105,8 +105,16 @@
                 display: none;
             }
 
-            img {
+            img,
+            .theme-shape__icon {
                 width: 120px;
+                height: auto;
+                display: block;
+            }
+
+            &.theme-shape {
+                opacity: 0.85;
+                filter: drop-shadow(0 0 24px rgba(102, 224, 163, 0.25));
             }
         }
 
@@ -121,8 +129,13 @@
                     font-weight: 500;
                     transition: all .3s ease-in-out;
 
-                    &:hover {
+                    &:hover,
+                    &.is-active {
                         color: $light-grern;
+                    }
+
+                    &.is-active {
+                        font-weight: 600;
                     }
                 }
             }
@@ -347,7 +360,7 @@
                         content: '';
                         width: 8px;
                         height: 8px;
-                        background-color: #BAE900;
+                        background-color: $light-grern;
                         border-radius: 100px;
                         transform: translate(-50%, -50%);
                     }
@@ -374,6 +387,20 @@
         .row {
             border-top: 1px solid #232222;
             padding: 25px 0;
+        }
+
+        .logo {
+            display: inline-flex;
+            align-items: center;
+
+            img,
+            .brand-logo {
+                height: 44px;
+                width: auto;
+                max-width: 150px;
+                object-fit: contain;
+                display: block;
+            }
         }
 
         .footer-nav-list {
@@ -571,7 +598,7 @@
         }
 
         h4 {
-            color: #BAE900;
+            color: $light-grern;
             font-size: 24px;
             font-weight: 600;
             text-transform: lowercase;
@@ -687,7 +714,7 @@
                 }
 
                 &:hover {
-                    color: #BAE900;
+                    color: $light-grern;
                 }
             }
 
@@ -723,7 +750,7 @@
 
         .copyright {
             span {
-                color: #BAE900;
+                color: $light-grern;
             }
         }
     }
@@ -983,7 +1010,7 @@
 
         .copyright {
             span {
-                color: #BAE900;
+                color: $light-grern;
             }
         }
     }

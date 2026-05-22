@@ -344,7 +344,7 @@
 			max-height: 140px;
 			width: 100%;
 			width: 100%;
-			background: #EE3736;
+			background: $theme-primary-color;
 			text-align: center;
 			line-height: 140px;
 			border-radius: 100%;
@@ -626,7 +626,7 @@
 		width: 233px;
 		height: 208px;
 		position: absolute;
-		background: #BAE900;
+		background: $light-grern;
 		z-index: 1;
 		border-top-left-radius: 23px;
 		z-index: -1;

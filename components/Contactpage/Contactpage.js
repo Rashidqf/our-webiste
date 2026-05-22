@@ -43,6 +43,7 @@ const Contactpage = () => {
         <div>
             <section className="contact-page section-padding">
                 <div className="container">
+                    <h1 className="visually-hidden">Contact Ryzonix | Web Development &amp; IT Consulting</h1>
                     <div className="office-info">
                         <div className="row">
                             <div className="col col-lg-4 col-md-6 col-12">
@@ -55,7 +56,7 @@ const Contactpage = () => {
                                     <div className="office-info-text">
                                         <h2>Website</h2>
                                         <p>
-                                            <a href="https://www.ryzonix.com" target="_blank" rel="noopener noreferrer">www.ryzonix.com</a>
+                                            <a className="theme-link" href="https://ryzonix.pro" target="_blank" rel="noopener noreferrer" title="Ryzonix website">ryzonix.pro</a>
                                             <br />Remote-first · IT Services &amp; Consulting</p>
                                     </div>
                                 </div>
@@ -95,7 +96,7 @@ const Contactpage = () => {
                                 <div className="contact-left">
                                     <h2>Get in touch</h2>
                                     <p>Ryzonix is your software partner for custom web development, tech consulting, MVPs, SaaS, and mobile apps. Tell us about your goals and we will help you plan the right build.</p>
-                                    <Image className="image" src={Shape} alt="" />
+                                    <Image className="image" src={Shape} alt="Contact Ryzonix" />
                                 </div>
                             </div>
                             <div className="col-lg-6 col-12">

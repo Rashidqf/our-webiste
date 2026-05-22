@@ -1,4 +1,7 @@
 import React, { Fragment } from 'react';
+import SeoHead from '../components/seo/SeoHead';
+import HomeSeoSection from '../components/seo/HomeSeoSection';
+import { PAGE_META } from '../lib/seo/pageMeta';
 import Navbar from '../components/Navbar/Navbar'
 import Hero from '../components/hero/hero';
 import PartnerSection from '../components/PartnerSection/PartnerSection';
@@ -16,11 +19,19 @@ import TeamSection from '../components/TeamSection/TeamSection';
 import BlogSection from '../components/BlogSection/BlogSection';
 import Footer from '../components/footer/Footer';
 import Scrollbar from '../components/scrollbar/scrollbar';
-import Logo from '/public/images/logo.svg'
+import Logo from '/public/images/logo.png'
 
 const HomePage = () => {
+    const meta = PAGE_META.home;
+
     return (
         <Fragment>
+            <SeoHead
+                title={meta.title}
+                description={meta.description}
+                keywords={meta.keywords}
+                canonicalPath={meta.path}
+            />
             <Navbar hclass={'wpo-site-header'} Logo={Logo} />
             <Hero />
             <PartnerSection />
@@ -36,6 +47,7 @@ const HomePage = () => {
             <MarqueeSectionS3 />
             {/* <TeamSection /> */}
             {/* <BlogSection hclass={'blog-section section-padding'} /> */}
+            {/* <HomeSeoSection /> */}
             <Footer hclass={"footer-section section-padding pb-0"} />
             <Scrollbar />
         </Fragment>

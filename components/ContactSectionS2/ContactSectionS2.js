@@ -107,7 +107,7 @@ const ContactSectionS2 = () => {
                                 <g opacity="0.45" filter="url(#filter0_f_373_1379)">
                                     <rect width="610.839" height="610.216"
                                         transform="matrix(0.972706 0.23204 0.23204 -0.972706 200.078 793.561)"
-                                        fill="#BAE900" />
+                                        fill="var(--brand-green-light, #66E0A3)" />
                                 </g>
                                 <defs>
                                     <filter id="filter0_f_373_1379" x="0.078125" y="0" width="1135.76" height="1135.3"

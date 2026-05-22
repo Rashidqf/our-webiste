@@ -2,11 +2,14 @@ import React, { Fragment } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import Image from "next/image";
+import SeoHead from "../../components/seo/SeoHead";
+import { formatTitle } from "../../lib/seo/site";
+import { buildBreadcrumbJsonLd } from "../../lib/seo/breadcrumbs";
 import NavbarS2 from "../../components/NavbarS2/NavbarS2";
 import Projects from "../../api/projects";
 import Footer from "../../components/footer/Footer";
 import Scrollbar from "../../components/scrollbar/scrollbar";
-import Logo from "/public/images/logo-2.svg";
+import Logo from "/public/images/logo.png";
 
 const ProjectSingle = () => {
     const router = useRouter();
@@ -50,8 +53,25 @@ const ProjectSingle = () => {
         <span>{project.website?.label || "—"}</span>
     );
 
+    const intro = (project.detailIntro || []).join(' ');
+    const pageDescription = intro
+        ? `${intro.slice(0, 155)}…`
+        : `${project.title} case study by Ryzonix—custom web development and IT consulting.`;
+
     return (
         <Fragment>
+            <SeoHead
+                title={formatTitle(project.title)}
+                description={pageDescription}
+                keywords={`${project.title}, ${(project.tags || []).join(', ')}, Ryzonix portfolio, case study`}
+                canonicalPath={`/project-single/${project.slug}`}
+                jsonLd={[
+                    buildBreadcrumbJsonLd([
+                        { name: 'Portfolio', path: '/project' },
+                        { name: project.title, path: `/project-single/${project.slug}` },
+                    ]),
+                ]}
+            />
             <NavbarS2 hclass={"wpo-site-header wpo-site-header-s4"} Logo={Logo} />
             <section className="project-single-page section-padding">
                 <div className="container">
@@ -60,7 +80,7 @@ const ProjectSingle = () => {
                             <div className="row align-items-center">
                                 <div className="col-lg-8 col-12">
                                     <div className="section-title poort-text poort-in-right">
-                                        <h2>{project.title}</h2>
+                                        <h1>{project.title}</h1>
                                         <h3>{project.tagline}</h3>
                                         {(project.detailIntro || []).map((para, i) => (
                                             <p key={i}>{para}</p>
@@ -199,7 +219,7 @@ const ProjectSingle = () => {
                                             fillRule="evenodd"
                                             clipRule="evenodd"
                                             d="M0.68457 0.444336H7.0903V6.88878H0.68457V0.444336ZM0.68457 13.3333H7.0903V19.7777H0.68457V13.3333ZM7.0903 26.2221H0.68457V32.6665H7.0903V26.2221ZM13.4959 0.444336H19.9016V6.88878H13.4959V0.444336ZM19.9016 13.3333H13.4959V19.7777H19.9016V13.3333ZM13.4959 26.2221H19.9016V32.6665H13.4959V26.2221ZM32.7133 0.444336H26.3076V6.88878H32.7133V0.444336ZM26.3076 13.3333H32.7133V19.7777H26.3076V13.3333ZM32.7133 26.2221H26.3076V32.6665H32.7133V26.2221Z"
-                                            fill="#FF7236"
+                                            fill="var(--theme, #3B8F63)"
                                         />
                                     </svg>
                                 </button>

@@ -83,7 +83,7 @@ const Testimonial = (props) => {
                     <svg width="1575" height="1108" viewBox="0 0 1575 1108" fill="none">
                         <g filter="url(#filter0_f_1_342)">
                             <ellipse cx="787.906" cy="554.021" rx="474.434" ry="83.9948"
-                                transform="rotate(23.3308 787.906 554.021)" fill="#FD5B38" fillOpacity="0.21" />
+                                transform="rotate(23.3308 787.906 554.021)" fill="var(--theme, #3B8F63)" fillOpacity="0.21" />
                         </g>
                         <defs>
                             <filter id="filter0_f_1_342" x="0.976105" y="0.859863" width="1573.86" height="1106.32"

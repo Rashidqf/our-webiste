@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
 
 import Abouti from '/public/images/btn-about.png';
-import logo from '/public/images/logo-2.svg';
+import logo from '/public/images/logo.png';
 
 
 const HeraderAbout = () => {
@@ -22,12 +24,14 @@ const HeraderAbout = () => {
 
         <div className="mini-cart">
             <button className="cart-toggle-btn" onClick={toggleProfile}>
-                <img src={Abouti} alt="" />
+                <img src={Abouti.src || Abouti} alt="Open contact panel" />
             </button>
             <div className={`mini-cart-content ${isProfileOpen ? 'mini-cart-content-toggle' : ""}`}>
                 <button className="mini-cart-close"><i className="ti-close" onClick={closeProfile}></i></button>
                 <div className="mini-cart-items">
-                    <a href="index.html"><img src={logo} alt="" /></a>
+                    <Link href="/" onClick={ClickHandler} className="mini-cart-logo">
+                        <Image src={logo} alt="Ryzonix" className="brand-logo" width={379} height={231} />
+                    </Link>
                     <h2>Get in Touch</h2>
                     <p>
                         Ryzonix—IT Services &amp; IT Consulting. Reach out for custom web development, MVPs, SaaS, or mobile projects.
@@ -68,4 +72,3 @@ const HeraderAbout = () => {
 }
 
 export default HeraderAbout;
-

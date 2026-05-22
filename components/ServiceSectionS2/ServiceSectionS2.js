@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link'
 import Services from "../../api/Services";
-import Image from 'next/image';
+import BrandBlobGlow from '../icons/BrandBlobGlow';
 
 const ClickHandler = () => {
     window.scrollTo(10, 0);
@@ -24,7 +24,7 @@ const ServiceSectionS2 = ({ sliceStart = 3, sliceEnd = 6 }) => {
                     <h2 className="scroll-text-animation" data-animation="fade_from_bottom">Ryzonix services</h2>
                     <div className="title-bottom">
                         <h3 className="scroll-text-animation" data-animation="fade_from_bottom">Delivery &amp; ongoing care</h3>
-                        <Link onClick={ClickHandler} href="/contact" className="scroll-text-animation" data-animation="fade_from_bottom">
+                        <Link onClick={ClickHandler} href="/contact" className="theme-link scroll-text-animation" data-animation="fade_from_bottom">
                             <span className="rolling-text">Start a project</span>
                             <i className="ti-arrow-top-right"></i></Link>
                     </div>
@@ -47,6 +47,9 @@ const ServiceSectionS2 = ({ sliceStart = 3, sliceEnd = 6 }) => {
                         </div>
                     ))}
                 </div>
+            </div>
+            <div className="bg-shape">
+                <BrandBlobGlow filterId="serviceS2BlobFilter" opacity={0.18} />
             </div>
         </section>
     );

@@ -39,13 +39,14 @@ const ProjectSection = (props) => {
                             <div className="project-card">
                                     <Image
                                         src={project.pimg1}
-                                        alt={project.title}
+                                        alt={`${project.title} portfolio project – Ryzonix`}
                                         width={1200}
                                         height={750}
+                                        loading="lazy"
                                         style={{ width: "100%", height: "auto" }}
                                     />
                                     <div className="text">
-                                        <h2><Link onClick={ClickHandler} href={`/project-single/${project.slug}`}>{project.title}</Link></h2>
+                                        <h2><Link onClick={ClickHandler} href={`/project-single/${project.slug}`} title={`View ${project.title} case study`}>{project.title}</Link></h2>
                                         <div className="project-tags">
                                             {(project.tags || []).slice(0, 2).map((tag) => (
                                                 <span key={tag}>{tag}</span>

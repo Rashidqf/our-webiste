@@ -16,11 +16,11 @@ const ServiceSectionS3 = ({ sliceStart = 0, sliceEnd = 3 }) => {
           className="title scroll-text-animation"
           data-animation="fade_from_buttom"
         >
-          <h3>
+          <h2>
             Custom web &amp; product work for{" "}
             <span>startups to enterprises —</span>
-          </h3>
-          <Link onClick={ClickHandler} href="/contact" className="theme-btn">
+          </h2>
+          <Link onClick={ClickHandler} href="/contact" className="theme-btn" title="Contact Ryzonix">
             <span className="rolling-text">Contact us</span>
             <i className="ti-arrow-top-right"></i>
           </Link>
@@ -41,6 +41,7 @@ const ServiceSectionS3 = ({ sliceStart = 0, sliceEnd = 3 }) => {
                     onClick={ClickHandler}
                     href={"/service-single/[slug]"}
                     as={`/service-single/${serve.slug}`}
+                    title={`${serve.title} – Ryzonix`}
                   >
                     {serve.title}
                   </Link>

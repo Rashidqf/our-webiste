@@ -1,11 +1,13 @@
 import React, { Fragment } from "react";
-import Head from "next/head";
+import SeoHead from "../../components/seo/SeoHead";
+import { PAGE_META } from "../../lib/seo/pageMeta";
+import { buildBreadcrumbJsonLd } from "../../lib/seo/breadcrumbs";
 import NavbarS2 from "../../components/NavbarS2/NavbarS2";
 import PageTitle from "../../components/pagetitle/PageTitle";
 import BlogList from "../../components/BlogList/BlogList";
 import Footer from "../../components/footer/Footer";
 import Scrollbar from "../../components/scrollbar/scrollbar";
-import Logo from "/public/images/logo-2.svg";
+import Logo from "/public/images/logo.png";
 import { getBlogListPageProps } from "../../lib/getBlogListPageProps";
 
 export async function getServerSideProps(context) {
@@ -13,15 +15,17 @@ export async function getServerSideProps(context) {
 }
 
 const BlogPage = ({ blogs, total, totalPages, page, dbError }) => {
+  const meta = PAGE_META.blog;
+
   return (
     <Fragment>
-      <Head>
-        <title>Blog | Ryzonix — Web development &amp; product notes</title>
-        <meta
-          name="description"
-          content="Articles from Ryzonix on custom web development, SaaS, MVPs, security, and tech consulting."
-        />
-      </Head>
+      <SeoHead
+        title={meta.title}
+        description={meta.description}
+        keywords={meta.keywords}
+        canonicalPath={meta.path}
+        jsonLd={[buildBreadcrumbJsonLd([{ name: 'Blog', path: '/blog' }])]}
+      />
       <NavbarS2 hclass={"wpo-site-header wpo-site-header-s4"} Logo={Logo} />
       <PageTitle pagesub={"Blog"} />
       <BlogList

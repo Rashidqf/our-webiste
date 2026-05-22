@@ -651,6 +651,17 @@
 	.mini-cart-items {
 		padding: 100px 20px 25px;
 
+		.mini-cart-logo {
+			display: inline-block;
+
+			.brand-logo {
+				height: 48px;
+				width: auto;
+				max-width: 160px;
+				object-fit: contain;
+			}
+		}
+
 		h2 {
 			padding: 20px 0;
 			margin-bottom: 0;
@@ -1287,8 +1298,16 @@
 	}
 
 	.navbar-header .navbar-brand {
-		img {
-			max-width: 170px;
+		display: flex;
+		align-items: center;
+
+		img,
+		.brand-logo {
+			height: 48px;
+			width: auto;
+			max-width: 160px;
+			object-fit: contain;
+			display: block;
 		}
 	}
 
@@ -1333,16 +1352,20 @@
 
 @media(max-width: 440px) {
 	.wpo-site-header .navbar-header .navbar-brand {
-		img {
-			max-width: 170px;
+		img,
+		.brand-logo {
+			height: 42px;
+			max-width: 140px;
 		}
 	}
 }
 
 @media(max-width: 370px) {
 	.wpo-site-header .navbar-header .navbar-brand {
-		img {
-			max-width: 140px;
+		img,
+		.brand-logo {
+			height: 36px;
+			max-width: 120px;
 		}
 	}
 }
@@ -1484,7 +1507,7 @@
 
 	.header-right .close-form .theme-btn {
 		padding: 35px 53px;
-		background: #BAE900;
+		background: $light-grern;
 
 		@media (max-width: 1399px) {
 			padding: 30px 25px;
@@ -1581,7 +1604,7 @@
 
 	.header-right .close-form .theme-btn {
 		padding: 35px 53px;
-		background: #BAE900;
+		background: $light-grern;
 
 		@media (max-width: 1199px) {
 			padding: 20px 40px;
@@ -1623,7 +1646,7 @@
 		}
 
 		>span {
-			color: #EE3736;
+			color: $theme-primary-color;
 		}
 	}
 
@@ -1636,7 +1659,7 @@
 
 		#navbar>ul li a:hover,
 		#navbar>ul li a:focus {
-			color: #BAE900;
+			color: $light-grern;
 			text-decoration: underline;
 		}
 

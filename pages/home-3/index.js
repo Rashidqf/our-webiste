@@ -14,7 +14,7 @@ import BlogSectionS3 from '../../components/BlogSectionS3/BlogSectionS3';
 import ContactSectionS2 from '../../components/ContactSectionS2/ContactSectionS2';
 import FooterS3 from '../../components/footerS3/FooterS3';
 import Scrollbar from '../../components/scrollbar/scrollbar';
-import Logo from '/public/images/logo-2.svg'
+import Logo from '/public/images/logo.png'
 
 const HomePage3 = () => {
     return (

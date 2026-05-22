@@ -1,4 +1,28 @@
 /* 1.1	Theme Reset Style */
+:root {
+    --theme: #{$theme-primary-color};
+    --theme-light: #{$theme-primary-color-s2};
+    --theme-dark: #{$theme-primary-dark};
+    --brand-green-dark: #3B8F63;
+    --brand-green-light: #66E0A3;
+}
+
+.theme-shape {
+    .theme-shape__icon {
+        display: block;
+        height: auto;
+    }
+}
+
+.theme-link {
+    color: $theme-primary-color;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+        color: $theme-primary-dark;
+    }
+}
+
 html {
     font-size: $base-font-size + px;
 
@@ -544,29 +568,35 @@ img {
 ul.smothscroll {
     position: fixed;
     bottom: 25px;
-    right:30px;
+    right: 30px;
     list-style: none;
     z-index: 99;
 }
+
 ul.smothscroll a {
-    background-color: rgba(186, 233, 0, 0.7);
+    background-color: transparentize($theme-primary-color-s2, 0.25);
     width: 45px;
     height: 45px;
     line-height: 45px;
-    border-radius:50%;
+    border-radius: 50%;
     display: block;
     text-align: center;
-    color: #121725;
-    background-size: 200%,1px;
+    color: $theme-primary-dark;
+    background-size: 200%, 1px;
     background-position: 0;
-    border: 2px solid #BAE900;
-}
-ul.smothscroll a:hover {
-    background-color: #BAE900;
-    color: #121725;
+    border: 2px solid $theme-primary-color;
+    box-shadow: 0 4px 16px rgba(59, 143, 99, 0.25);
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-@media(max-width:767px){
+ul.smothscroll a:hover {
+    background-color: $theme-primary-color;
+    border-color: $theme-primary-color;
+    color: $white;
+    box-shadow: 0 6px 20px rgba(59, 143, 99, 0.35);
+}
+
+@media(max-width:767px) {
     ul.smothscroll a {
         width: 30px;
         height: 30px;

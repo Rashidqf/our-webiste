@@ -88,35 +88,35 @@ const TestimonialS2 = (props) => {
                                                     <svg width="21" height="20" viewBox="0 0 21 20" fill="none">
                                                         <path
                                                             d="M10.4151 0L13.775 6.32631L20.83 7.56695L15.8517 12.7175L16.8519 19.8105L10.4151 16.6674L3.97819 19.8105L4.97838 12.7175L0 7.56695L7.05499 6.32631L10.4151 0Z"
-                                                            fill="#FD5B38" />
+                                                            fill="var(--brand-green-light, #66E0A3)" />
                                                     </svg>
                                                 </li>
                                                 <li>
                                                     <svg width="21" height="20" viewBox="0 0 21 20" fill="none">
                                                         <path
                                                             d="M10.4151 0L13.775 6.32631L20.83 7.56695L15.8517 12.7175L16.8519 19.8105L10.4151 16.6674L3.97819 19.8105L4.97838 12.7175L0 7.56695L7.05499 6.32631L10.4151 0Z"
-                                                            fill="#FD5B38" />
+                                                            fill="var(--brand-green-light, #66E0A3)" />
                                                     </svg>
                                                 </li>
                                                 <li>
                                                     <svg width="21" height="20" viewBox="0 0 21 20" fill="none">
                                                         <path
                                                             d="M10.4151 0L13.775 6.32631L20.83 7.56695L15.8517 12.7175L16.8519 19.8105L10.4151 16.6674L3.97819 19.8105L4.97838 12.7175L0 7.56695L7.05499 6.32631L10.4151 0Z"
-                                                            fill="#FD5B38" />
+                                                            fill="var(--brand-green-light, #66E0A3)" />
                                                     </svg>
                                                 </li>
                                                 <li>
                                                     <svg width="21" height="20" viewBox="0 0 21 20" fill="none">
                                                         <path
                                                             d="M10.4151 0L13.775 6.32631L20.83 7.56695L15.8517 12.7175L16.8519 19.8105L10.4151 16.6674L3.97819 19.8105L4.97838 12.7175L0 7.56695L7.05499 6.32631L10.4151 0Z"
-                                                            fill="#FD5B38" />
+                                                            fill="var(--brand-green-light, #66E0A3)" />
                                                     </svg>
                                                 </li>
                                                 <li>
                                                     <svg width="21" height="20" viewBox="0 0 21 20" fill="none">
                                                         <path
                                                             d="M10.4151 0L13.775 6.32631L20.83 7.56695L15.8517 12.7175L16.8519 19.8105L10.4151 16.6674L3.97819 19.8105L4.97838 12.7175L0 7.56695L7.05499 6.32631L10.4151 0Z"
-                                                            fill="#FD5B38" />
+                                                            fill="var(--brand-green-light, #66E0A3)" />
                                                     </svg>
                                                 </li>
                                             </ul>

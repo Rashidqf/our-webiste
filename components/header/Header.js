@@ -30,7 +30,7 @@ const Header = (props) => {
                             <div className="col-lg-2 col-md-5 col-6">
                                 <div className="navbar-header">
                                     <Link onClick={ClickHandler} className="navbar-brand" href="/"><Image src={props.Logo}
-                                        alt="" /></Link>
+                                        alt="Ryzonix" className="brand-logo" width={379} height={231} priority /></Link>
                                 </div>
                             </div>
                             <div className="col-lg-7 col-md-1 col-1">

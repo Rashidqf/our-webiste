@@ -13,7 +13,7 @@ import BlogSectionS2 from '../../components/BlogSectionS2/BlogSectionS2';
 import ContactSection from '../../components/ContactSection/ContactSection';
 import FooterS2 from '../../components/footerS2/FooterS2.js';
 import Scrollbar from '../../components/scrollbar/scrollbar';
-import Logo from '/public/images/logo.svg'
+import Logo from '/public/images/logo.png'
 
 const HomePage2 = () => {
     return (

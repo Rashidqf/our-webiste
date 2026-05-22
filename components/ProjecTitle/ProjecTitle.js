@@ -24,7 +24,7 @@ const ProjecTitle = (props) => {
                         <svg width="1746" height="1177" viewBox="0 0 1746 1177" fill="none">
                             <g filter="url(#filter0_f_1_327)">
                                 <ellipse cx="872.831" cy="588.902" rx="567.536" ry="85.0932"
-                                    transform="rotate(23.3308 872.831 588.902)" fill="#FD5B38" fillOpacity="0.47" />
+                                    transform="rotate(23.3308 872.831 588.902)" fill="var(--theme, #3B8F63)" fillOpacity="0.47" />
                             </g>
                             <defs>
                                 <filter id="filter0_f_1_327" x="0.592957" y="0.876709" width="1744.48" height="1176.05"

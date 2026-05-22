@@ -7,8 +7,8 @@ const Scrollbar = () => {
             <div className="header-menu">
                 <ul className="smothscroll">
                     <li>
-                        <AnchorLink href="#__next">
-                            <i className="ti-arrow-up"></i>
+                        <AnchorLink href="#__next" className="scroll-top-btn" aria-label="Scroll to top">
+                            <i className="ti-arrow-up" aria-hidden="true"></i>
                         </AnchorLink>
                     </li>
                 </ul>

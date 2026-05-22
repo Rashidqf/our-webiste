@@ -1,4 +1,8 @@
 import React, { Fragment } from 'react';
+import SeoHead from '../../components/seo/SeoHead';
+import AboutSeoIntro from '../../components/seo/AboutSeoIntro';
+import { PAGE_META } from '../../lib/seo/pageMeta';
+import { buildBreadcrumbJsonLd } from '../../lib/seo/breadcrumbs';
 import NavbarS2 from '../../components/NavbarS2/NavbarS2';
 import About from '../../components/about/about';
 import MarqueeSectionS2 from '../../components/MarqueeSectionS2/MarqueeSectionS2';
@@ -9,13 +13,23 @@ import ProjectSectionS3 from '../../components/ProjectSectionS3/ProjectSectionS3
 import TeamSectionS3 from '../../components/TeamSectionS3/TeamSectionS3';
 import Footer from '../../components/footer/Footer';
 import Scrollbar from '../../components/scrollbar/scrollbar';
-import Logo from '/public/images/logo-2.svg'
+import Logo from '/public/images/logo.png'
 
 
 const AboutPage = () => {
+    const meta = PAGE_META.about;
+
     return (
         <Fragment>
+            <SeoHead
+                title={meta.title}
+                description={meta.description}
+                keywords={meta.keywords}
+                canonicalPath={meta.path}
+                jsonLd={[buildBreadcrumbJsonLd([{ name: 'About', path: '/about' }])]}
+            />
             <NavbarS2 hclass={'wpo-site-header wpo-site-header-s4'} Logo={Logo} />
+            {/* <AboutSeoIntro /> */}
             <About />
             <MarqueeSectionS2 />
             <FunFact />

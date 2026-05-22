@@ -47,33 +47,30 @@ const Hero = () => {
                         <div className="splittext-line">
                             <div className="p-style scroll-text-animation" data-animation="fade_from_left">
                                 <p>IT Services &amp; IT Consulting · Founded 2025</p>
-                                <i className="ti-arrow-top-right"></i>
+                                <i className="ti-arrow-top-right" aria-hidden="true"></i>
                             </div>
                             <h2 className="italic scroll-text-animation" data-animation="fade_from_bottom">Scalable</h2>
                             <h2 className="normal scroll-text-animation">
-                                web apps <Image src={Slide1} alt="icon" width={50} height={50} />
+                                web apps <Image src={Slide1} alt="Web development icon – Ryzonix" width={50} height={50} />
                             </h2>
                             <h2 className="text-stroke scroll-text-animation">
-                                d<Image src={Slide2} alt="text-icon" width={50} height={50} />igital.
+                                d<Image src={Slide2} alt="Digital product design accent – Ryzonix" width={50} height={50} />igital.
                             </h2>
-                            <div className="p-style-s2 scroll-text-animation" data-animation="fade_from_right">
-                                <p>Your digital partner for responsive, secure, and scalable websites—from MVPs to production.</p>
-                            </div>
                         </div>
                         <div className="content_middle">
-                            <Image src={Slide3} alt="background" width={800} height={600} />
+                            <Image src={Slide3} alt="Custom web development hero background – Ryzonix" width={800} height={600} priority />
                         </div>
                     </div>
                     <div className="start new_img-animet">
-                        <Image data-speed="0.8" src={Slide4} alt="start" width={100} height={100} />
+                        <Image data-speed="0.8" src={Slide4} alt="Decorative star accent – Ryzonix" width={100} height={100} loading="lazy" />
                     </div>
                 </div>
             </div>
             <div className="bg-shape">
-                <Image src={Slide5} alt="background shape" width={800} height={600} />
+                <Image src={Slide5} alt="Hero section background shape – Ryzonix" width={800} height={600} loading="lazy" aria-hidden="true" />
             </div>
             <div className="round-shape">
-                <Image src={Slide6} alt="round shape" width={100} height={100} />
+                <Image src={Slide6} alt="Hero decorative round shape – Ryzonix" width={100} height={100} loading="lazy" aria-hidden="true" />
             </div>
         </section>
     );

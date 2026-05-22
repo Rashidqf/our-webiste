@@ -9,14 +9,14 @@ import 'react-toastify/dist/ReactToastify.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Cursor from "../components/Cursor/Cursor";
-import Head from 'next/head'
+import GlobalJsonLd from "../components/seo/GlobalJsonLd";
+import AnalyticsScripts from "../components/seo/AnalyticsScripts";
 
 function MyApp({ Component, pageProps }) {
   return (
     <div>
-      <Head>
-        <title>Ryzonix | Your digital partner for responsive, secure, and scalable websites</title>
-      </Head>
+      <GlobalJsonLd />
+      <AnalyticsScripts />
       <Component {...pageProps} />
       <Cursor />
     </div>

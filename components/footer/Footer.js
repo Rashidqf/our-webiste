@@ -1,12 +1,20 @@
 import React from 'react'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import Services from '../../api/Services';
-import FLoGo from '/public/images/logo.svg'
-import Stert from '/public/images/stert.svg'
+import FLoGo from '/public/images/logo.png'
+import BrandStarIcon from '../icons/BrandStarIcon'
 import Image from 'next/image';
 
-// images
+const RYZONIX_SERVICES = Services.slice(0, 6);
 
+const footerInfoLinks = [
+    { title: 'About', href: '/about' },
+    { title: 'Services', href: '/service' },
+    { title: 'Projects', href: '/project' },
+    { title: 'Blog', href: '/blog' },
+    { title: 'Contact', href: '/contact' },
+];
 
 const ClickHandler = () => {
     window.scrollTo(10, 0);
@@ -14,6 +22,8 @@ const ClickHandler = () => {
 
 
 const Footer = (props) => {
+    const router = useRouter();
+
     return (
         <footer className={"" + props.hclass}>
             <div className="footer-topbar">
@@ -37,32 +47,46 @@ const Footer = (props) => {
                     <div className="item fade_bottom">
                         <h2 className="title">services</h2>
                         <ul>
-                            {Services.slice(0, 5).map((service, Sitem) => (
-                                <li key={Sitem}><Link onClick={ClickHandler} href={'/service-single/[slug]'} as={`/service-single/${service.slug}`}>{service.title}</Link></li>
+                            {RYZONIX_SERVICES.map((service) => (
+                                <li key={service.Id}>
+                                    <Link
+                                        onClick={ClickHandler}
+                                        href={'/service-single/[slug]'}
+                                        as={`/service-single/${service.slug}`}
+                                        className={router.pathname === '/service-single/[slug]' && router.query.slug === service.slug ? 'is-active' : ''}
+                                    >
+                                        {service.title}
+                                    </Link>
+                                </li>
                             ))}
                         </ul>
-                        <div className="shape">
-                            <Image src={Stert} alt="" />
+                        <div className="shape theme-shape">
+                            <BrandStarIcon className="theme-shape__icon" size={120} gradientId="footerBrandStar" />
                         </div>
                     </div>
                     <div className="item fade_bottom">
                         <h2 className="title">Information</h2>
                         <ul>
-                            {Services.slice(0, 5).map((service, Sitem) => (
-                                <li key={Sitem}><Link onClick={ClickHandler} href={'/service-single/[slug]'} as={`/service-single/${service.slug}`}>{service.title}</Link></li>
+                            {footerInfoLinks.map((link) => (
+                                <li key={link.href}>
+                                    <Link
+                                        onClick={ClickHandler}
+                                        href={link.href}
+                                        className={router.pathname === link.href ? 'is-active' : ''}
+                                    >
+                                        {link.title}
+                                    </Link>
+                                </li>
                             ))}
                         </ul>
                     </div>
                     <div className="item widget-contact fade_bottom">
                         <h2 className="title">RYZONIX</h2>
                         <h3>Remote-first · IT Services &amp; IT Consulting</h3>
-                        <h4><a href="mailto:hello@ryzonix.com">hello@ryzonix.com</a></h4>
+                        <h4><a className="theme-link" href="mailto:hello@ryzonix.com">hello@ryzonix.com</a></h4>
                         <ul className="widget-social">
-                            <li><Link href="#"><i className="ti-facebook"></i></Link></li>
-                            <li><Link href="#"><i className="ti-twitter-alt"></i></Link></li>
-                            <li><Link href="#"><i className="ti-instagram"></i></Link></li>
-                            <li><Link href="#"><i className="ti-linkedin"></i></Link></li>
-                            <li><Link href="#"><i className="ti-pinterest"></i></Link></li>
+                            <li><Link href="https://www.facebook.com/profile.php?id=61578278572030" target="_blank" rel="noopener noreferrer" title="Ryzonix on Facebook"><i className="ti-facebook"></i></Link></li>
+                            <li><Link href="https://www.linkedin.com/company/ryzonix" target="_blank" rel="noopener noreferrer" title="Ryzonix on LinkedIn"><i className="ti-linkedin"></i></Link></li>
                         </ul>
                     </div>
 
@@ -73,7 +97,7 @@ const Footer = (props) => {
                     <div className="row align-items-center">
                         <div className="col-lg-2 col-md-2 col-12">
                             <Link onClick={ClickHandler} href="/" className="logo">
-                                <Image src={FLoGo} alt="" />
+                                <Image src={FLoGo} alt="Ryzonix" className="brand-logo" width={379} height={231} />
                             </Link>
                         </div>
                         <div className="col-lg-10 col-md-10 col-12">
