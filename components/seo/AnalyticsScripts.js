@@ -1,15 +1,24 @@
 import Head from 'next/head';
 
 const GA_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
-const GSC_VERIFICATION = process.env.NEXT_PUBLIC_GSC_VERIFICATION;
 const FB_PIXEL_ID = process.env.NEXT_PUBLIC_FB_PIXEL_ID;
+
+/** Meta tag uses token only; DNS TXT uses `google-site-verification=<token>` */
+function normalizeGscVerification(value) {
+  if (!value || value === 'your-google-site-verification-token') return null;
+  return value.replace(/^google-site-verification=/i, '').trim();
+}
+
+const GSC_VERIFICATION = normalizeGscVerification(
+  process.env.NEXT_PUBLIC_GSC_VERIFICATION
+);
 
 /** GA4, Search Console verification, Facebook Pixel — enable via .env */
 export default function AnalyticsScripts() {
   return (
     <Head>
       {/* SEO: Google Search Console verification */}
-      {GSC_VERIFICATION && GSC_VERIFICATION !== 'your-google-site-verification-token' ? (
+      {GSC_VERIFICATION ? (
         <meta name="google-site-verification" content={GSC_VERIFICATION} />
       ) : null}
 
