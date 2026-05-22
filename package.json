@@ -4,7 +4,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "seed:blogs": "node scripts/seed-blogs.js"
+    "seed:blogs": "node scripts/seed-blogs.js",
+    "generate:favicons": "node scripts/generate-favicons.js"
   },
   "dependencies": {
     "@emotion/react": "^11.10.5",
@@ -51,6 +52,8 @@
     "yet-another-react-lightbox": "^3.19.0"
   },
   "devDependencies": {
-    "dotenv": "^17.4.2"
+    "dotenv": "^17.4.2",
+    "jimp": "^1.6.1",
+    "to-ico": "^1.1.5"
   }
 }

@@ -1,0 +1,30 @@
+{
+  "name": "Ryzonix",
+  "short_name": "Ryzonix",
+  "description": "Your digital partner for responsive, secure, and scalable websites.",
+  "icons": [
+    {
+      "src": "/favicon/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "theme_color": "#3B8F63",
+  "background_color": "#121725",
+  "display": "standalone",
+  "start_url": "/",
+  "scope": "/"
+}
