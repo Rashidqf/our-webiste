@@ -1,0 +1,10 @@
+/* Below-the-fold sections: skip layout/paint until near viewport */
+.testimonial-section,
+.project-section,
+.fanfuct-section,
+.project-title,
+.marquee-section-s2,
+.marquee-section-s3 {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 400px;
+}

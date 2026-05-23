@@ -43,6 +43,7 @@ const ProjectSection = (props) => {
                                         width={1200}
                                         height={750}
                                         loading="lazy"
+                                        sizes="(max-width: 768px) 100vw, 50vw"
                                         style={{ width: "100%", height: "auto" }}
                                     />
                                     <div className="text">

@@ -704,6 +704,10 @@
 .fanfuct-section {
     position: relative;
     background: url(/images/fanfact-bg.jpg) center / cover no-repeat;
+    background-image: image-set(
+        url(/images/fanfact-bg.webp) type("image/webp"),
+        url(/images/fanfact-bg.jpg) type("image/jpeg")
+    );
     z-index: 1;
     overflow: hidden;
 
