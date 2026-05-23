@@ -3,6 +3,7 @@ import SeoHead from '../../components/seo/SeoHead';
 import { PAGE_META } from '../../lib/seo/pageMeta';
 import { buildBreadcrumbJsonLd } from '../../lib/seo/breadcrumbs';
 import NavbarS2 from '../../components/NavbarS2/NavbarS2';
+import PageH1 from '../../components/seo/PageH1';
 import TeamSectionS2 from '../../components/TeamSectionS2/TeamSectionS2';
 import Footer from '../../components/footer/Footer';
 import Scrollbar from '../../components/scrollbar/scrollbar';
@@ -22,6 +23,7 @@ const ProjectPage = () => {
                 jsonLd={[buildBreadcrumbJsonLd([{ name: 'Team', path: '/team' }])]}
             />
             <NavbarS2 hclass={'wpo-site-header wpo-site-header-s4'} Logo={Logo} />
+            <PageH1 id="team-page-h1">Team | Ryzonix</PageH1>
             <TeamSectionS2 circlebottom={false} />
             <Footer hclass={'footer-section section-padding pb-0'} />
             <Scrollbar />

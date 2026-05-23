@@ -3,6 +3,7 @@ import SeoHead from "../../components/seo/SeoHead";
 import { PAGE_META } from "../../lib/seo/pageMeta";
 import { buildBreadcrumbJsonLd } from "../../lib/seo/breadcrumbs";
 import NavbarS2 from "../../components/NavbarS2/NavbarS2";
+import PageH1 from "../../components/seo/PageH1";
 import PageTitle from "../../components/pagetitle/PageTitle";
 import BlogList from "../../components/BlogList/BlogList";
 import Footer from "../../components/footer/Footer";
@@ -27,6 +28,7 @@ const BlogPage = ({ blogs, total, totalPages, page, dbError }) => {
         jsonLd={[buildBreadcrumbJsonLd([{ name: 'Blog', path: '/blog' }])]}
       />
       <NavbarS2 hclass={"wpo-site-header wpo-site-header-s4"} Logo={Logo} />
+      <PageH1 id="blog-page-h1">Blog | Ryzonix</PageH1>
       <PageTitle pagesub={"Blog"} />
       <BlogList
         Qclass={"blog-pg-section section-padding"}

@@ -1,16 +1,17 @@
-import Services from '../api/Services';
-import Projects from '../api/projects';
-import { SITE_URL } from '../lib/seo/site';
+import Services from "../api/Services";
+import Projects from "../api/projects";
+import { absoluteUrl } from "../lib/seo/site";
+import { listPublishedBlogSitemapEntries } from "../lib/blogQueries";
 
 const STATIC_ROUTES = [
-  { path: '/', priority: '1.0', changefreq: 'weekly' },
-  { path: '/about', priority: '0.8', changefreq: 'monthly' },
-  { path: '/service', priority: '0.9', changefreq: 'weekly' },
-  { path: '/project', priority: '0.8', changefreq: 'weekly' },
-  { path: '/contact', priority: '0.8', changefreq: 'monthly' },
-  { path: '/blog', priority: '0.7', changefreq: 'weekly' },
-  { path: '/pricing', priority: '0.6', changefreq: 'monthly' },
-  { path: '/team', priority: '0.5', changefreq: 'monthly' },
+  { path: "/", priority: "1.0", changefreq: "weekly" },
+  { path: "/about", priority: "0.8", changefreq: "monthly" },
+  { path: "/service", priority: "0.9", changefreq: "weekly" },
+  { path: "/project", priority: "0.8", changefreq: "weekly" },
+  { path: "/contact", priority: "0.8", changefreq: "monthly" },
+  { path: "/blog", priority: "0.8", changefreq: "weekly" },
+  { path: "/pricing", priority: "0.6", changefreq: "monthly" },
+  { path: "/team", priority: "0.5", changefreq: "monthly" },
 ];
 
 function urlEntry(loc, lastmod, changefreq, priority) {
@@ -22,41 +23,77 @@ function urlEntry(loc, lastmod, changefreq, priority) {
   </url>`;
 }
 
-function generateSiteMap() {
-  const lastmod = new Date().toISOString().split('T')[0];
+function todayIsoDate() {
+  return new Date().toISOString().split("T")[0];
+}
+
+function seedBlogSitemapFallback() {
+  try {
+    const seedPosts = require("../scripts/blog-seed-data");
+    return seedPosts.map((post) => ({
+      slug: post.slug,
+      lastmod: post.publishedAt
+        ? new Date(post.publishedAt).toISOString().split("T")[0]
+        : todayIsoDate(),
+    }));
+  } catch {
+    return [];
+  }
+}
+
+async function fetchBlogSitemapEntries() {
+  try {
+    return await listPublishedBlogSitemapEntries();
+  } catch (e) {
+    console.error("[sitemap] blog fetch failed, using seed fallback:", e.message);
+    return seedBlogSitemapFallback();
+  }
+}
+
+async function generateSiteMap() {
+  const lastmod = todayIsoDate();
   const featuredServices = Services.slice(0, 6);
+  const blogEntries = await fetchBlogSitemapEntries();
 
   const urls = [
     ...STATIC_ROUTES.map((r) =>
-      urlEntry(`${SITE_URL}${r.path}`, lastmod, r.changefreq, r.priority)
+      urlEntry(absoluteUrl(r.path), lastmod, r.changefreq, r.priority),
     ),
     ...featuredServices.map((s) =>
       urlEntry(
-        `${SITE_URL}/service-single/${s.slug}`,
+        absoluteUrl(`/service-single/${s.slug}`),
         lastmod,
-        'monthly',
-        '0.7'
-      )
+        "monthly",
+        "0.7",
+      ),
     ),
     ...Projects.map((p) =>
       urlEntry(
-        `${SITE_URL}/project-single/${p.slug}`,
+        absoluteUrl(`/project-single/${p.slug}`),
         lastmod,
-        'monthly',
-        '0.7'
-      )
+        "monthly",
+        "0.7",
+      ),
+    ),
+    ...blogEntries.map((b) =>
+      urlEntry(
+        absoluteUrl(`/blog-single/${b.slug}`),
+        b.lastmod,
+        "monthly",
+        "0.6",
+      ),
     ),
   ];
 
   return `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${urls.join('\n')}
+${urls.join("\n")}
 </urlset>`;
 }
 
 export async function getServerSideProps({ res }) {
-  const sitemap = generateSiteMap();
-  res.setHeader('Content-Type', 'text/xml');
+  const sitemap = await generateSiteMap();
+  res.setHeader("Content-Type", "text/xml");
   res.write(sitemap);
   res.end();
   return { props: {} };

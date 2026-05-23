@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import ReactMarkdown from "react-markdown";
-import CommentForm from "./CommentsFrom";
+// import CommentForm from "./CommentsFrom";
 import Image from "next/image";
 
 const ClickHandler = () => {
@@ -65,8 +65,14 @@ const BlogSingle = ({ post, recentPosts = [] }) => {
                 </ul>
               </div>
               <div className="entry-details blog-markdown">
-                <h3>{post.title}</h3>
-                <ReactMarkdown>{post.content || ""}</ReactMarkdown>
+                <h1>{post.title}</h1>
+                <ReactMarkdown
+                  components={{
+                    h1: ({ children }) => <h2>{children}</h2>,
+                  }}
+                >
+                  {post.content || ""}
+                </ReactMarkdown>
               </div>
             </div>
 
@@ -138,9 +144,9 @@ const BlogSingle = ({ post, recentPosts = [] }) => {
               </div>
             )}
 
-            <div className="comments-area">
+            {/* <div className="comments-area">
               <CommentForm />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

@@ -36,7 +36,7 @@ const AwardSection = (props) => {
                                 <Image src={start} alt="" />
                             </div>
                             <div className="bg-text">
-                                <h1>Awwards</h1>
+                                <h2 aria-hidden="true">Awwards</h2>
                             </div>
                         </div>
                     </div>

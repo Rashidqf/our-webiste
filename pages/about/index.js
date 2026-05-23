@@ -4,6 +4,7 @@ import AboutSeoIntro from '../../components/seo/AboutSeoIntro';
 import { PAGE_META } from '../../lib/seo/pageMeta';
 import { buildBreadcrumbJsonLd } from '../../lib/seo/breadcrumbs';
 import NavbarS2 from '../../components/NavbarS2/NavbarS2';
+import PageH1 from '../../components/seo/PageH1';
 import About from '../../components/about/about';
 import MarqueeSectionS2 from '../../components/MarqueeSectionS2/MarqueeSectionS2';
 import FunFact from '../../components/FunFact/FunFact';
@@ -29,6 +30,7 @@ const AboutPage = () => {
                 jsonLd={[buildBreadcrumbJsonLd([{ name: 'About', path: '/about' }])]}
             />
             <NavbarS2 hclass={'wpo-site-header wpo-site-header-s4'} Logo={Logo} />
+            <PageH1 id="about-page-h1">About Ryzonix | Web Development &amp; IT Consulting</PageH1>
             {/* <AboutSeoIntro /> */}
             <About />
             <MarqueeSectionS2 />

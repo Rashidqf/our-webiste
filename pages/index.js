@@ -3,6 +3,7 @@ import SeoHead from '../components/seo/SeoHead';
 import HomeSeoSection from '../components/seo/HomeSeoSection';
 import { PAGE_META } from '../lib/seo/pageMeta';
 import Navbar from '../components/Navbar/Navbar'
+import PageH1 from '../components/seo/PageH1';
 import Hero from '../components/hero/hero';
 import PartnerSection from '../components/PartnerSection/PartnerSection';
 import About from '../components/about/about';
@@ -33,6 +34,7 @@ const HomePage = () => {
                 canonicalPath={meta.path}
             />
             <Navbar hclass={'wpo-site-header'} Logo={Logo} />
+            <PageH1>Custom Web Development Services | Ryzonix</PageH1>
             <Hero />
             <PartnerSection />
             <About />

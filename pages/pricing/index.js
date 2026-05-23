@@ -3,6 +3,7 @@ import SeoHead from '../../components/seo/SeoHead';
 import { PAGE_META } from '../../lib/seo/pageMeta';
 import { buildBreadcrumbJsonLd } from '../../lib/seo/breadcrumbs';
 import NavbarS2 from '../../components/NavbarS2/NavbarS2';
+import PageH1 from '../../components/seo/PageH1';
 import MarqueeSectionS2 from "../../components/MarqueeSectionS2/MarqueeSectionS2";
 import ProjecTitle from "../../components/ProjecTitle/ProjecTitle";
 import Footer from "../../components/footer/Footer";
@@ -26,6 +27,7 @@ const PricingPage = (props) => {
                 jsonLd={[buildBreadcrumbJsonLd([{ name: 'Pricing', path: '/pricing' }])]}
             />
             <NavbarS2 hclass={'wpo-site-header wpo-site-header-s4'} Logo={Logo} />
+            <PageH1 id="pricing-page-h1">Pricing | Ryzonix</PageH1>
             <PricingSection />
             <MarqueeSectionS2 />
             <ProjecTitle hclass={'project-title section-padding'} />

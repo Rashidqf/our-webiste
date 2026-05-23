@@ -42,6 +42,11 @@ const BlogList = (props) => {
               )}
 
               {blogs.map((blog) => (
+                <Link
+                href={`/blog-single/${encodeURIComponent(blog.slug)}`}
+                key={blog.id || blog.slug}
+                className="text-decoration-none cursor-pointer"
+              >
                 <div
                   className={`post format-standard-image ${blog.blClass || ""}`}
                   key={blog.id || blog.slug}
@@ -105,6 +110,7 @@ const BlogList = (props) => {
                     </Link>
                   </div>
                 </div>
+                </Link>
               ))}
 
               {totalPages > 1 && (
