@@ -36,6 +36,7 @@ const ProjectSection = (props) => {
                     <div className="row gallery-container">
                         {projects.map((project, item) => (
                             <div className="col col-lg-6 col-12 scroll-text-animation" data-animation="fade_from_bottom" key={project.slug || item}>
+                            <Link  onClick={ClickHandler} href={`/project-single/${project.slug}`} title={`View ${project.title} case study`}>
                             <div className="project-card">
                                     <Image
                                         src={project.pimg1}
@@ -55,6 +56,7 @@ const ProjectSection = (props) => {
                                         </div>
                                     </div>
                             </div>
+                            </Link>
                         </div>
                         ))}
                     </div>

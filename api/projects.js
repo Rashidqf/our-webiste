@@ -8,6 +8,9 @@ import pimg7 from "/public/images/projects_banner/moonline-ai.png";
 import pimg8 from "/public/images/projects_banner/lumera-skin-ai.png";
 import pimg9 from "/public/images/projects_banner/CynCity.png";
 import pimg10 from "/public/images/projects_banner/Custom-Neon-Sign.png";
+import pimg11 from "/public/images/projects_banner/rodeoshop.us.png";
+import pimg12 from "/public/images/projects_banner/emb-patches.png";
+import pimg13 from "/public/images/projects_banner/dubai-patches.png";
 
 const Projects = [
     {
@@ -71,7 +74,7 @@ const Projects = [
         tags: ["AI", "Real-time voice"],
         client: "English learning product team",
         projectType: "AI conversation learning platform",
-        website: { label: "—", href: null },
+        website: { label: "speak.englishtodayusa.com", href: "https://speak.englishtodayusa.com" },
         detailIntro: [
             "SpeakSmart helps learners practice spoken English through natural, real-time AI conversations. It connects with Thinkific so students get a seamless path from courses into live speaking practice.",
             "Powered by OpenAI models, the experience supports fluid dialogue—including an optional continuous mode so learners are not forced to click before every utterance.",
@@ -118,7 +121,7 @@ const Projects = [
         tags: ["Next.js", "AI assistants"],
         client: "Startup coaching product",
         projectType: "AI business coaching web app",
-        website: { label: "—", href: null },
+        website: { label: "voraiq.com", href: "https://www.voraiq.com/" },
         detailIntro: [
             "Pocket Coach AI guides founders from rough ideas toward clearer plans and market signals using an Assistants-style conversational coach.",
             "Users chat naturally for feedback, strategy prompts, and structured next steps while vScore evaluates viability from inputs and conversation history.",
@@ -211,7 +214,7 @@ const Projects = [
         tags: ["Shopify", "3D avatar"],
         client: "Shopify merchant ecosystem",
         projectType: "Shopify embedded AI sales assistant",
-        website: { label: "—", href: null },
+        website: { label: "daylily.chat", href: "https://www.daylily.chat" },
         detailIntro: [
             "Daylily embeds a Heygen-powered 3D avatar that acts as a consultative seller, combining conversational AI with catalog memory for richer storefront interactions.",
             "Langbase supplies NLU and memory modules so the assistant understands each shop's products and shopper behavior for recommendations and upsells.",
@@ -303,7 +306,7 @@ const Projects = [
         tags: ["Voice AI", "Next.js"],
         client: "Restaurant technology partner",
         projectType: "AI voice agent & admin dashboard",
-        website: { label: "—", href: null },
+        website: { label: "moonline.ai", href: "https://moonline.ai" },
         detailIntro: [
             "Moonline is an AI-powered voice agent built for restaurants. It automates phone answering, reservations, order-taking, and FAQs using natural, human-like conversations—available 24/7 so no call goes unanswered.",
             "The platform listens with context, remembers preferences where appropriate, and integrates with POS, delivery, and phone systems so it can act as a central automation hub for front-of-house operations.",
@@ -395,7 +398,7 @@ const Projects = [
         tags: ["Wearables", "NestJS"],
         client: "Wellness & performance product",
         projectType: "Mobile, watch, web & backend platform",
-        website: { label: "—", href: null },
+        website: { label: "Visit App store", href: "https://apps.apple.com/us/app/cyncity/id6742030989" },
         detailIntro: [
             "CynCity is a health and performance platform that combines wearable data, real-time sync, and AI-driven insights across fitness, sleep, stress, nutrition, and mental well-being.",
             "Native iOS with SwiftUI, a dedicated Apple Watch experience, and a React web dashboard give users and professionals layered views of vitals, workouts, recovery, and coaching.",
@@ -441,7 +444,7 @@ const Projects = [
         tags: ["Shopify", "Remix"],
         client: "Custom neon & signage merchants",
         projectType: "Embedded Shopify design & pricing app",
-        website: { label: "—", href: null },
+        website: { label: "create-neon-sign", href: "https://customneon.com/create-neon-sign/" },
         detailIntro: [
             "The Custom Neon Sign Tool lets shoppers design neon signs on the storefront with live glow preview, typography controls, wall mockups, and artwork uploads converted into neon-ready artwork with AI assistance.",
             "AI validates manufacturability, suggests neon-friendly revisions, and estimates pricing from dimensions, font complexity, colors, materials, LED tubing, and mount options—reducing production errors and support load.",
@@ -472,6 +475,152 @@ const Projects = [
             },
         ],
     },
+    {
+        id: "11",
+        slug: "rodeo-shop-western-wear",
+        title: "Rodeo Shop",
+        tagline: "Premium Western Wear E-commerce Store",
+        title2: "E-commerce",
+        title3: "WordPress",
+        subtitle: "WordPress · WooCommerce · Custom Theme",
+        subtitle2: "Western Lifestyle Brand",
+        pimg1: pimg11,
+        date: "2025",
+        location: "USA",
+        tags: ["WordPress", "WooCommerce", "E-commerce"],
+        client: "Rodeo Shop",
+        projectType: "E-commerce Website",
+        website: { label: "rodeoshop.us", href: "https://rodeoshop.us/" },
+        detailIntro: [
+            "Developed a complete e-commerce platform for Rodeo Shop, specializing in authentic western wear including cowboy jackets, hats, shirts, boots, and accessories.",
+            "Built on WordPress with WooCommerce, featuring a custom-designed theme that captures the rugged spirit of the American West while maintaining modern usability.",
+            "Includes product catalog with variants, size guides, customer reviews, and a seamless shopping experience."
+        ],
+        detailOverviewHeading: "Platform Features",
+        detailOverviewBody: [
+            "Custom WordPress theme with Western aesthetic and responsive design",
+            "WooCommerce integration with advanced product filtering and bulk ordering",
+            "High-quality product imagery and lifestyle photography showcase",
+            "Order tracking system and customer account management"
+        ],
+        detailHighlightBullets: [
+            "Authentic Western design language",
+            "Advanced product filtering & search",
+            "Mobile-first responsive design",
+            "Order tracking & customer portal",
+            "Fast loading optimized for conversions"
+        ],
+        detailResultsHeading: "Project Outcome",
+        detailResultsLead: "Successfully launched a premium online destination for western fashion enthusiasts with strong brand identity and smooth shopping experience.",
+        detailOutcomePoints: [
+            {
+                title: "Brand Identity",
+                text: "Strong visual identity reflecting American rodeo culture and craftsmanship."
+            },
+            {
+                title: "E-commerce Performance",
+                text: "Optimized for conversions with clear CTAs and smooth checkout flow."
+            }
+        ],
+    },
+    {
+        id: "12",
+        slug: "embroidered-patch-uk",
+        title: "EmbroideredPatch",
+        tagline: "Custom Embroidered Patches Platform - UK",
+        title2: "E-commerce",
+        title3: "Custom Products",
+        subtitle: "Laravel · PHP · MySQL",
+        subtitle2: "Bespoke Patch Builder",
+        pimg1: pimg12,
+        date: "2025",
+        location: "United Kingdom",
+        tags: ["Laravel", "E-commerce", "Custom Product"],
+        client: "EmbroideredPatch.co.uk",
+        projectType: "Custom Product E-commerce Website",
+        website: { label: "embroideredpatch.co.uk", href: "https://embroideredpatch.co.uk/" },
+        detailIntro: [
+            "Built a full-featured custom embroidered patches platform for the UK market using Laravel.",
+            "Customers can order various types of patches including iron-on, Velcro, sew-on, biker, military, and more with multiple backing options.",
+            "Includes quote system, design upload, free proofing, and order management."
+        ],
+        detailOverviewHeading: "Key Features",
+        detailOverviewBody: [
+            "Laravel backend with robust admin panel",
+            "Custom product configurator (size, backing, thread colors, etc.)",
+            "Artwork upload and free digital proof system",
+            "Multi-currency and UK-focused shipping"
+        ],
+        detailHighlightBullets: [
+            "Advanced product customizer",
+            "Free design proof & unlimited revisions",
+            "Bulk ordering system",
+            "Professional admin dashboard",
+            "Quote request system"
+        ],
+        detailResultsHeading: "Technical Excellence",
+        detailResultsLead: "Delivered a scalable Laravel solution capable of handling complex custom product workflows with excellent user experience.",
+        detailOutcomePoints: [
+            {
+                title: "Customization Depth",
+                text: "Highly flexible patch builder with multiple options and real-time preview."
+            },
+            {
+                title: "Business Efficiency",
+                text: "Streamlined ordering and production workflow for the client."
+            }
+        ],
+    },
+    {
+        id: "13",
+        slug: "dubai-patches-uae",
+        title: "Dubai Patches",
+        tagline: "Premium Custom Patches Manufacturer - UAE",
+        title2: "E-commerce",
+        title3: "Custom Products",
+        subtitle: "Laravel & Core PHP",
+        subtitle2: "Gulf Market Leader",
+        pimg1: pimg13,
+        date: "2025",
+        location: "UAE",
+        tags: ["Laravel", "PHP", "E-commerce"],
+        client: "CustomPatch.ae & Dubaipatches.ae",
+        projectType: "Custom Patches E-commerce Platform",
+        website: { 
+            label: "custompatch.ae / dubaipatches.ae", 
+            href: "https://custompatch.ae/" 
+        },
+        detailIntro: [
+            "Developed two high-performance websites for custom patches business in the UAE market.",
+            "One built on Laravel and another on core PHP, both offering extensive customization options for embroidered, PVC, woven, military, and other patch types."
+        ],
+        detailOverviewHeading: "Project Scope",
+        detailOverviewBody: [
+            "Complete e-commerce solution with advanced product builder",
+            "Multi-language & multi-currency support for GCC region",
+            "Instant quote system and order management",
+            "Professional design upload and approval workflow"
+        ],
+        detailHighlightBullets: [
+            "Advanced patch customizer",
+            "Multiple patch types & materials",
+            "Fast quote generation",
+            "Mobile optimized experience",
+            "Strong visual product gallery"
+        ],
+        detailResultsHeading: "Delivery",
+        detailResultsLead: "Successfully delivered professional, conversion-focused websites tailored to the UAE/Gulf market with excellent customization capabilities.",
+        detailOutcomePoints: [
+            {
+                title: "Regional Adaptation",
+                text: "Designed specifically for UAE market preferences and business needs."
+            },
+            {
+                title: "Technical Flexibility",
+                text: "Built both Laravel and core PHP versions as per client requirements."
+            }
+        ],
+    }
 ];
 
 export default Projects;

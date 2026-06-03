@@ -17,6 +17,9 @@ const IMAGES = {
   lumera: "/images/projects_banner/lumera-skin-ai.png",
   cyncity: "/images/projects_banner/CynCity.png",
   neonSign: "/images/projects_banner/Custom-Neon-Sign.png",
+  rodeoshop: "/images/projects_banner/rodeoshop.us.png",
+  embpatches: "/images/projects_banner/emb-patches.png",
+  dubaipatches: "/images/projects_banner/dubai-patches.png",
 };
 
 function post({
@@ -583,6 +586,127 @@ These questions shaped builds like our [recruitment AI middleware](/project-sing
 - **Roadmap** that sequences infra vs product work
 
 Consulting should reduce uncertainty—not replace your internal owners. [Contact us](/contact).`,
+  }),
+  post({
+    slug: "rodeo-shop-western-wear-ecommerce",
+    title: "Building Rodeo Shop: Premium Western Wear E-commerce",
+    title2: "WordPress + WooCommerce with strong brand identity",
+    category: "E-COMMERCE",
+    description:
+      "How we built a high-converting western lifestyle store featuring cowboy jackets, hats, and accessories with custom WordPress & WooCommerce development.",
+    imageKey: "rodeoshop",
+    tags: ["WordPress", "WooCommerce", "E-commerce", "Custom Theme"],
+    publishedAt: "2026-04-05T10:00:00Z",
+    readMinutes: 6,
+    content: `## From vision to online store
+
+**Rodeo Shop** brings the spirit of the American West to life online — cowboy jackets, western hats, boots, and apparel with authentic rodeo aesthetics and modern shopping experience.
+
+[View Rodeo Shop Project →](/project-single/rodeo-shop-western-wear)
+
+## What we delivered
+
+- Custom WordPress theme designed around rugged Western identity
+- Full WooCommerce setup with product variants, size guides, and collections
+- Optimized product pages with lifestyle imagery and clear CTAs
+- Order tracking system and customer account dashboard
+- Fast loading performance and mobile-first responsiveness
+
+## Key Challenges Solved
+
+- Balancing bold Western visual language with clean, modern UX
+- Managing complex product variations (sizes, colors, materials)
+- Building trust through craftsmanship storytelling and in-house production narrative
+
+## Takeaways
+
+1. **Brand storytelling** is as important as functionality in lifestyle e-commerce.
+2. Strong visual hierarchy and lifestyle photography significantly boost conversion.
+3. Custom theme development on WordPress still offers excellent flexibility when done right.
+
+Looking to build a premium lifestyle or fashion e-commerce store? [Contact Ryzonix](/contact).`,
+  }),
+
+  post({
+    slug: "laravel-custom-embroidered-patches-uk",
+    title: "Custom Embroidered Patches Platform for UK Market",
+    title2: "Built with Laravel – From quote to delivery",
+    category: "E-COMMERCE",
+    description:
+      "End-to-end Laravel solution for custom embroidered patches including configurator, free proofs, multiple backings, and no minimum order policy.",
+    imageKey: "embpatches",
+    tags: ["Laravel", "PHP", "E-commerce", "Custom Product"],
+    publishedAt: "2026-04-12T09:30:00Z",
+    readMinutes: 7,
+    content: `## Powering custom patch manufacturing in the UK
+
+**EmbroideredPatch.co.uk** is a complete custom product platform where customers can order embroidered patches, Velcro patches, iron-on, biker patches, military patches, and more.
+
+[View EmbroideredPatch Project →](/project-single/embroidered-patch-uk)
+
+## Core Features Delivered
+
+- Advanced product configurator (size, backing type, thread colors, shape, etc.)
+- Free artwork upload + unlimited digital proof revisions
+- Quote system and bulk ordering capabilities
+- Professional admin dashboard for order & production management
+- Responsive design optimized for UK customers
+
+## Technical Highlights
+
+- Robust Laravel architecture with clean separation of concerns
+- Dynamic pricing engine based on complexity and quantity
+- Secure file upload and design approval workflow
+- No minimum order logic with scalable backend
+
+## Lessons Learned
+
+1. **Customization depth** is the biggest conversion driver in this industry.
+2. Fast proofing and clear communication build strong customer trust.
+3. Flexible backend rules (no MOQ, multiple backings) were critical for business success.
+
+Need a powerful custom product platform? [Let’s talk](/contact).`,
+  }),
+
+  post({
+    slug: "dubai-patches-custom-patches-uae",
+    title: "Dubai Patches & CustomPatch.ae – UAE Market Leader",
+    title2: "Laravel + Core PHP solutions for Gulf region",
+    category: "E-COMMERCE",
+    description:
+      "Two high-performance custom patches websites built for the UAE market — advanced configurator, multi-language, instant quotes, and premium user experience.",
+    imageKey: "dubaipatches",
+    tags: ["Laravel", "PHP", "E-commerce", "UAE", "Custom Product"],
+    publishedAt: "2026-04-18T11:00:00Z",
+    readMinutes: 6,
+    content: `## Serving the custom patches demand in the UAE
+
+We developed **CustomPatch.ae** (Laravel) and **Dubaipatches.ae** (Core PHP) — two professional platforms for custom embroidered patches, PVC patches, military patches, woven labels, and more across the Gulf.
+
+[View Dubai Patches Projects →](/project-single/dubai-patches-uae)
+
+## What was delivered
+
+- Powerful patch customizer with multiple materials and backing options
+- Instant quote generation system
+- Free design proof with unlimited revisions
+- Multi-currency and Arabic/English support readiness
+- Strong visual product gallery and trust-building elements
+
+## Technical Approach
+
+- One project on modern **Laravel** stack with excellent admin panel
+- Second project on optimized **Core PHP** as per client preference
+- Clean, fast, and conversion-focused frontend
+- Scalable architecture ready for high order volume
+
+## Regional Success Factors
+
+1. Understanding **GCC market expectations** — speed, quality, and premium feel.
+2. Strong emphasis on **mobile experience** (majority of traffic).
+3. Flexible ordering system (small and bulk orders).
+
+We help businesses in the Middle East establish strong online presence. [Contact us](/contact) for similar custom product platforms.`,
   }),
 ];
 
