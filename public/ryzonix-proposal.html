@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="robots" content="noindex, nofollow" />
+<title>Ryzonix – Project Proposal</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet"/>
+<style>
+  :root {
+    --brand-dark: #121725;
+    --brand-green: #3B8F63;
+    --brand-green-light: #66E0A3;
+    --brand-green-deep: #2A6B4A;
+    --cream: #FAFBFE;
+    --white: #FFFFFF;
+    --text: #565656;
+    --muted: #687693;
+    --border: rgba(75, 72, 72, 0.14);
+    --accent-bg: #F0FAF4;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--cream);
+    color: var(--text);
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .print-bar {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 999;
+    background: var(--brand-dark);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 32px;
+  }
+  .print-bar span { color: #bcc0cb; font-size: 13px; }
+  .print-btn {
+    background: var(--brand-green);
+    color: #fff;
+    border: none;
+    padding: 9px 24px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.2s;
+  }
+  .print-btn:hover { background: var(--brand-green-deep); }
+
+  .page {
+    max-width: 860px;
+    margin: 70px auto 48px;
+    background: var(--white);
+    box-shadow: 0 4px 40px rgba(0,0,0,0.08);
+  }
+
+  .cover {
+    background: var(--brand-dark);
+    padding: 48px 60px 52px;
+    position: relative;
+    overflow: hidden;
+  }
+  .cover-logo {
+    display: block;
+    height: 56px;
+    width: auto;
+    max-width: 180px;
+    object-fit: contain;
+    margin-bottom: 32px;
+    position: relative;
+    z-index: 1;
+  }
+  .project-title {
+    color: var(--brand-green-light);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
+  }
+  .cover::before {
+    content: '';
+    position: absolute;
+    top: -60px; right: -60px;
+    width: 320px; height: 320px;
+    border-radius: 50%;
+    border: 60px solid rgba(102,224,163,0.10);
+  }
+  .cover::after {
+    content: '';
+    position: absolute;
+    bottom: -40px; left: 40px;
+    width: 180px; height: 180px;
+    border-radius: 50%;
+    border: 40px solid rgba(59,143,99,0.08);
+  }
+  .cover-eyebrow {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--brand-green-light);
+    margin-bottom: 18px;
+    position: relative;
+    z-index: 1;
+  }
+  .cover h1 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--white);
+    line-height: 1.2;
+    max-width: 560px;
+    margin-bottom: 8px;
+    position: relative;
+    z-index: 1;
+  }
+  .cover h1 span { color: var(--brand-green-light); }
+  .cover-sub {
+    color: #bcc0cb;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 1;
+  }
+  .cover-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px 48px;
+    border-top: 1px solid rgba(255,255,255,0.12);
+    padding-top: 28px;
+    position: relative;
+    z-index: 1;
+  }
+  .cover-meta-item label {
+    display: block;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--brand-green-light);
+    margin-bottom: 4px;
+  }
+  .cover-meta-item p { color: #d8dce8; font-size: 13.5px; font-weight: 500; }
+
+  .green-rule {
+    height: 4px;
+    background: linear-gradient(135deg, #66E0A3 0%, #3B8F63 100%);
+  }
+
+  .content { padding: 52px 60px; }
+
+  .section { margin-bottom: 52px; }
+  .section-label {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--brand-green);
+    margin-bottom: 6px;
+  }
+  .section h2 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 24px;
+    color: var(--brand-dark);
+    margin-bottom: 18px;
+    padding-bottom: 12px;
+    border-bottom: 1.5px solid var(--border);
+  }
+  .section p { color: var(--text); margin-bottom: 12px; font-size: 14px; }
+
+  .highlight-box {
+    background: var(--accent-bg);
+    border-left: 4px solid var(--brand-green);
+    border-radius: 0 6px 6px 0;
+    padding: 18px 22px;
+    margin: 20px 0;
+  }
+  .highlight-box p { margin: 0; }
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 20px;
+  }
+  .stat-card {
+    text-align: center;
+    padding: 20px 10px;
+    background: var(--accent-bg);
+    border-radius: 8px;
+  }
+  .stat-value {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 28px;
+    color: var(--brand-dark);
+    font-weight: 700;
+  }
+  .stat-label { font-size: 12px; color: var(--muted); margin-top: 4px; }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-top: 20px;
+  }
+  .service-card {
+    border: 1.5px solid var(--border);
+    border-radius: 8px;
+    padding: 20px;
+  }
+  .service-icon {
+    width: 36px; height: 36px;
+    background: linear-gradient(135deg, #66E0A3 0%, #3B8F63 100%);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+    font-size: 17px;
+  }
+  .service-card h3 { font-size: 14px; font-weight: 600; color: var(--brand-dark); margin-bottom: 6px; }
+  .service-card p { font-size: 13px; color: var(--muted); margin: 0; }
+
+  .timeline { margin-top: 20px; }
+  .tl-item {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 28px;
+    position: relative;
+  }
+  .tl-item::after {
+    content: '';
+    position: absolute;
+    left: 19px; top: 36px;
+    width: 2px;
+    height: calc(100% + 4px);
+    background: var(--border);
+  }
+  .tl-item:last-child::after { display: none; }
+  .tl-dot {
+    flex-shrink: 0;
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #66E0A3 0%, #3B8F63 100%);
+    color: var(--brand-dark);
+    font-weight: 700;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+  }
+  .tl-body h4 { font-size: 14px; font-weight: 600; color: var(--brand-dark); margin-bottom: 3px; }
+  .tl-week {
+    display: inline-block;
+    background: var(--accent-bg);
+    color: var(--brand-green);
+    font-size: 11px;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 20px;
+    margin-bottom: 6px;
+  }
+  .tl-body p { font-size: 13px; color: var(--muted); margin: 0; }
+
+  .pricing-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 13.5px;
+  }
+  .pricing-table th {
+    background: var(--brand-dark);
+    color: var(--white);
+    padding: 13px 16px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+  }
+  .pricing-table td {
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--border);
+    color: var(--text);
+  }
+  .pricing-table tr:nth-child(even) td { background: var(--accent-bg); }
+  .total-row td {
+    font-weight: 700 !important;
+    color: var(--brand-dark) !important;
+    font-size: 15px !important;
+    background: #e8f5ee !important;
+    border-top: 2px solid var(--brand-green) !important;
+  }
+  .price-cell { font-weight: 600; color: var(--brand-dark); text-align: right; }
+
+  .note-box {
+    background: #f0faf4;
+    border: 1px solid rgba(59,143,99,0.25);
+    border-radius: 6px;
+    padding: 14px 18px;
+    margin-top: 16px;
+    font-size: 13px;
+    color: var(--muted);
+  }
+  .note-box strong { color: var(--brand-green); }
+
+  .terms-list { list-style: none; padding: 0; margin-top: 10px; }
+  .terms-list li {
+    padding: 11px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 13.5px;
+    color: var(--text);
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+  }
+  .terms-list li:last-child { border-bottom: none; }
+  .terms-list li::before {
+    content: '▸';
+    color: var(--brand-green);
+    flex-shrink: 0;
+    margin-top: 1px;
+    font-size: 12px;
+  }
+
+  .signature-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 32px;
+  }
+  .sig-col label {
+    display: block;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--brand-green);
+    margin-bottom: 32px;
+  }
+  .sig-line {
+    border-bottom: 1.5px solid var(--brand-dark);
+    height: 48px;
+    margin-bottom: 6px;
+  }
+  .sig-image {
+    display: block;
+    height: 52px;
+    width: auto;
+    max-width: 220px;
+    object-fit: contain;
+    object-position: left center;
+    margin-bottom: 6px;
+  }
+  .sig-col p { font-size: 12px; color: var(--muted); }
+
+  .footer {
+    background: var(--brand-dark);
+    padding: 24px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+  }
+  .footer .brand-logo {
+    height: 48px;
+    width: auto;
+    max-width: 160px;
+    object-fit: contain;
+    display: block;
+  }
+  .footer p { color: #6a7898; font-size: 12px; text-align: right; }
+
+  .about-appendix {
+    margin-top: 24px;
+    padding-top: 32px;
+    border-top: 1.5px dashed var(--border);
+  }
+  .about-appendix h2 { font-size: 20px; }
+
+  .closing-block {
+    margin: 8px 0 40px;
+    padding: 28px 32px;
+    background: var(--accent-bg);
+    border-radius: 8px;
+    border-left: 4px solid var(--brand-green);
+  }
+  .closing-block p { margin-bottom: 8px; color: var(--text); }
+  .closing-signoff { margin-top: 16px !important; color: var(--muted) !important; }
+  .closing-name {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    color: var(--brand-dark) !important;
+  }
+  .closing-role { font-weight: 600 !important; color: var(--brand-green) !important; }
+  .closing-tagline { font-size: 13px !important; color: var(--muted) !important; margin-bottom: 0 !important; }
+
+  @media print {
+    .print-bar { display: none !important; }
+    body { background: white; font-size: 13px; }
+    .page { margin: 0; box-shadow: none; max-width: 100%; }
+    .cover { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .section { page-break-inside: avoid; }
+    @page { margin: 0; size: A4; }
+  }
+</style>
+</head>
+<body>
+
+<div class="print-bar">
+  <span>Ryzonix · Project Proposal</span>
+  <button class="print-btn" onclick="window.print()">⬇ Download as PDF</button>
+</div>
+
+<div class="page" id="proposal-root"></div>
+
+<script>
+  const STORAGE_KEY = 'ryzonix-proposal-data';
+  const LOGO_SRC = '/images/logo.png';
+  const SIGNATURE_SRC = '/mysignature.png';
+
+  const DEFAULT = {
+    meta: {
+      clientName: '[Client Name]',
+      preparedBy: 'Ryzonix',
+      proposalDate: '',
+      validUntil: '',
+      coverEyebrow: 'Project Proposal · Confidential',
+      coverTitle: 'Website',
+      coverTitleAccent: 'Development',
+      coverTitleSuffix: 'Proposal',
+      projectTitle: '',
+      coverSubtitle: 'Crafted for forward-thinking businesses ready to grow online.',
+      currency: 'PKR'
+    },
+    overview: {
+      sectionLabel: 'Section 01',
+      title: 'Project Overview',
+      paragraphs: ['Thank you for considering Ryzonix for your project.']
+    },
+    services: { sectionLabel: 'Section 02', title: 'Services & Scope', intro: '', items: [] },
+    timeline: { sectionLabel: 'Section 03', title: 'Project Timeline', intro: '', totalDuration: '6–8 weeks', phases: [] },
+    pricing: { sectionLabel: 'Section 04', title: 'Investment & Pricing', intro: '', lineItems: [], totalLabel: 'Total Project Investment', total: 'PKR 0', paymentNote: '' },
+    terms: { sectionLabel: 'Section 05', title: 'Terms & Conditions', items: [] },
+    signature: {
+      title: 'Acceptance & Sign-Off',
+      intro: 'By signing below, both parties agree to the scope, pricing, timeline, and terms outlined in this proposal.',
+      providerLabel: 'Ryzonix (Service Provider)',
+      providerSignatory: 'Authorised Signatory · Ryzonix',
+      clientLabel: 'Client (Project Owner)'
+    },
+    closing: {
+      message: 'We look forward to working with you on this project.',
+      name: 'Muhammad Rashid Khan',
+      role: 'Founder · Ryzonix',
+      tagline: 'Website Development & Digital Solutions'
+    },
+    about: {
+      sectionLabel: 'About Us',
+      title: 'About Ryzonix',
+      paragraphs: ['Ryzonix is a remote-first software house.'],
+      promise: 'Every project is handled with care from start to finish.',
+      stats: [
+        { value: '50+', label: 'Projects Delivered' },
+        { value: '98%', label: 'Client Satisfaction' },
+        { value: '5 Yrs', label: 'Industry Experience' }
+      ]
+    },
+    footer: {
+      brand: 'Ryzonix',
+      tagline: 'ryzonix.pro · IT Services & IT Consulting',
+      disclaimer: 'This document is confidential and intended solely for the named recipient.'
+    }
+  };
+
+  function isSectionVisible(key, section) {
+    if (section === undefined || section === null) return false;
+    switch (key) {
+      case 'overview':
+        return Boolean(section.title) || (section.paragraphs || []).length > 0;
+      case 'services':
+        return (section.items || []).length > 0;
+      case 'timeline':
+        return (section.phases || []).length > 0;
+      case 'pricing':
+        return (section.lineItems || []).length > 0 || section.total || section.paymentNote;
+      case 'terms':
+        return (section.items || []).length > 0;
+      case 'signature':
+        return Boolean(section.title || section.providerLabel || section.clientLabel);
+      case 'closing':
+        return Boolean(section.message || section.name || section.role);
+      case 'about':
+        return Boolean(section.title) || (section.paragraphs || []).length > 0;
+      case 'footer':
+        return Boolean(section.tagline || section.disclaimer || section.brand);
+      default:
+        return false;
+    }
+  }
+
+  function pickVisibleSections(data, defaults) {
+    const keys = ['overview', 'services', 'timeline', 'pricing', 'terms', 'signature', 'closing', 'about', 'footer'];
+    const picked = {};
+    keys.forEach(key => {
+      if (!(key in data)) return;
+      if (data[key] === null) return;
+      const merged = defaults[key] ? { ...defaults[key], ...data[key] } : data[key];
+      if (isSectionVisible(key, merged)) picked[key] = merged;
+    });
+    return picked;
+  }
+
+  function buildProposal(data, useDefaults) {
+    const meta = { ...(useDefaults ? DEFAULT.meta : {}), ...data.meta };
+    const sectionInput = useDefaults ? { ...DEFAULT, ...data } : data;
+    const sections = pickVisibleSections(sectionInput, useDefaults ? DEFAULT : {});
+    return withDates({ meta, ...sections });
+  }
+
+  function mergeProposal(data) {
+    return buildProposal(data, true);
+  }
+
+  function withDates(data) {
+    const today = new Date();
+    const validUntil = new Date(today);
+    validUntil.setDate(today.getDate() + 30);
+    const fmt = d => d.toLocaleDateString('en-PK', { day: 'numeric', month: 'long', year: 'numeric' });
+    data.meta.proposalDate = data.meta.proposalDate || fmt(today);
+    data.meta.validUntil = data.meta.validUntil || fmt(validUntil);
+    return data;
+  }
+
+  function loadData() {
+    try {
+      const raw = sessionStorage.getItem(STORAGE_KEY);
+      if (raw) return buildProposal(JSON.parse(raw), false);
+    } catch (e) {
+      console.warn('Could not load proposal data:', e);
+    }
+    return buildProposal(JSON.parse(JSON.stringify(DEFAULT)), true);
+  }
+
+  function boldHtml(text) {
+    return String(text).replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+  }
+
+  function render(data) {
+    const root = document.getElementById('proposal-root');
+    const projectTitle = data.meta.projectTitle
+      ? `<p class="project-title">${data.meta.projectTitle}</p>`
+      : '';
+
+    const overviewHtml = isSectionVisible('overview', data.overview) ? `
+        <div class="section">
+          ${data.overview.sectionLabel ? `<div class="section-label">${data.overview.sectionLabel}</div>` : ''}
+          <h2>${data.overview.title}</h2>
+          ${(data.overview.paragraphs || []).map(p => `<p>${p}</p>`).join('')}
+        </div>` : '';
+
+    const servicesHtml = isSectionVisible('services', data.services) ? `
+        <div class="section">
+          ${data.services.sectionLabel ? `<div class="section-label">${data.services.sectionLabel}</div>` : ''}
+          <h2>${data.services.title}</h2>
+          ${data.services.intro ? `<p>${data.services.intro}</p>` : ''}
+          <div class="services-grid">${(data.services.items || []).map(item => `
+            <div class="service-card">
+              <div class="service-icon">${item.icon}</div>
+              <h3>${item.title}</h3>
+              <p>${item.description}</p>
+            </div>`).join('')}</div>
+        </div>` : '';
+
+    const timelineHtml = isSectionVisible('timeline', data.timeline) ? `
+        <div class="section">
+          ${data.timeline.sectionLabel ? `<div class="section-label">${data.timeline.sectionLabel}</div>` : ''}
+          <h2>${data.timeline.title}</h2>
+          <p>${data.timeline.intro || ''}${data.timeline.totalDuration ? ` Total estimated duration: <strong>${data.timeline.totalDuration}</strong>.` : ''}</p>
+          <div class="timeline">${(data.timeline.phases || []).map(p => `
+            <div class="tl-item">
+              <div class="tl-dot">${p.number}</div>
+              <div class="tl-body">
+                <div class="tl-week">${p.week}</div>
+                <h4>${p.title}</h4>
+                <p>${p.description}</p>
+              </div>
+            </div>`).join('')}</div>
+        </div>` : '';
+
+    const pricingHtml = isSectionVisible('pricing', data.pricing) ? `
+        <div class="section">
+          ${data.pricing.sectionLabel ? `<div class="section-label">${data.pricing.sectionLabel}</div>` : ''}
+          <h2>${data.pricing.title}</h2>
+          ${data.pricing.intro ? `<p>${data.pricing.intro}</p>` : ''}
+          ${(data.pricing.lineItems || []).length ? `
+          <table class="pricing-table">
+            <thead>
+              <tr>
+                <th style="width:50%">Deliverable</th>
+                <th>Details</th>
+                <th style="text-align:right">Price (${data.meta.currency})</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${(data.pricing.lineItems || []).map(r => `
+              <tr>
+                <td>${r.deliverable}</td>
+                <td>${r.details}</td>
+                <td class="price-cell">${r.price}</td>
+              </tr>`).join('')}
+              <tr class="total-row">
+                <td colspan="2"><strong>${data.pricing.totalLabel}</strong></td>
+                <td class="price-cell"><strong>${data.pricing.total}</strong></td>
+              </tr>
+            </tbody>
+          </table>` : ''}
+          ${data.pricing.paymentNote ? `<div class="note-box"><strong>Payment Structure:</strong> ${data.pricing.paymentNote}</div>` : ''}
+        </div>` : '';
+
+    const termsHtml = isSectionVisible('terms', data.terms) ? `
+        <div class="section">
+          ${data.terms.sectionLabel ? `<div class="section-label">${data.terms.sectionLabel}</div>` : ''}
+          <h2>${data.terms.title}</h2>
+          <ul class="terms-list">${(data.terms.items || []).map(t => `<li>${boldHtml(t)}</li>`).join('')}</ul>
+        </div>` : '';
+
+    const signatureHtml = isSectionVisible('signature', data.signature) ? `
+        <div class="section">
+          <h2>${data.signature.title}</h2>
+          ${data.signature.intro ? `<p>${data.signature.intro}</p>` : ''}
+          <div class="signature-block">
+            <div class="sig-col">
+              <label>${data.signature.providerLabel}</label>
+              <img src="${SIGNATURE_SRC}" alt="Authorised signatory signature" class="sig-image" width="220" height="52" />
+              <p>${data.signature.providerSignatory}</p>
+              <p style="margin-top:8px;">Date: ___________________</p>
+            </div>
+            <div class="sig-col">
+              <label>${data.signature.clientLabel}</label>
+              <div class="sig-line"></div>
+              <p>Name: ___________________</p>
+              <p style="margin-top:8px;">Date: ___________________</p>
+            </div>
+          </div>
+        </div>` : '';
+
+    const closingHtml = isSectionVisible('closing', data.closing) ? `
+      <div class="closing-block">
+        ${data.closing.message ? `<p>${data.closing.message}</p>` : ''}
+        <p class="closing-signoff">Best Regards,</p>
+        ${data.closing.name ? `<p class="closing-name">${data.closing.name}</p>` : ''}
+        ${data.closing.role ? `<p class="closing-role">${data.closing.role}</p>` : ''}
+        ${data.closing.tagline ? `<p class="closing-tagline">${data.closing.tagline}</p>` : ''}
+      </div>` : '';
+
+    const aboutHtml = isSectionVisible('about', data.about) ? `
+        <div class="section about-appendix">
+          ${data.about.sectionLabel ? `<div class="section-label">${data.about.sectionLabel}</div>` : ''}
+          <h2>${data.about.title}</h2>
+          ${(data.about.paragraphs || []).map(p => `<p>${p}</p>`).join('')}
+          ${data.about.promise ? `<div class="highlight-box"><p><strong>Our Promise:</strong> ${data.about.promise}</p></div>` : ''}
+          ${(data.about.stats || []).length ? `<div class="stats-grid">${(data.about.stats || []).map(st => `
+            <div class="stat-card">
+              <div class="stat-value">${st.value}</div>
+              <div class="stat-label">${st.label}</div>
+            </div>`).join('')}</div>` : ''}
+        </div>` : '';
+
+    const footerHtml = isSectionVisible('footer', data.footer) ? `
+      <div class="footer">
+        <img src="${LOGO_SRC}" alt="Ryzonix" class="brand-logo" width="160" height="48" />
+        <p>${data.footer.tagline}<br/>${data.footer.disclaimer}</p>
+      </div>` : '';
+
+    root.innerHTML = `
+      <div class="cover">
+        <img src="${LOGO_SRC}" alt="Ryzonix" class="cover-logo" width="160" height="56" />
+        ${data.meta.coverEyebrow ? `<div class="cover-eyebrow">${data.meta.coverEyebrow}</div>` : ''}
+        <h1>${data.meta.coverTitle}<br/><span>${data.meta.coverTitleAccent}</span><br/>${data.meta.coverTitleSuffix}</h1>
+        ${projectTitle}
+        ${data.meta.coverSubtitle ? `<p class="cover-sub">${data.meta.coverSubtitle}</p>` : ''}
+        <div class="cover-meta">
+          <div class="cover-meta-item"><label>Prepared By</label><p>${data.meta.preparedBy}</p></div>
+          <div class="cover-meta-item"><label>Prepared For</label><p>${data.meta.clientName}</p></div>
+          <div class="cover-meta-item"><label>Date</label><p>${data.meta.proposalDate}</p></div>
+          <div class="cover-meta-item"><label>Valid Until</label><p>${data.meta.validUntil}</p></div>
+        </div>
+      </div>
+      <div class="green-rule"></div>
+      <div class="content">
+        ${overviewHtml}
+        ${servicesHtml}
+        ${timelineHtml}
+        ${pricingHtml}
+        ${termsHtml}
+        ${signatureHtml}
+        ${closingHtml}
+        ${aboutHtml}
+      </div>
+      ${footerHtml}`;
+  }
+
+  render(loadData());
+</script>
+
+</body>
+</html>

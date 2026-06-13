@@ -1,0 +1,214 @@
+.shell {
+  min-height: 100vh;
+  background: #121725;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+}
+
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  padding: 20px 28px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(18, 23, 37, 0.95);
+  backdrop-filter: blur(8px);
+}
+
+.topBarBrand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.topBarLogo {
+  height: 48px;
+  width: auto;
+  max-width: 160px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.topBar h1 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 22px;
+  margin: 0 0 4px;
+  color: #fff;
+}
+
+.topBar p {
+  margin: 0;
+  font-size: 13px;
+  color: #bcc0cb;
+}
+
+.topActions {
+  display: flex;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.workspace {
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  min-height: calc(100vh - 81px);
+}
+
+.sidebar {
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 20px;
+  overflow-y: auto;
+  max-height: calc(100vh - 81px);
+}
+
+.previewWrap {
+  padding: 32px 24px 48px;
+  overflow-y: auto;
+  max-height: calc(100vh - 81px);
+  background: #0d1119;
+}
+
+.panel {
+  margin-bottom: 20px;
+}
+
+.panelHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.panelHead h2 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 15px;
+  margin: 0;
+  color: #66e0a3;
+}
+
+.promptArea,
+.jsonArea {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.04);
+  color: #e8eaef;
+  font-family: ui-monospace, 'Cascadia Code', monospace;
+  font-size: 11px;
+  line-height: 1.5;
+  padding: 12px;
+  resize: vertical;
+}
+
+.promptArea {
+  min-height: 180px;
+}
+
+.jsonArea {
+  min-height: 220px;
+}
+
+.btnPrimary,
+.btnSecondary,
+.btnGhost {
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 10px 16px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.btnPrimary {
+  background: #3b8f63;
+  color: #fff;
+}
+
+.btnPrimary:hover {
+  background: #2a6b4a;
+}
+
+.sidebar .btnPrimary {
+  width: 100%;
+  margin-top: 12px;
+}
+
+.btnSecondary {
+  background: rgba(102, 224, 163, 0.12);
+  color: #66e0a3;
+  border: 1px solid rgba(102, 224, 163, 0.3);
+}
+
+.btnSecondary:hover {
+  background: rgba(102, 224, 163, 0.2);
+}
+
+.btnGhost {
+  background: transparent;
+  color: #bcc0cb;
+  padding: 6px 10px;
+  font-size: 12px;
+}
+
+.btnGhost:hover {
+  color: #66e0a3;
+}
+
+.error {
+  color: #ff8a80;
+  font-size: 12px;
+  margin: 8px 0 0;
+}
+
+.help {
+  background: rgba(59, 143, 99, 0.1);
+  border: 1px solid rgba(59, 143, 99, 0.25);
+  border-radius: 8px;
+  padding: 14px 16px;
+}
+
+.help h3 {
+  font-size: 13px;
+  margin: 0 0 8px;
+  color: #66e0a3;
+}
+
+.help ol {
+  margin: 0;
+  padding-left: 18px;
+  color: #bcc0cb;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+@media (max-width: 1100px) {
+  .workspace {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    max-height: none;
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .previewWrap {
+    max-height: none;
+  }
+}
+
+@media print {
+  .shell :global(.no-print) {
+    display: none !important;
+  }
+
+  .previewWrap {
+    padding: 0;
+    background: white;
+  }
+}

@@ -4,6 +4,7 @@ Allow: /
 
 Disallow: /admin
 Disallow: /private
+Disallow: /internal/
 Disallow: /api/
 
 Sitemap: https://ryzonix.pro/sitemap.xml
