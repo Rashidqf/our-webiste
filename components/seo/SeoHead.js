@@ -22,7 +22,8 @@ export default function SeoHead({
   noindex = false,
   jsonLd = [],
 }) {
-  const canonical = absoluteUrl(canonicalPath);
+  const hasCanonical = Boolean(canonicalPath);
+  const canonical = hasCanonical ? absoluteUrl(canonicalPath) : null;
   const image = ogImage || SITE.ogImage;
   const robots = noindex ? 'noindex, nofollow' : 'index, follow';
   const keywordContent = keywords || SITE.defaultKeywords.join(', ');
@@ -30,26 +31,26 @@ export default function SeoHead({
   return (
     <Head>
       {/* SEO: Meta Tags */}
-      <title>{title}</title>
-      <meta name="description" content={description} />
-      <meta name="keywords" content={keywordContent} />
+      {title ? <title>{title}</title> : <title> </title>}
+      {description ? <meta name="description" content={description} /> : null}
+      {keywords || !noindex ? <meta name="keywords" content={keywordContent} /> : null}
       <meta name="author" content={SITE.name} />
       <meta name="robots" content={robots} />
-      <link rel="canonical" href={canonical} />
+      {hasCanonical ? <link rel="canonical" href={canonical} /> : null}
 
       {/* SEO: Open Graph */}
-      <meta property="og:title" content={title} />
-      <meta property="og:description" content={description} />
+      {title ? <meta property="og:title" content={title} /> : null}
+      {description ? <meta property="og:description" content={description} /> : null}
       <meta property="og:image" content={image} />
-      <meta property="og:url" content={canonical} />
+      {hasCanonical ? <meta property="og:url" content={canonical} /> : null}
       <meta property="og:type" content={ogType} />
       <meta property="og:site_name" content={SITE.name} />
       <meta property="og:locale" content={SITE.locale} />
 
       {/* SEO: Twitter Card */}
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content={title} />
-      <meta name="twitter:description" content={description} />
+      {title ? <meta name="twitter:title" content={title} /> : null}
+      {description ? <meta name="twitter:description" content={description} /> : null}
       <meta name="twitter:image" content={image} />
 
       {/* SEO: Schema (page-level JSON-LD) */}

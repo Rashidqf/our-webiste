@@ -8,9 +8,8 @@ import {
   PROPOSAL_LOGO_ALT,
   PROPOSAL_LOGO_SRC,
 } from '../../../lib/proposal/defaultProposal';
+import { downloadProposalPdf, saveProposalForDownload } from '../../../lib/proposal/downloadPdf';
 import styles from '../../../styles/proposalGenerator.module.scss';
-
-const STORAGE_KEY = 'ryzonix-proposal-data';
 
 export default function InternalProposalPage() {
   const sampleJson = useMemo(
@@ -28,9 +27,7 @@ export default function InternalProposalPage() {
       const parsed = parseProposalJson(jsonInput);
       setProposal(parsed);
       setError('');
-      if (typeof window !== 'undefined') {
-        sessionStorage.setItem(STORAGE_KEY, JSON.stringify(parsed));
-      }
+      saveProposalForDownload(parsed);
     } catch (e) {
       setError(e.message || 'Invalid JSON');
     }
@@ -47,22 +44,19 @@ export default function InternalProposalPage() {
   }, []);
 
   const downloadPdf = useCallback(() => {
-    window.print();
-  }, []);
-
-  const openStandalone = useCallback(() => {
-    sessionStorage.setItem(STORAGE_KEY, JSON.stringify(proposal));
-    window.open('/ryzonix-proposal.html', '_blank', 'noopener,noreferrer');
-  }, [proposal]);
+    try {
+      const parsed = parseProposalJson(jsonInput);
+      setProposal(parsed);
+      setError('');
+      downloadProposalPdf(parsed);
+    } catch (e) {
+      setError(e.message || 'Invalid JSON');
+    }
+  }, [jsonInput]);
 
   return (
     <Fragment>
-      <SeoHead
-        title="Proposal Generator | Ryzonix Internal"
-        description="Internal proposal PDF generator"
-        canonicalPath="/internal/proposal"
-        noindex
-      />
+      <SeoHead title=" " description="" noindex />
 
       <div className={styles.shell}>
         <header className={`${styles.topBar} no-print`}>
@@ -74,15 +68,8 @@ export default function InternalProposalPage() {
               width={160}
               height={48}
             />
-            <div>
-              <h1>Proposal Generator</h1>
-              <p>Internal tool · paste AI JSON → preview → download PDF</p>
-            </div>
           </div>
           <div className={styles.topActions}>
-            <button type="button" className={styles.btnSecondary} onClick={openStandalone}>
-              Open HTML Preview
-            </button>
             <button type="button" className={styles.btnPrimary} onClick={downloadPdf}>
               Download PDF
             </button>
@@ -139,8 +126,8 @@ export default function InternalProposalPage() {
               <ol>
                 <li>Copy the AI prompt and paste your client brief.</li>
                 <li>Paste the JSON response below.</li>
-                <li>Click Apply &amp; Preview, then Download PDF.</li>
-                <li>Choose Save as PDF in the print dialog. Nothing is stored on the server.</li>
+                <li>Click Download PDF (uses the JSON in the editor).</li>
+                <li>A PDF file downloads automatically — do not use Ctrl+P on this page.</li>
               </ol>
             </section>
           </aside>
@@ -154,19 +141,6 @@ export default function InternalProposalPage() {
       <style jsx global>{`
         @media print {
           body * {
-            visibility: hidden;
-          }
-          #proposal-document,
-          #proposal-document * {
-            visibility: visible;
-          }
-          #proposal-document {
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-          }
-          .no-print {
             display: none !important;
           }
         }
