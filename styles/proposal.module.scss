@@ -541,6 +541,11 @@
 }
 
 @media print {
+  @page {
+    margin: 12mm 10mm;
+    size: A4;
+  }
+
   .proposalRoot {
     background: white;
     font-size: 13px;
