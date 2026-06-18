@@ -10,16 +10,6 @@ const nextConfig = {
   compiler: {
     removeConsole: process.env.NODE_ENV === "production",
   },
-  async redirects() {
-    return [
-      {
-        source: "/:path*",
-        has: [{ type: "host", value: "ryzonix.pro" }],
-        destination: "https://www.ryzonix.pro/:path*",
-        permanent: true,
-      },
-    ];
-  },
 };
 
 module.exports = nextConfig;

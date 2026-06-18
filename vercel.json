@@ -1,0 +1,10 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "ryzonix.pro" }],
+      "destination": "https://www.ryzonix.pro/:path*",
+      "permanent": true
+    }
+  ]
+}
