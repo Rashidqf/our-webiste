@@ -12,6 +12,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import GlobalJsonLd from "../components/seo/GlobalJsonLd";
 import AnalyticsScripts from "../components/seo/AnalyticsScripts";
+import WebMcpEvents from "../components/agentic/WebMcpEvents";
 
 const Cursor = dynamic(() => import("../components/Cursor/Cursor"), {
   ssr: false,
@@ -33,6 +34,7 @@ function MyApp({ Component, pageProps }) {
     <div>
       <GlobalJsonLd />
       <AnalyticsScripts />
+      <WebMcpEvents />
       <Component {...pageProps} />
       {showCursor ? <Cursor /> : null}
     </div>

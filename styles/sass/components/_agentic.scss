@@ -1,0 +1,11 @@
+/* WebMCP declarative form focus indicators (Chrome default-style fallback) */
+form:tool-form-active {
+    outline: light-dark(blue, cyan) dashed 1px;
+    outline-offset: -1px;
+}
+
+button:tool-submit-active,
+input[type='submit']:tool-submit-active {
+    outline: light-dark(red, pink) dashed 1px;
+    outline-offset: -1px;
+}

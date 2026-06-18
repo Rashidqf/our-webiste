@@ -1,0 +1,28 @@
+# Ryzonix
+> Remote-first IT services and web development company. We build responsive, secure, and scalable websites, SaaS applications, startup MVPs, and mobile apps for startups, SMBs, and enterprises.
+
+## Primary pages
+- [Home](https://www.ryzonix.pro/): Custom web development services for startups and growing businesses
+- [Services](https://www.ryzonix.pro/service): Web development, tech consulting, startup MVPs, SaaS apps, mobile apps, deployment
+- [Portfolio](https://www.ryzonix.pro/project): Case studies and software projects
+- [About](https://www.ryzonix.pro/about): Company overview, team, and approach
+- [Contact](https://www.ryzonix.pro/contact): Request a quote, consultation, or project inquiry
+- [Blog](https://www.ryzonix.pro/blog): Web development, SaaS architecture, and IT consulting articles
+
+## Contact
+- Email: ryzonix50@gmail.com
+- Website: https://www.ryzonix.pro
+- Location: Remote-first · Worldwide
+- LinkedIn: https://www.linkedin.com/company/ryzonix/
+- Instagram: https://www.instagram.com/ryz0nix/
+- Facebook: https://www.facebook.com/profile.php?id=61578278572030
+
+## Agent interaction
+- Contact form (WebMCP tool `contactRyzonix`): https://www.ryzonix.pro/contact
+- Service inquiry form (WebMCP tool `requestRyzonixServices`): available on /service and /project pages
+
+## Key facts
+- Founded: 2025
+- Industry: IT Services & IT Consulting
+- Team size: 2–10
+- Specialties: custom web development, SaaS, MVP builds, mobile apps, IT consulting

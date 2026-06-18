@@ -248,7 +248,8 @@
 				}
 			}
 
-			label {
+			label,
+			.input-icon {
 				position: absolute;
 				left: 0;
 				top: -2px;
@@ -260,12 +261,14 @@
 				}
 			}
 
-			&:focus-within label i {
+			&:focus-within label i,
+			&:focus-within .input-icon i {
 				color: $theme-primary-color-s2;
 			}
 
 			&:nth-child(3) {
-				label {
+				label,
+				.input-icon {
 					top: 2px;
 				}
 			}
