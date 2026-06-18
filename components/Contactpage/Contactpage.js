@@ -84,7 +84,7 @@ const Contactpage = () => {
                                     </div>
                                     <div className="office-info-text">
                                         <h2>Email</h2>
-                                        <p>contact@ryzonix.com <br /> hello@ryzonix.com</p>
+                                        <p><a href="mailto:ryzonix50@gmail.com">ryzonix50@gmail.com</a></p>
                                     </div>
                                 </div>
                             </div>

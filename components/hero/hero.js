@@ -83,11 +83,12 @@ const Hero = () => {
                   height={50}
                 />
               </h2>
-              <h2 className="text-stroke scroll-text-animation">
+              <h2 className="text-stroke scroll-text-animation" aria-label="digital">
                 d
                 <Image
                   src={Slide2}
-                  alt="Digital product design accent – Ryzonix"
+                  alt=""
+                  aria-hidden="true"
                   width={50}
                   height={50}
                 />

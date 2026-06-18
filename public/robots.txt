@@ -1,4 +1,4 @@
-# SEO: robots.txt — https://ryzonix.pro
+# SEO: robots.txt — https://www.ryzonix.pro
 User-agent: *
 Allow: /
 
@@ -7,4 +7,4 @@ Disallow: /private
 Disallow: /internal/
 Disallow: /api/
 
-Sitemap: https://ryzonix.pro/sitemap.xml
+Sitemap: https://www.ryzonix.pro/sitemap.xml

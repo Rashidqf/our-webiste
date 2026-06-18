@@ -28,10 +28,9 @@ const FooterS2 = () => {
                             <div className="title">
                                 <h2>Ryzonix <i className="ti-arrow-down"></i></h2>
                                 <p>Remote-first · IT Services &amp; IT Consulting
-                                    <br /><a href="https://www.ryzonix.com">www.ryzonix.com</a></p>
+                                    <br /><a href="https://www.ryzonix.pro">www.ryzonix.pro</a></p>
                             </div>
-                            <h3><a href="mailto:hello@ryzonix.com">hello@ryzonix.com</a></h3>
-                            <h4>contact@ryzonix.com</h4>
+                            <h3><a href="mailto:ryzonix50@gmail.com">ryzonix50@gmail.com</a></h3>
                         </div>
                         <div className="widget-contact">
                             <div className="title">

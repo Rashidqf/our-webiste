@@ -32,7 +32,7 @@ const HomePage = () => {
                 canonicalPath={meta.path}
             />
             <Navbar hclass={'wpo-site-header'} Logo={Logo} />
-            <PageH1>Custom Web Development Services | Ryzonix</PageH1>
+            <PageH1 id="home-page-h1">Custom Web Development for Startups &amp; Growing Businesses</PageH1>
             <Hero />
             <PartnerSection />
             <About />

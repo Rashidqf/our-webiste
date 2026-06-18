@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import SeoHead from "../../components/seo/SeoHead";
 import { formatTitle } from "../../lib/seo/site";
 import { buildBreadcrumbJsonLd } from "../../lib/seo/breadcrumbs";
+import { blogPostingSchema } from "../../lib/seo/schemas";
 import NavbarS2 from "../../components/NavbarS2/NavbarS2";
 import Scrollbar from "../../components/scrollbar/scrollbar";
 import BlogSingle from "../../components/BlogDetails/BlogSingle";
@@ -40,6 +41,13 @@ const BlogDetails = ({ post, recentPosts }) => {
         canonicalPath={`/blog-single/${post.slug}`}
         ogType="article"
         jsonLd={[
+          blogPostingSchema({
+            title: post.title,
+            slug: post.slug,
+            description: post.description,
+            publishedAt: post.publishedAt,
+            image: post.image,
+          }),
           buildBreadcrumbJsonLd([
             { name: 'Blog', path: '/blog' },
             { name: post.title, path: `/blog-single/${post.slug}` },

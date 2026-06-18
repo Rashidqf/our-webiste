@@ -94,14 +94,14 @@ const PartnerSection = (props) => {
 
     return (
         <section className="partners-section fade_bottom">
-            <h2 className="d-none">No Content</h2>
+            <h2 className="visually-hidden">Technology and platform partners</h2>
             <div className="container">
                 <ul className="partners-slider">
                     <Slider {...settings}>
                         {partners.map((partner, pitem) => (
                             <div key={pitem}>
                                 <li>
-                                    <Image src={partner.pimg} alt="" />
+                                    <Image src={partner.pimg} alt={`Partner logo ${pitem + 1}`} />
                                 </li>
                             </div>
                         ))}

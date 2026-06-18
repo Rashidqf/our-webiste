@@ -47,7 +47,7 @@ const HeaderS2 = (props) => {
                             </div>
                             <div className="col-lg-5 col-md-4 col-2">
                                 <div className="header-right">
-                                    <span className="location">140 Poplar Road, Mnt, NY 3142</span>
+                                    <span className="location">Remote-first · Worldwide</span>
                                     <HeraderAbout/>
                                     <div className="close-form">
                                         <Link onClick={ClickHandler} className="theme-btn" href="/contact"><span> Contact

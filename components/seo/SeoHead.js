@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { SITE, absoluteUrl } from '../../lib/seo/site';
+import { SITE, absoluteUrl, normalizeCanonicalPath } from '../../lib/seo/site';
 
 /**
  * @param {object} props
@@ -22,7 +22,7 @@ export default function SeoHead({
   noindex = false,
   jsonLd = [],
 }) {
-  const canonical = absoluteUrl(canonicalPath);
+  const canonical = absoluteUrl(normalizeCanonicalPath(canonicalPath));
   const image = ogImage || SITE.ogImage;
   const robots = noindex ? 'noindex, nofollow' : 'index, follow';
   const keywordContent = keywords || SITE.defaultKeywords.join(', ');

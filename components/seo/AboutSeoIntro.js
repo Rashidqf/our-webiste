@@ -36,7 +36,7 @@ export default function AboutSeoIntro() {
           <Link href="/contact" onClick={ClickHandler} title="Contact Ryzonix">
             Contact us
           </Link>{' '}
-          at hello@ryzonix.com.
+          at ryzonix50@gmail.com.
         </p>
       </div>
     </section>

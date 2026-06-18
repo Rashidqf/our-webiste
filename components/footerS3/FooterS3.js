@@ -46,7 +46,7 @@ const FooterS3 = () => {
                     <div className="wraper">
                         <h2 className="scroll-text-animation">
                             <span>Start a project</span> <br /> write us at <span className="color">
-                                hello@ryzonix.com</span>
+                                ryzonix50@gmail.com</span>
                         </h2>
                         <Link onClick={ClickHandler} href="/contact" className="topbar-btn scroll-text-animation btn-wrapper btn-move"
                             data-animation="fade_from_bottom">contact
@@ -100,8 +100,8 @@ const FooterS3 = () => {
                         <ul>
                             <li>Ryzonix</li>
                             <li>Remote-first · Worldwide</li>
-                            <li><a href="https://www.ryzonix.com">www.ryzonix.com</a></li>
-                            <li><a href="mailto:contact@ryzonix.com">contact@ryzonix.com</a></li>
+                            <li><a href="https://www.ryzonix.pro">www.ryzonix.pro</a></li>
+                            <li><a href="mailto:ryzonix50@gmail.com">ryzonix50@gmail.com</a></li>
                             <li>IT Services &amp; IT Consulting</li>
                         </ul>
                     </div>
@@ -119,10 +119,9 @@ const FooterS3 = () => {
                         </div>
                         <div className="col-lg-4 col-12">
                             <ul className="widget-social">
-                                <li><Link onClick={ClickHandler} href="#"><i className="ti-facebook"></i></Link></li>
-                                <li><Link onClick={ClickHandler} href="#"><i className="ti-twitter-alt"></i></Link></li>
-                                <li><Link onClick={ClickHandler} href="#"><i className="ti-instagram"></i></Link></li>
-                                <li><Link onClick={ClickHandler} href="#"><i className="ti-linkedin"></i></Link></li>
+                                <li><Link href="https://www.facebook.com/profile.php?id=61578278572030" target="_blank" rel="noopener noreferrer" title="Ryzonix on Facebook"><i className="ti-facebook"></i></Link></li>
+                                <li><Link href="https://www.instagram.com/ryz0nix/" target="_blank" rel="noopener noreferrer" title="Ryzonix on Instagram"><i className="ti-instagram"></i></Link></li>
+                                <li><Link href="https://www.linkedin.com/company/ryzonix/" target="_blank" rel="noopener noreferrer" title="Ryzonix on LinkedIn"><i className="ti-linkedin"></i></Link></li>
                             </ul>
                         </div>
                     </div>
