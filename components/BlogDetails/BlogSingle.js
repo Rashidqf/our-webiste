@@ -3,6 +3,7 @@ import Link from "next/link";
 import ReactMarkdown from "react-markdown";
 // import CommentForm from "./CommentsFrom";
 import Image from "next/image";
+import { absoluteUrl } from "../../lib/seo/site";
 
 const ClickHandler = () => {
   window.scrollTo(10, 0);
@@ -19,11 +20,7 @@ const BlogSingle = ({ post, recentPosts = [] }) => {
     );
   }
 
-  const siteOrigin =
-    typeof process !== "undefined" && process.env.NEXT_PUBLIC_SITE_URL
-      ? process.env.NEXT_PUBLIC_SITE_URL.replace(/\/$/, "")
-      : "https://www.ryzonix.com";
-  const postUrl = `${siteOrigin}/blog-single/${encodeURIComponent(post.slug)}`;
+  const postUrl = absoluteUrl(`/blog-single/${encodeURIComponent(post.slug)}`);
   const singleHref = `/blog-single/${encodeURIComponent(post.slug)}`;
 
   return (

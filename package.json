@@ -6,7 +6,8 @@
     "start": "next start",
     "seed:blogs": "node scripts/seed-blogs.js",
     "optimize:images": "node scripts/optimize-images.js",
-    "generate:favicons": "node scripts/generate-favicons.js"
+    "generate:favicons": "node scripts/generate-favicons.js",
+    "verify:site-url": "node scripts/verify-site-url.js"
   },
   "dependencies": {
     "@emotion/react": "^11.10.5",
