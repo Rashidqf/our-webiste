@@ -11,20 +11,33 @@ import Logo from '/public/images/logo.png';
 import Image from 'next/image';
 
 
-const TeamSinglePage = (props) => {
+function memberMetaDescription(member, memberName) {
+    if (member?.metaDescription) return member.metaDescription;
+    if (member?.subtitle) {
+        return `${memberName} — ${member.subtitle} at Ryzonix. Web development and IT consulting.`;
+    }
+    return `${memberName} at Ryzonix—IT services and web development team.`;
+}
+
+const TeamSinglePage = ({ slug }) => {
 
     const router = useRouter()
+    const resolvedSlug = slug || router.query.slug
 
-    const TeamSingles = Teams.find(item => item.slug === router.query.slug)
+    const TeamSingles = Teams.find(item => item.slug === resolvedSlug)
     const memberName = TeamSingles?.title || 'Team member';
+    const pageDescription = memberMetaDescription(TeamSingles, memberName);
+    const canonicalPath = TeamSingles
+        ? `/team-single/${TeamSingles.slug}`
+        : (resolvedSlug ? `/team-single/${resolvedSlug}` : '/team');
 
     return (
         <Fragment>
             <SeoHead
                 title={formatTitle(memberName)}
-                description={`${memberName} at Ryzonix—IT services and web development team.`}
+                description={pageDescription}
                 keywords={`${memberName}, Ryzonix team, web development`}
-                canonicalPath={TeamSingles ? `/team-single/${TeamSingles.slug}` : '/team'}
+                canonicalPath={canonicalPath}
                 jsonLd={TeamSingles ? [buildBreadcrumbJsonLd([
                     { name: 'Team', path: '/team' },
                     { name: memberName, path: `/team-single/${TeamSingles.slug}` },
@@ -44,19 +57,26 @@ const TeamSinglePage = (props) => {
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="team-info-text">
-                                        <h2>{TeamSingles?.title}</h2>
+                                        <h1>{TeamSingles?.title}</h1>
                                         <span>{TeamSingles?.subtitle}</span>
 
-                                        <p>Lorem Ipsum is simply dumm text of the printing has been the
-                                            industy standard dummy text ever since unknown printer took
-                                            the printing has been the industry.</p>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting has been the
-                                            industry's standard dummy text ever since the 1500 when unknown printer took
-                                            galley
-                                            of type and scrambled it to make a type specimen book. It has survived not
-                                            only
-                                            five
-                                            centuries, but also the leap into electronic typesetting.</p>
+                                        {TeamSingles?.bio ? (
+                                            <p>{TeamSingles.bio}</p>
+                                        ) : (
+                                            <>
+                                                {/* TODO: placeholder body until real bio is added on this entry */}
+                                                <p>Lorem Ipsum is simply dumm text of the printing has been the
+                                                    industy standard dummy text ever since unknown printer took
+                                                    the printing has been the industry.</p>
+                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting has been the
+                                                    industry's standard dummy text ever since the 1500 when unknown printer took
+                                                    galley
+                                                    of type and scrambled it to make a type specimen book. It has survived not
+                                                    only
+                                                    five
+                                                    centuries, but also the leap into electronic typesetting.</p>
+                                            </>
+                                        )}
                                         <div className="wpo-skill-section">
                                             <div className="wpo-skill-progress">
                                                 <div className="wpo-progress-single">
@@ -181,4 +201,22 @@ const TeamSinglePage = (props) => {
         </Fragment>
     )
 };
+
+export async function getStaticPaths() {
+    const uniqueSlugs = [...new Set(Teams.map((member) => member.slug))];
+    return {
+        paths: uniqueSlugs.map((memberSlug) => ({ params: { slug: memberSlug } })),
+        fallback: false,
+    };
+}
+
+export async function getStaticProps({ params }) {
+    const memberSlug = params?.slug;
+    const member = Teams.find((item) => item.slug === memberSlug);
+    if (!member) {
+        return { notFound: true };
+    }
+    return { props: { slug: memberSlug } };
+}
+
 export default TeamSinglePage;

@@ -10,7 +10,7 @@ const PageTitle = (props) => {
                     <div className="col col-xs-12">
                         <div className="breadcumb-wrap">
                             <ol className="breadcumb-wrap">
-                                <li><Link href="/home">Home</Link></li>
+                                <li><Link href="/">Home</Link></li>
                                 <li>{props.pagesub}</li>
                             </ol>
                         </div>

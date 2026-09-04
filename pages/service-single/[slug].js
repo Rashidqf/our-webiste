@@ -20,10 +20,11 @@ import Image from 'next/image';
 gsap.registerPlugin(ScrollTrigger);
 
 
-const ServiceSinglePage = (props) => {
+const ServiceSinglePage = ({ slug }) => {
     const router = useRouter()
+    const resolvedSlug = slug || router.query.slug
 
-    const serviceDetails = Services.find(item => item.slug === router.query.slug)
+    const serviceDetails = Services.find(item => item.slug === resolvedSlug)
     const isFeatured = serviceDetails && Number(serviceDetails.Id) <= 6;
     const pageTitle = serviceDetails
         ? formatTitle(serviceDetails.title)
@@ -33,7 +34,7 @@ const ServiceSinglePage = (props) => {
         : 'Ryzonix web development and IT consulting services.';
     const canonicalPath = serviceDetails
         ? `/service-single/${serviceDetails.slug}`
-        : '/service';
+        : (resolvedSlug ? `/service-single/${resolvedSlug}` : '/service');
     const jsonLd = serviceDetails && isFeatured
         ? [
             buildBreadcrumbJsonLd([
@@ -134,4 +135,21 @@ const ServiceSinglePage = (props) => {
         </Fragment>
     )
 };
+
+export async function getStaticPaths() {
+    return {
+        paths: Services.map((service) => ({ params: { slug: service.slug } })),
+        fallback: false,
+    };
+}
+
+export async function getStaticProps({ params }) {
+    const slug = params?.slug;
+    const service = Services.find((item) => item.slug === slug);
+    if (!service) {
+        return { notFound: true };
+    }
+    return { props: { slug } };
+}
+
 export default ServiceSinglePage;

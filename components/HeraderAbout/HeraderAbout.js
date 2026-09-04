@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { SITE } from '../../lib/seo/site';
 
 import Abouti from '/public/images/btn-about.png';
 import logo from '/public/images/logo.png';
@@ -42,7 +43,7 @@ const HeraderAbout = () => {
                         </div>
                         <div className="contact">
                             <span>Website</span>
-                            <h6><a href="https://www.ryzonix.com" target="_blank" rel="noopener noreferrer">ryzonix.com</a></h6>
+                            <h6><a href={`${SITE.url}/`} target="_blank" rel="noopener noreferrer">ryzonix.pro</a></h6>
                         </div>
                     </div>
                     <div className="mini-cart-item">
@@ -51,7 +52,7 @@ const HeraderAbout = () => {
                         </div>
                         <div className="contact">
                             <span>Email Now</span>
-                            <h6><a href="mailto:contact@ryzonix.com">contact@ryzonix.com</a></h6>
+                            <h6><a href={`mailto:${SITE.email}`}>{SITE.email}</a></h6>
                         </div>
                     </div>
                     <div className="mini-cart-item">

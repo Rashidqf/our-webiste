@@ -24,7 +24,7 @@ const BlogPage = ({ blogs, total, totalPages, page, dbError }) => {
         title={meta.title}
         description={meta.description}
         keywords={meta.keywords}
-        canonicalPath={meta.path}
+        canonicalPath="/blog"
         jsonLd={[buildBreadcrumbJsonLd([{ name: 'Blog', path: '/blog' }])]}
       />
       <NavbarS2 hclass={"wpo-site-header wpo-site-header-s4"} Logo={Logo} />

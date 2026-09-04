@@ -29,12 +29,36 @@ import Stime12 from '/public/images/team/S12.jpg'
 
 
 
+/**
+ * TODO(content): Theme-demo placeholders — not real Ryzonix staff.
+ * Replace with real people (name, role, bio, metaDescription) or remove
+ * the /team and /team-single routes entirely. Do not invent bios.
+ *
+ * Indexed / mentioned placeholder slugs that need real content or removal:
+ * - Henry-Bannet
+ * - Tanean-Akrasen
+ * - Lily-Margerat
+ * - William-Watson
+ * - Leslie-Alexander (duplicate slug on ids 5 and 9)
+ * - Aleesha-Brown
+ * - James-Baker
+ * - Ryan-Rickets
+ *
+ * Extra unused placeholders (same decision — populate or delete):
+ * - Brooklyn-Simmons
+ * - Linda-Jackson
+ * - Andrea-Turner
+ */
 const Teams = [
     {
         id: '1',
         title: 'Henry Bannet',
         subtitle: 'Creative Director',
         slug: 'Henry-Bannet',
+        // TODO: replace placeholder or remove /team-single/Henry-Bannet
+        placeholder: true,
+        metaDescription: '',
+        bio: '',
         timg: timg1,
         Sime: Stime1,
     },
@@ -43,6 +67,10 @@ const Teams = [
         title: 'Tanean Akrasen',
         subtitle: 'HEAD OF PLANNING',
         slug: 'Tanean-Akrasen',
+        // TODO: replace placeholder or remove /team-single/Tanean-Akrasen
+        placeholder: true,
+        metaDescription: '',
+        bio: '',
         timg: timg2,
         Sime: Stime2,
     },
@@ -51,6 +79,10 @@ const Teams = [
         title: 'Lily Margerat',
         subtitle: 'Art Director',
         slug: 'Lily-Margerat',
+        // TODO: replace placeholder or remove /team-single/Lily-Margerat
+        placeholder: true,
+        metaDescription: '',
+        bio: '',
         timg: timg3,
         Sime: Stime3,
     },
@@ -59,6 +91,10 @@ const Teams = [
         title: 'William Watson',
         subtitle: 'Creative Director',
         slug: 'William-Watson',
+        // TODO: replace placeholder or remove /team-single/William-Watson
+        placeholder: true,
+        metaDescription: '',
+        bio: '',
         timg: timg4,
         Sime: Stime4,
     },
@@ -67,6 +103,10 @@ const Teams = [
         title: 'Leslie Alexander',
         subtitle: 'GRAPHIC DESIGNER',
         slug: 'Leslie-Alexander',
+        // TODO: replace placeholder or remove /team-single/Leslie-Alexander
+        placeholder: true,
+        metaDescription: '',
+        bio: '',
         timg: timg5,
         Sime: Stime5,
     }
@@ -76,6 +116,10 @@ const Teams = [
         title: 'Aleesha Brown',
         subtitle: 'Marketing Expert',
         slug: 'Aleesha-Brown',
+        // TODO: replace placeholder or remove /team-single/Aleesha-Brown
+        placeholder: true,
+        metaDescription: '',
+        bio: '',
         timg: timg6,
         Sime: Stime6,
     }
@@ -85,6 +129,10 @@ const Teams = [
         title: 'James Baker',
         subtitle: 'Project Manager',
         slug: 'James-Baker',
+        // TODO: replace placeholder or remove /team-single/James-Baker
+        placeholder: true,
+        metaDescription: '',
+        bio: '',
         timg: timg7,
         Sime: Stime7,
     }
@@ -94,6 +142,10 @@ const Teams = [
         title: 'Ryan Rickets',
         subtitle: 'Consulting Officer',
         slug: 'Ryan-Rickets',
+        // TODO: replace placeholder or remove /team-single/Ryan-Rickets
+        placeholder: true,
+        metaDescription: '',
+        bio: '',
         timg: timg8,
         Sime: Stime8,
     }
@@ -103,6 +155,10 @@ const Teams = [
         title: 'Leslie Alexander',
         subtitle: 'creative director',
         slug: 'Leslie-Alexander',
+        // TODO: replace placeholder or remove — duplicate slug of id 5
+        placeholder: true,
+        metaDescription: '',
+        bio: '',
         timg: timg9,
         Sime: Stime9,
     }
@@ -112,6 +168,10 @@ const Teams = [
         title: 'Brooklyn Simmons',
         subtitle: 'CEO Founder',
         slug: 'Brooklyn-Simmons',
+        // TODO: replace placeholder or remove /team-single/Brooklyn-Simmons
+        placeholder: true,
+        metaDescription: '',
+        bio: '',
         timg: timg10,
         Sime: Stime10,
     }
@@ -121,6 +181,10 @@ const Teams = [
         title: 'Linda Jackson',
         subtitle: 'CTO & Product Management',
         slug: 'Linda-Jackson',
+        // TODO: replace placeholder or remove /team-single/Linda-Jackson
+        placeholder: true,
+        metaDescription: '',
+        bio: '',
         timg: timg11,
         Sime: Stime11,
     }
@@ -130,6 +194,10 @@ const Teams = [
         title: 'Andrea G. Turner',
         subtitle: 'Marketing Director',
         slug: 'Andrea-Turner',
+        // TODO: replace placeholder or remove /team-single/Andrea-Turner
+        placeholder: true,
+        metaDescription: '',
+        bio: '',
         timg: timg12,
         Sime: Stime12,
     }
