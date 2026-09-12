@@ -15,7 +15,7 @@
 - Location: Remote-first · Worldwide
 - LinkedIn: https://www.linkedin.com/company/ryzonix/
 - Instagram: https://www.instagram.com/ryz0nix/
-- Facebook: https://www.facebook.com/profile.php?id=61578278572030
+- Facebook: https://www.facebook.com/ryzonix.pro
 
 ## Agent interaction
 - Contact form (WebMCP tool `contactRyzonix`): https://www.ryzonix.pro/contact

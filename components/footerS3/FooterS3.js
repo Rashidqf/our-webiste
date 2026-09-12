@@ -119,7 +119,7 @@ const FooterS3 = () => {
                         </div>
                         <div className="col-lg-4 col-12">
                             <ul className="widget-social">
-                                <li><Link href="https://www.facebook.com/profile.php?id=61578278572030" target="_blank" rel="noopener noreferrer" title="Ryzonix on Facebook"><i className="ti-facebook"></i></Link></li>
+                                <li><Link href="https://www.facebook.com/ryzonix.pro" target="_blank" rel="noopener noreferrer" title="Ryzonix on Facebook"><i className="ti-facebook"></i></Link></li>
                                 <li><Link href="https://www.instagram.com/ryz0nix/" target="_blank" rel="noopener noreferrer" title="Ryzonix on Instagram"><i className="ti-instagram"></i></Link></li>
                                 <li><Link href="https://www.linkedin.com/company/ryzonix/" target="_blank" rel="noopener noreferrer" title="Ryzonix on LinkedIn"><i className="ti-linkedin"></i></Link></li>
                             </ul>
