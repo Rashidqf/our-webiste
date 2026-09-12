@@ -46,7 +46,7 @@ const FooterS3 = () => {
                     <div className="wraper">
                         <h2 className="scroll-text-animation">
                             <span>Start a project</span> <br /> write us at <span className="color">
-                                ryzonix50@gmail.com</span>
+                                sales@ryzonix.pro</span>
                         </h2>
                         <Link onClick={ClickHandler} href="/contact" className="topbar-btn scroll-text-animation btn-wrapper btn-move"
                             data-animation="fade_from_bottom">contact
@@ -101,7 +101,7 @@ const FooterS3 = () => {
                             <li>Ryzonix</li>
                             <li>Remote-first · Worldwide</li>
                             <li><a href="https://www.ryzonix.pro">www.ryzonix.pro</a></li>
-                            <li><a href="mailto:ryzonix50@gmail.com">ryzonix50@gmail.com</a></li>
+                            <li><a href="mailto:sales@ryzonix.pro">sales@ryzonix.pro</a></li>
                             <li>IT Services &amp; IT Consulting</li>
                         </ul>
                     </div>

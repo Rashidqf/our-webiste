@@ -122,7 +122,7 @@ const ServiceSinglePage = ({ slug }) => {
                                 <p>Founded in 2025, Ryzonix is a modern software house serving startups, small businesses, and enterprises.
                                     Explore our <a href="/service" title="All Ryzonix services">services</a> and{' '}
                                     <a href="/project" title="Ryzonix portfolio">portfolio</a>, or email{' '}
-                                    <a href="mailto:ryzonix50@gmail.com" className="theme-link">ryzonix50@gmail.com</a>.</p>
+                                    <a href="mailto:sales@ryzonix.pro" className="theme-link">sales@ryzonix.pro</a>.</p>
                                 <h3 className="quate">Your digital partner for responsive, secure, and scalable websites—from first release to long-term operations.</h3>
                             </div>
                         </div>

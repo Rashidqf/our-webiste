@@ -30,7 +30,7 @@ const FooterS2 = () => {
                                 <p>Remote-first · IT Services &amp; IT Consulting
                                     <br /><a href="https://www.ryzonix.pro">www.ryzonix.pro</a></p>
                             </div>
-                            <h3><a href="mailto:ryzonix50@gmail.com">ryzonix50@gmail.com</a></h3>
+                            <h3><a href="mailto:sales@ryzonix.pro">sales@ryzonix.pro</a></h3>
                         </div>
                         <div className="widget-contact">
                             <div className="title">

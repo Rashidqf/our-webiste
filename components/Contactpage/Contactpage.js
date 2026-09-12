@@ -46,7 +46,7 @@ const Contactpage = () => {
             respondToAgentFormSubmit(
                 e,
                 true,
-                'Thank you. Your message was received. Ryzonix typically replies within one business day at ryzonix50@gmail.com.',
+                'Thank you. Your message was received. Ryzonix typically replies within one business day at sales@ryzonix.pro.',
                 ''
             );
         } else {
@@ -107,7 +107,7 @@ const Contactpage = () => {
                                     </div>
                                     <div className="office-info-text">
                                         <h2>Email</h2>
-                                        <p><a href="mailto:ryzonix50@gmail.com">ryzonix50@gmail.com</a></p>
+                                        <p><a href="mailto:sales@ryzonix.pro">sales@ryzonix.pro</a></p>
                                     </div>
                                 </div>
                             </div>

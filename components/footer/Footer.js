@@ -83,7 +83,7 @@ const Footer = (props) => {
                     <div className="item widget-contact fade_bottom">
                         <h2 className="title">RYZONIX</h2>
                         <h3>Remote-first · IT Services &amp; IT Consulting</h3>
-                        <h4><a className="theme-link" href="mailto:ryzonix50@gmail.com">ryzonix50@gmail.com</a></h4>
+                        <h4><a className="theme-link" href="mailto:sales@ryzonix.pro">sales@ryzonix.pro</a></h4>
                         <ul className="widget-social">
                             <li><Link href="https://www.facebook.com/profile.php?id=61578278572030" target="_blank" rel="noopener noreferrer" title="Ryzonix on Facebook"><i className="ti-facebook"></i></Link></li>
                             <li><Link href="https://www.instagram.com/ryz0nix/" target="_blank" rel="noopener noreferrer" title="Ryzonix on Instagram"><i className="ti-instagram"></i></Link></li>
