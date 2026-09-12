@@ -45,21 +45,7 @@ const Footer = (props) => {
             <div className="container">
                 <div className="footer">
                     <div className="item fade_bottom">
-                        <h2 className="title">services</h2>
-                        <ul>
-                            {RYZONIX_SERVICES.map((service) => (
-                                <li key={service.Id}>
-                                    <Link
-                                        onClick={ClickHandler}
-                                        href={'/service-single/[slug]'}
-                                        as={`/service-single/${service.slug}`}
-                                        className={router.pathname === '/service-single/[slug]' && router.query.slug === service.slug ? 'is-active' : ''}
-                                    >
-                                        {service.title}
-                                    </Link>
-                                </li>
-                            ))}
-                        </ul>
+                        
                         <div className="shape theme-shape">
                             <BrandStarIcon className="theme-shape__icon" size={120} gradientId="footerBrandStar" />
                         </div>
