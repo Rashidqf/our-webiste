@@ -3,6 +3,7 @@ import Link from 'next/link'
 import MobileMenu from '../MobileMenu/MobileMenu'
 import HeraderAbout from '../HeraderAbout/HeraderAbout';
 import Image from 'next/image';
+import { SITE } from '../../lib/seo/site';
 
 
 const HeaderS2 = (props) => {
@@ -47,7 +48,7 @@ const HeaderS2 = (props) => {
                             </div>
                             <div className="col-lg-5 col-md-4 col-2">
                                 <div className="header-right">
-                                    <span className="location">Remote-first · Worldwide</span>
+                                    <span className="location">{SITE.locationLabel}</span>
                                     <HeraderAbout/>
                                     <div className="close-form">
                                         <Link onClick={ClickHandler} className="theme-btn" href="/contact"><span> Contact

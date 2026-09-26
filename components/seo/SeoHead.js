@@ -42,6 +42,7 @@ export default function SeoHead({
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={image} />
+      <meta property="og:image:alt" content={`${SITE.name} brand mark`} />
       {hasCanonical ? <meta property="og:url" content={canonical} key="og-url" /> : null}
       <meta property="og:type" content={ogType} />
       <meta property="og:site_name" content={SITE.name} />
@@ -51,6 +52,7 @@ export default function SeoHead({
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
+      {hasCanonical ? <meta name="twitter:url" content={canonical} key="twitter-url" /> : null}
 
       {jsonLd.map((schema, index) => (
         <script

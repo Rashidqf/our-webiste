@@ -2,7 +2,8 @@ import React, { Fragment, useEffect } from 'react';
 import { gsap } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import SeoHead from '../../components/seo/SeoHead';
-import { formatTitle } from '../../lib/seo/site';
+import { formatTitle, SITE } from '../../lib/seo/site';
+import Link from 'next/link';
 import { buildBreadcrumbJsonLd } from '../../lib/seo/breadcrumbs';
 import { serviceSchema } from '../../lib/seo/schemas';
 import NavbarS2 from '../../components/NavbarS2/NavbarS2';
@@ -122,7 +123,13 @@ const ServiceSinglePage = ({ slug }) => {
                                 <p>Founded in 2025, Ryzonix is a modern software house serving startups, small businesses, and enterprises.
                                     Explore our <a href="/service" title="All Ryzonix services">services</a> and{' '}
                                     <a href="/project" title="Ryzonix portfolio">portfolio</a>, or email{' '}
-                                    <a href="mailto:sales@ryzonix.pro" className="theme-link">sales@ryzonix.pro</a>.</p>
+                                    <a href={`mailto:${SITE.email}`} className="theme-link">{SITE.email}</a>.</p>
+                                {isFeatured ? (
+                                    <p>
+                                        For Karachi teams looking for a remote product partner, read about{' '}
+                                        <Link href="/karachi">software development services for Karachi businesses</Link>.
+                                    </p>
+                                ) : null}
                                 <h3 className="quate">Your digital partner for responsive, secure, and scalable websites—from first release to long-term operations.</h3>
                             </div>
                         </div>

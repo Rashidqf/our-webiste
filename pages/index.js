@@ -3,7 +3,7 @@ import dynamic from 'next/dynamic';
 import SeoHead from '../components/seo/SeoHead';
 import { PAGE_META } from '../lib/seo/pageMeta';
 import Navbar from '../components/Navbar/Navbar'
-import PageH1 from '../components/seo/PageH1';
+import HomeSeoSection from '../components/seo/HomeSeoSection';
 import Hero from '../components/hero/hero';
 import PartnerSection from '../components/PartnerSection/PartnerSection';
 import About from '../components/about/about';
@@ -32,11 +32,11 @@ const HomePage = () => {
                 canonicalPath={meta.path}
             />
             <Navbar hclass={'wpo-site-header'} Logo={Logo} />
-            <PageH1 id="home-page-h1">Custom Web Development for Startups &amp; Growing Businesses</PageH1>
             <Hero />
             <PartnerSection />
             <About />
             <ServiceSection hclass={'service-section section-padding'} />
+            <HomeSeoSection />
             <MarqueeSection />
             <ProjectSection hclass={'project-section section-padding'} limit={6} />
             <MarqueeSectionS2 />

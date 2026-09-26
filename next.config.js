@@ -2,6 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  trailingSlash: false,
   images: {
     formats: ["image/avif", "image/webp"],
     deviceSizes: [640, 750, 828, 1080, 1200],
@@ -15,6 +16,16 @@ const nextConfig = {
       {
         source: "/home",
         destination: "/",
+        statusCode: 301,
+      },
+      {
+        source: "/services",
+        destination: "/service",
+        statusCode: 301,
+      },
+      {
+        source: "/projects",
+        destination: "/project",
         statusCode: 301,
       },
       {

@@ -61,7 +61,7 @@ const HeraderAbout = () => {
                         </div>
                         <div className="contact">
                             <span>Location</span>
-                            <h6>Remote-first · Worldwide</h6>
+                            <h6>{SITE.locationLabel}</h6>
                         </div>
                     </div>
                 </div>

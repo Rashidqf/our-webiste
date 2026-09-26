@@ -25,6 +25,13 @@ export default function ProjectSeoIntro() {
           </Link>{' '}
           to discuss your product roadmap.
         </p>
+        <p>
+          For teams in Karachi exploring remote product development, read how Ryzonix serves{' '}
+          <Link href="/karachi" onClick={ClickHandler} title="Software development services for Karachi teams">
+            businesses in Karachi, Pakistan
+          </Link>{' '}
+          and start a conversation about your own product.
+        </p>
       </div>
     </section>
   );

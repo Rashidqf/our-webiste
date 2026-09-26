@@ -1,4 +1,16 @@
 	/*10. contact-page */
+	.contact-page__heading {
+		margin-bottom: 40px;
+		color: #0A1222;
+		font-size: 44px;
+		font-weight: 700;
+		text-transform: capitalize;
+
+		@media (max-width: 767px) {
+			font-size: 35px;
+		}
+	}
+
 	.office-info {
 		padding-bottom: 120px;
 		margin: 0 -10px;

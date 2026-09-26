@@ -5,6 +5,7 @@ import Submitbtn from '/public/images/widget-search-btn.svg';
 import Shape from '/public/images/f-shape.png';
 import Image from 'next/image';
 import BrandGearIcon from '../icons/BrandGearIcon';
+import { SITE } from '../../lib/seo/site';
 
 const FooterS3 = () => {
     const [email, setEmail] = useState('');
@@ -46,7 +47,7 @@ const FooterS3 = () => {
                     <div className="wraper">
                         <h2 className="scroll-text-animation">
                             <span>Start a project</span> <br /> write us at <span className="color">
-                                sales@ryzonix.pro</span>
+                                {SITE.email}</span>
                         </h2>
                         <Link onClick={ClickHandler} href="/contact" className="topbar-btn scroll-text-animation btn-wrapper btn-move"
                             data-animation="fade_from_bottom">contact
@@ -98,10 +99,10 @@ const FooterS3 = () => {
                     <div className="item fade_bottom">
                         <h2 className="title">Contact info</h2>
                         <ul>
-                            <li>Ryzonix</li>
-                            <li>Remote-first · Worldwide</li>
-                            <li><a href="https://www.ryzonix.pro">www.ryzonix.pro</a></li>
-                            <li><a href="mailto:sales@ryzonix.pro">sales@ryzonix.pro</a></li>
+                            <li>{SITE.name}</li>
+                            <li>{SITE.locationLabel}</li>
+                            <li><a href={`${SITE.url}/`}>www.ryzonix.pro</a></li>
+                            <li><a href={`mailto:${SITE.email}`}>{SITE.email}</a></li>
                             <li>IT Services &amp; IT Consulting</li>
                         </ul>
                     </div>
@@ -112,16 +113,16 @@ const FooterS3 = () => {
                 <div className="container">
                     <div className="row align-items-center g-0">
                         <div className="col-lg-5 col-12">
-                            <p className="copyright">Copyright &copy; <span>{new Date().getFullYear()}</span> Ryzonix. All rights reserved.</p>
+                            <p className="copyright">Copyright &copy; <span>{new Date().getFullYear()}</span> {SITE.name}. All rights reserved.</p>
                         </div>
                         <div className="col-lg-3 col-12 text-center">
-                            <p>Saturday - Thursday</p>
+                            <p>{SITE.locationLabel}</p>
                         </div>
                         <div className="col-lg-4 col-12">
                             <ul className="widget-social">
-                                <li><Link href="https://www.facebook.com/ryzonix.pro" target="_blank" rel="noopener noreferrer" title="Ryzonix on Facebook"><i className="ti-facebook"></i></Link></li>
-                                <li><Link href="https://www.instagram.com/ryz0nix/" target="_blank" rel="noopener noreferrer" title="Ryzonix on Instagram"><i className="ti-instagram"></i></Link></li>
-                                <li><Link href="https://www.linkedin.com/company/ryzonix/" target="_blank" rel="noopener noreferrer" title="Ryzonix on LinkedIn"><i className="ti-linkedin"></i></Link></li>
+                                <li><Link href={SITE.social.facebook} target="_blank" rel="noopener noreferrer" title="Ryzonix on Facebook"><i className="ti-facebook"></i></Link></li>
+                                <li><Link href={SITE.social.instagram} target="_blank" rel="noopener noreferrer" title="Ryzonix on Instagram"><i className="ti-instagram"></i></Link></li>
+                                <li><Link href={SITE.social.linkedin} target="_blank" rel="noopener noreferrer" title="Ryzonix on LinkedIn"><i className="ti-linkedin"></i></Link></li>
                             </ul>
                         </div>
                     </div>

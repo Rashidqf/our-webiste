@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { SITE } from '../../lib/seo/site';
 
 const ClickHandler = () => window.scrollTo(10, 0);
 
@@ -8,13 +9,18 @@ export default function HomeSeoSection() {
     <section className="seo-content-section section-padding pt-0" aria-labelledby="home-seo-heading">
       <div className="container">
         <h2 id="home-seo-heading" className="seo-content-section__title">
-          Why businesses choose Ryzonix for web development &amp; IT consulting
+          Remote software development for Karachi and worldwide teams
         </h2>
         <p>
-          <strong>Ryzonix</strong> is your digital partner for{' '}
-          <strong>responsive, secure, and scalable websites</strong>, SaaS applications, and startup MVPs.
-          As a remote-first IT services and consulting team founded in 2025, we help founders, small businesses,
-          and enterprises ship modern products without sacrificing code quality or long-term maintainability.
+          {SITE.description} Founded in 2025, Ryzonix works with founders, small businesses, and enterprises
+          that need maintainable software and a clear path from the first release to ongoing operations.
+        </p>
+        <p>
+          Karachi is an important service market, not a claim of a walk-in office. Read how our{' '}
+          <Link href="/karachi" onClick={ClickHandler} title="Remote software development services for Karachi businesses">
+            remote development work supports Karachi businesses
+          </Link>{' '}
+          or explore the full range of services available to clients worldwide.
         </p>
 
         <h3>Web development, SaaS, MVPs, mobile apps &amp; consulting</h3>

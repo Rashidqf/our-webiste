@@ -7,6 +7,7 @@ import Slide3 from "/public/images/slider/bg-img.jpg";
 import Slide4 from "/public/images/slider/start.svg";
 import Slide5 from "/public/images/slider/bg-shap.svg";
 import Slide6 from "/public/images/slider/round-shape.png";
+import { SITE } from '../../lib/seo/site';
 
 const Hero = () => {
   useEffect(() => {
@@ -65,9 +66,12 @@ const Hero = () => {
                 className="p-style scroll-text-animation"
                 data-animation="fade_from_left"
               >
-                <p>IT Services &amp; IT Consulting · Founded 2025</p>
+                <p>{SITE.locationLabel}</p>
                 <i className="ti-arrow-top-right" aria-hidden="true"></i>
               </div>
+              <h1 className="hero-seo-h1">
+                Remote software development for Karachi and worldwide businesses
+              </h1>
               <h2
                 className="italic scroll-text-animation"
                 data-animation="fade_from_bottom"

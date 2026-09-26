@@ -9,11 +9,11 @@ export default function ServicePageSeoContent() {
   return (
     <>
       {/* SEO: Service page body copy */}
-      <section className="seo-content-section section-padding" aria-labelledby="services-page-h1">
+      <section className="seo-content-section section-padding" aria-labelledby="services-page-details-title">
         <div className="container">
-          <h1 id="services-page-h1" className="seo-content-section__title">
-            Web Development &amp; IT Consulting Services | Ryzonix
-          </h1>
+          <h2 id="services-page-details-title" className="seo-content-section__title">
+            Detailed service scopes
+          </h2>
           <p className="seo-content-section__lead">
             From custom websites and SaaS platforms to startup MVPs and mobile apps, Ryzonix delivers
             engineering you can scale. See our{' '}
@@ -24,7 +24,10 @@ export default function ServicePageSeoContent() {
             <Link href="/contact" onClick={ClickHandler} title="Contact Ryzonix">
               request a quote
             </Link>
-            .
+              . For teams in Karachi, see our{' '}
+              <Link href="/karachi" onClick={ClickHandler} title="Remote software development for Karachi businesses">
+                remote software development services for Karachi businesses
+              </Link>.
           </p>
 
           {SERVICE_SEO_BLOCKS.map((block) => (

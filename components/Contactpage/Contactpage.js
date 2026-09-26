@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import Shape from '/public/images/contact-img.png'
 import SimpleReactValidator from "simple-react-validator";
 import Image from "next/image";
+import Link from 'next/link';
+import { SITE } from '../../lib/seo/site';
 import {
   WEBMCP_TOOLS,
   respondToAgentFormSubmit,
@@ -66,7 +68,7 @@ const Contactpage = () => {
         <div>
             <section className="contact-page section-padding">
                 <div className="container">
-                    <h1 className="visually-hidden">Contact Ryzonix | Web Development &amp; IT Consulting</h1>
+                    <h1 className="contact-page__heading">Contact Ryzonix</h1>
                     <div className="office-info">
                         <div className="row">
                             <div className="col col-lg-4 col-md-6 col-12">
@@ -77,10 +79,11 @@ const Contactpage = () => {
                                         </div>
                                     </div>
                                     <div className="office-info-text">
-                                        <h2>Website</h2>
+                                        <h2>Service area</h2>
                                         <p>
-                                            <a className="theme-link" href="https://www.ryzonix.pro" target="_blank" rel="noopener noreferrer" title="Ryzonix website">www.ryzonix.pro</a>
-                                            <br />Remote-first · IT Services &amp; Consulting</p>
+                                            {SITE.locationLabel}.{' '}
+                                            <Link href="/karachi">Karachi software development services</Link>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -93,7 +96,8 @@ const Contactpage = () => {
                                     </div>
                                     <div className="office-info-text">
                                         <h2>Connect</h2>
-                                        <p>Message us via the form or on LinkedIn
+                                        <p>Message us via the form or on{' '}
+                                            <a href={SITE.social.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a>
                                             <br />We typically reply within one business day</p>
                                     </div>
                                 </div>
@@ -107,7 +111,7 @@ const Contactpage = () => {
                                     </div>
                                     <div className="office-info-text">
                                         <h2>Email</h2>
-                                        <p><a href="mailto:sales@ryzonix.pro">sales@ryzonix.pro</a></p>
+                                        <p><a href={`mailto:${SITE.email}`}>{SITE.email}</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -202,16 +206,22 @@ const Contactpage = () => {
                 </div>
             </section>
 
-            <section className="map-section" aria-label="Office location map">
-                <h2 className="visually-hidden">Office location map</h2>
-                <div className="wpo-map">
-                    <iframe
-                        title="Ryzonix remote office — worldwide service area map"
-                        width="100%"
-                        height="450"
-                        loading="lazy"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.9147703055!2d-74.11976314309273!3d40.69740344223377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sbd!4v1547528325671"
-                        allowFullScreen></iframe>
+            <section className="seo-content-section section-padding" aria-labelledby="contact-service-area-heading">
+                <div className="container">
+                    <h2 id="contact-service-area-heading">Remote-first support for Karachi and worldwide teams</h2>
+                    <p>
+                        Ryzonix works remotely with businesses in Karachi, Pakistan, and clients worldwide.
+                        No physical office address is published on this site. Project discussions and delivery are
+                        arranged online, and you can reach the team through this form or by email at{' '}
+                        <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.
+                    </p>
+                    <p>
+                        Tell us what you are building, what stage you are at, and the kind of support you need.
+                        We typically reply within one business day.
+                    </p>
+                    <p>
+                        Learn about our <Link href="/karachi">remote software development services for Karachi teams</Link>.
+                    </p>
                 </div>
             </section>
 

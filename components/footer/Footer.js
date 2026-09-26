@@ -5,12 +5,14 @@ import Services from '../../api/Services';
 import FLoGo from '/public/images/logo.png'
 import BrandStarIcon from '../icons/BrandStarIcon'
 import Image from 'next/image';
+import { SITE } from '../../lib/seo/site';
 
 const RYZONIX_SERVICES = Services.slice(0, 6);
 
 const footerInfoLinks = [
     { title: 'About', href: '/about' },
     { title: 'Services', href: '/service' },
+    { title: 'Karachi Services', href: '/karachi' },
     { title: 'Projects', href: '/project' },
     { title: 'Blog', href: '/blog' },
     { title: 'Contact', href: '/contact' },
@@ -67,13 +69,13 @@ const Footer = (props) => {
                         </ul>
                     </div>
                     <div className="item widget-contact fade_bottom">
-                        <h2 className="title">RYZONIX</h2>
-                        <h3>Remote-first · IT Services &amp; IT Consulting</h3>
-                        <h4><a className="theme-link" href="mailto:sales@ryzonix.pro">sales@ryzonix.pro</a></h4>
+                        <h2 className="title">{SITE.name}</h2>
+                        <h3>{SITE.locationLabel} · IT Services &amp; IT Consulting</h3>
+                        <h4><a className="theme-link" href={`mailto:${SITE.email}`}>{SITE.email}</a></h4>
                         <ul className="widget-social">
-                            <li><Link href="https://www.facebook.com/ryzonix.pro" target="_blank" rel="noopener noreferrer" title="Ryzonix on Facebook"><i className="ti-facebook"></i></Link></li>
-                            <li><Link href="https://www.instagram.com/ryz0nix/" target="_blank" rel="noopener noreferrer" title="Ryzonix on Instagram"><i className="ti-instagram"></i></Link></li>
-                            <li><Link href="https://www.linkedin.com/company/ryzonix/" target="_blank" rel="noopener noreferrer" title="Ryzonix on LinkedIn"><i className="ti-linkedin"></i></Link></li>
+                            <li><Link href={SITE.social.facebook} target="_blank" rel="noopener noreferrer" title="Ryzonix on Facebook"><i className="ti-facebook"></i></Link></li>
+                            <li><Link href={SITE.social.instagram} target="_blank" rel="noopener noreferrer" title="Ryzonix on Instagram"><i className="ti-instagram"></i></Link></li>
+                            <li><Link href={SITE.social.linkedin} target="_blank" rel="noopener noreferrer" title="Ryzonix on LinkedIn"><i className="ti-linkedin"></i></Link></li>
                         </ul>
                     </div>
 

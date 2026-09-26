@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import footetlogo from '/public/images/f-logo.svg'
 import Image from 'next/image';
+import { SITE } from '../../lib/seo/site';
 
 
 
@@ -26,11 +27,11 @@ const FooterS2 = () => {
                     <div className="left-widget">
                         <div className="widget-contact">
                             <div className="title">
-                                <h2>Ryzonix <i className="ti-arrow-down"></i></h2>
-                                <p>Remote-first · IT Services &amp; IT Consulting
-                                    <br /><a href="https://www.ryzonix.pro">www.ryzonix.pro</a></p>
+                                <h2>{SITE.name} <i className="ti-arrow-down"></i></h2>
+                                <p>{SITE.locationLabel} · IT Services &amp; IT Consulting
+                                    <br /><a href={`${SITE.url}/`}>www.ryzonix.pro</a></p>
                             </div>
-                            <h3><a href="mailto:sales@ryzonix.pro">sales@ryzonix.pro</a></h3>
+                            <h3><a href={`mailto:${SITE.email}`}>{SITE.email}</a></h3>
                         </div>
                         <div className="widget-contact">
                             <div className="title">
@@ -43,17 +44,17 @@ const FooterS2 = () => {
                     </div>
                     <div className="right-widget">
                         <div className="contact-map">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.9147703055!2d-74.11976314309273!3d40.69740344223377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sbd!4v1547528325671"
-                                allowFullScreen></iframe>
+                            <h3>Remote service area</h3>
+                            <p>{SITE.locationLabel}. There is no public office location listed on this site.</p>
+                            <Link href="/karachi">Software development services for Karachi teams</Link>
                         </div>
                         <nav className="f-menu">
                             <ul>
-                                <li><Link onClick={ClickHandler} href="#" className="rolling-text">SOLUTIONS</Link></li>
-                                <li><Link onClick={ClickHandler} href="#" className="rolling-text">WORKS</Link></li>
-                                <li><Link onClick={ClickHandler} href="#" className="rolling-text">INSIGHTS</Link></li>
-                                <li><Link onClick={ClickHandler} href="#" className="rolling-text">ABOUT</Link></li>
-                                <li><Link onClick={ClickHandler} href="#" className="rolling-text">WE HIRE</Link></li>
+                                <li><Link onClick={ClickHandler} href="/service" className="rolling-text">SERVICES</Link></li>
+                                <li><Link onClick={ClickHandler} href="/project" className="rolling-text">WORK</Link></li>
+                                <li><Link onClick={ClickHandler} href="/blog" className="rolling-text">INSIGHTS</Link></li>
+                                <li><Link onClick={ClickHandler} href="/about" className="rolling-text">ABOUT</Link></li>
+                                <li><Link onClick={ClickHandler} href="/contact" className="rolling-text">CONTACT</Link></li>
                             </ul>
                         </nav>
                     </div>
@@ -62,17 +63,16 @@ const FooterS2 = () => {
                     <div className="container">
                         <div className="row align-items-center g-0">
                             <div className="col-lg-5 col-12">
-                                <p className="copyright">Copyright &copy; <span>{new Date().getFullYear()}</span> Ryzonix. All rights reserved.</p>
+                                <p className="copyright">Copyright &copy; <span>{new Date().getFullYear()}</span> {SITE.name}. All rights reserved.</p>
                             </div>
                             <div className="col-lg-3 col-12">
-                                <p>Saturday - Thursday</p>
+                                <p>{SITE.locationLabel}</p>
                             </div>
                             <div className="col-lg-4 col-12">
                                 <ul className="widget-social">
-                                    <li><Link onClick={ClickHandler} href="#"><i className="ti-facebook"></i></Link></li>
-                                    <li><Link onClick={ClickHandler} href="#"><i className="ti-twitter-alt"></i></Link></li>
-                                    <li><Link onClick={ClickHandler} href="#"><i className="ti-instagram"></i></Link></li>
-                                    <li><Link onClick={ClickHandler} href="#"><i className="ti-linkedin"></i></Link></li>
+                                    <li><Link href={SITE.social.facebook} target="_blank" rel="noopener noreferrer" title="Ryzonix on Facebook"><i className="ti-facebook"></i></Link></li>
+                                    <li><Link href={SITE.social.instagram} target="_blank" rel="noopener noreferrer" title="Ryzonix on Instagram"><i className="ti-instagram"></i></Link></li>
+                                    <li><Link href={SITE.social.linkedin} target="_blank" rel="noopener noreferrer" title="Ryzonix on LinkedIn"><i className="ti-linkedin"></i></Link></li>
                                 </ul>
                             </div>
                         </div>

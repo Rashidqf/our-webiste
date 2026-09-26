@@ -1594,14 +1594,6 @@
 		display: none;
 	}
 
-	.container-fluid {
-		margin-right: -23px;
-
-		@media(max-width:991px) {
-			margin-right: 0;
-		}
-	}
-
 	.header-right .close-form .theme-btn {
 		padding: 35px 53px;
 		background: $light-grern;

@@ -4,7 +4,6 @@ import ProjectSeoIntro from '../../components/seo/ProjectSeoIntro';
 import { PAGE_META } from '../../lib/seo/pageMeta';
 import { buildBreadcrumbJsonLd } from '../../lib/seo/breadcrumbs';
 import NavbarS2 from '../../components/NavbarS2/NavbarS2';
-import PageH1 from '../../components/seo/PageH1';
 import ProjectSection from '../../components/ProjectSection/ProjectSection';
 import ContactSectionS2 from '../../components/ContactSectionS2/ContactSectionS2';
 import Footer from '../../components/footer/Footer';
@@ -26,8 +25,7 @@ const ProjectPage = () => {
                 jsonLd={[buildBreadcrumbJsonLd([{ name: 'Portfolio', path: '/project' }])]}
             />
             <NavbarS2 hclass={'wpo-site-header wpo-site-header-s4'} Logo={Logo} />
-            <PageH1 id="portfolio-page-h1">Portfolio &amp; Case Studies | Ryzonix</PageH1>
-            {/* <ProjectSeoIntro /> */}
+            <ProjectSeoIntro />
             <ProjectSection hclass={'project-section section-padding pb-0'} />
             <ContactSectionS2 />
             <Footer hclass={'footer-section section-padding pb-0'} />
