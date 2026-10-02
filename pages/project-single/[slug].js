@@ -1,5 +1,4 @@
 import React, { Fragment } from "react";
-import { useRouter } from "next/router";
 import Link from "next/link";
 import Image from "next/image";
 import SeoHead from "../../components/seo/SeoHead";
@@ -11,9 +10,7 @@ import Footer from "../../components/footer/Footer";
 import Scrollbar from "../../components/scrollbar/scrollbar";
 import Logo from "/public/images/logo.png";
 
-const ProjectSingle = () => {
-    const router = useRouter();
-    const slug = router.query.slug;
+const ProjectSingle = ({ slug }) => {
     const project = Projects.find((item) => item.slug === slug);
     const idx = Projects.findIndex((item) => item.slug === slug);
     const prevProject = idx > 0 ? Projects[idx - 1] : null;
@@ -22,10 +19,6 @@ const ProjectSingle = () => {
     const ClickHandler = () => {
         window.scrollTo(10, 0);
     };
-
-    if (!router.isReady) {
-        return null;
-    }
 
     if (!project) {
         return (
@@ -247,4 +240,23 @@ const ProjectSingle = () => {
         </Fragment>
     );
 };
+
+export async function getStaticPaths() {
+    return {
+        paths: Projects.map((project) => ({ params: { slug: project.slug } })),
+        fallback: false,
+    };
+}
+
+export async function getStaticProps({ params }) {
+    const slug = params?.slug;
+    const project = Projects.find((item) => item.slug === slug);
+
+    if (!project) {
+        return { notFound: true };
+    }
+
+    return { props: { slug } };
+}
+
 export default ProjectSingle;
