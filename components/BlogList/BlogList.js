@@ -42,23 +42,23 @@ const BlogList = (props) => {
               )}
 
               {blogs.map((blog) => (
-                <Link
-                href={`/blog-single/${encodeURIComponent(blog.slug)}`}
-                key={blog.id || blog.slug}
-                className="text-decoration-none cursor-pointer"
-              >
                 <div
                   className={`post format-standard-image ${blog.blClass || ""}`}
                   key={blog.id || blog.slug}
                 >
                   <div className="entry-media">
-                    <Image
-                      src={blog.bloggrid}
-                      alt=""
-                      width={850}
-                      height={560}
-                      sizes="(max-width: 768px) 100vw, 850px"
-                    />
+                    <Link
+                      href={`/blog-single/${encodeURIComponent(blog.slug)}`}
+                      aria-label={`Read ${blog.title2 || blog.title}`}
+                    >
+                      <Image
+                        src={blog.bloggrid}
+                        alt=""
+                        width={850}
+                        height={560}
+                        sizes="(max-width: 768px) 100vw, 850px"
+                      />
+                    </Link>
                     <span>
                       {blog.day || "--"}
                       <br />
@@ -110,7 +110,6 @@ const BlogList = (props) => {
                     </Link>
                   </div>
                 </div>
-                </Link>
               ))}
 
               {totalPages > 1 && (

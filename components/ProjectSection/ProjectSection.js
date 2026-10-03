@@ -48,7 +48,7 @@ const ProjectSection = (props) => {
                                         style={{ width: "100%", height: "auto" }}
                                     />
                                     <div className="text">
-                                        <h2><Link onClick={ClickHandler} href={`/project-single/${project.slug}`} title={`View ${project.title} case study`}>{project.title}</Link></h2>
+                                        <h2>{project.title}</h2>
                                         <div className="project-tags">
                                             {(project.tags || []).slice(0, 2).map((tag) => (
                                                 <span key={tag}>{tag}</span>
