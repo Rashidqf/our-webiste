@@ -1,45 +1,62 @@
 import Link from 'next/link';
-import { SITE } from '../../lib/seo/site';
 
 const ClickHandler = () => window.scrollTo(10, 0);
 
-/** Keyword-rich home copy (300+ words) — complements hero visuals */
+/** Supporting home copy for Pakistan-wide software development services. */
 export default function HomeSeoSection() {
   return (
     <section className="seo-content-section section-padding pt-0" aria-labelledby="home-seo-heading">
       <div className="container">
         <h2 id="home-seo-heading" className="seo-content-section__title">
-          Remote software development for Karachi and worldwide teams
+          Software development for Pakistan and worldwide teams
         </h2>
         <p>
-          {SITE.description} Founded in 2025, Ryzonix works with founders, small businesses, and enterprises
-          that need maintainable software and a clear path from the first release to ongoing operations.
+          Ryzonix is a remote-first software development company in Pakistan. We build custom websites,
+          web applications, SaaS products, and mobile apps for founders, small businesses, and established
+          teams, supporting projects from discovery through deployment and ongoing maintenance.
         </p>
         <p>
-          Karachi is an important service market, not a claim of a walk-in office. Read how our{' '}
+          For Karachi teams, our work is remote rather than a walk-in office service. Read how we support{' '}
           <Link href="/karachi" onClick={ClickHandler} title="Remote software development services for Karachi businesses">
-            remote development work supports Karachi businesses
+            software development projects for Karachi businesses
           </Link>{' '}
           or explore the full range of services available to clients worldwide.
         </p>
 
         <h3>Web development, SaaS, MVPs, mobile apps &amp; consulting</h3>
         <p>
-          Our <Link href="/service" onClick={ClickHandler} title="View all Ryzonix services">
-            custom web development services
+          Our <Link href="/service-single/Web-Development" onClick={ClickHandler} title="Custom web development services">
+            custom web development
           </Link>{' '}
-          cover marketing sites, customer portals, and full-stack web apps. We build{' '}
-          <strong>SaaS applications</strong> with authentication, billing hooks, and observability;
-          deliver <strong>startup MVPs</strong> that validate ideas quickly; and extend products with{' '}
-          <strong>mobile app development</strong> aligned to your APIs. When you need direction before build,
-          our <strong>tech consulting</strong> clarifies architecture, security, and stack choices.
+          covers marketing sites, customer portals, and full-stack web apps. We build{' '}
+          <Link href="/service-single/SaaS-Applications" onClick={ClickHandler}>SaaS applications</Link>{' '}
+          with authentication, billing hooks, and observability; deliver{' '}
+          <Link href="/service-single/Startup-MVPs" onClick={ClickHandler}>startup MVPs</Link>{' '}
+          that validate ideas quickly; and extend products with{' '}
+          <Link href="/service-single/Mobile-App-Development" onClick={ClickHandler}>mobile app development</Link>{' '}
+          aligned to your APIs. Our{' '}
+          <Link href="/service-single/Tech-Consulting" onClick={ClickHandler}>IT consulting</Link>{' '}
+          helps clarify architecture, security, and stack choices before a build.
+        </p>
+
+        <p>
+          Our portfolio also shows AI product development and integration, including recruitment automation
+          and conversational products.{' '}
+          <Link href="/project" onClick={ClickHandler} title="AI and software development case studies">
+            Explore AI and software case studies
+          </Link>.
         </p>
 
         <h3>Clean code, secure delivery, scalable architecture</h3>
         <ul>
           <li>Responsive, mobile-first interfaces that perform on real devices</li>
           <li>Security-minded defaults, sensible auth, and maintainable APIs</li>
-          <li>Scalable structure and DevOps-ready deployment pipelines</li>
+          <li>
+            Scalable structure and{' '}
+            <Link href="/service-single/Deployment-Maintenance" onClick={ClickHandler}>
+              DevOps-ready deployment and maintenance
+            </Link>
+          </li>
           <li>Transparent communication for startups and enterprise stakeholders</li>
         </ul>
         <p>

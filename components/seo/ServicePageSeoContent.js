@@ -33,7 +33,7 @@ export default function ServicePageSeoContent() {
           {SERVICE_SEO_BLOCKS.map((block) => (
             <article key={block.id} className="seo-service-block" id={`service-${block.slug}`}>
               <h2>{block.title}</h2>
-              <p>{block.description}</p>
+              <p>{block.summary}</p>
               <h3>Key benefits</h3>
               <ul>
                 {block.benefits.map((benefit) => (

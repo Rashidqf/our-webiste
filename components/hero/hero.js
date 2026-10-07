@@ -70,7 +70,7 @@ const Hero = () => {
                 <i className="ti-arrow-top-right" aria-hidden="true"></i>
               </div>
               <h1 className="hero-seo-h1">
-                Remote software development for Karachi and worldwide businesses
+                Software development company in Pakistan, serving teams worldwide
               </h1>
               <h2
                 className="italic scroll-text-animation"

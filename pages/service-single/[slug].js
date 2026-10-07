@@ -10,6 +10,7 @@ import NavbarS2 from '../../components/NavbarS2/NavbarS2';
 import VideoModal from '../../components/ModalVideo/VideoModal';
 import { useRouter } from 'next/router'
 import Services from '../../api/Services';
+import { SERVICE_SEO_BLOCKS } from '../../lib/seo/serviceContent';
 import Video from '/public/images/service-single/video.jpg'
 import Footer from '../../components/footer/Footer';
 import Scrollbar from '../../components/scrollbar/scrollbar';
@@ -26,13 +27,15 @@ const ServiceSinglePage = ({ slug }) => {
     const resolvedSlug = slug || router.query.slug
 
     const serviceDetails = Services.find(item => item.slug === resolvedSlug)
+    const seoBlock = SERVICE_SEO_BLOCKS.find(item => item.slug === resolvedSlug)
     const isFeatured = serviceDetails && Number(serviceDetails.Id) <= 6;
-    const pageTitle = serviceDetails
+    const pageTitle = seoBlock?.seoTitle || (serviceDetails
         ? formatTitle(serviceDetails.title)
-        : formatTitle('Service');
-    const pageDescription = serviceDetails
+        : formatTitle('Service'));
+    const pageDescription = seoBlock?.metaDescription || (serviceDetails
         ? `${serviceDetails.description.slice(0, 140)}… Contact Ryzonix for a quote.`
-        : 'Ryzonix web development and IT consulting services.';
+        : 'Ryzonix web development and IT consulting services.');
+    const pageKeywords = seoBlock?.keywords.join(', ') || `${serviceDetails?.title || 'service'}, Ryzonix, web development, IT consulting`;
     const canonicalPath = serviceDetails
         ? `/service-single/${serviceDetails.slug}`
         : (resolvedSlug ? `/service-single/${resolvedSlug}` : '/service');
@@ -74,7 +77,7 @@ const ServiceSinglePage = ({ slug }) => {
             <SeoHead
                 title={pageTitle}
                 description={pageDescription}
-                keywords={`${serviceDetails?.title || 'service'}, Ryzonix, web development, IT consulting`}
+                keywords={pageKeywords}
                 canonicalPath={canonicalPath}
                 jsonLd={jsonLd}
             />
@@ -95,9 +98,9 @@ const ServiceSinglePage = ({ slug }) => {
                                         />
                                     ) : null}
                                 </div>
-                                <h1 className='poort-text poort-in-right'>{serviceDetails?.title || 'Service'}</h1>
-                                <p>{serviceDetails?.description}</p>
-                                <h3 className="poort-text poort-in-right">How Ryzonix delivers</h3>
+                                <h1 className='poort-text poort-in-right'>{seoBlock?.h1 || serviceDetails?.title || 'Service'}</h1>
+                                <p>{seoBlock?.description || serviceDetails?.description}</p>
+                                <h2 className="poort-text poort-in-right">How Ryzonix delivers</h2>
                                 <p>At Ryzonix we combine clear discovery, pragmatic architecture, and iterative delivery.
                                     Whether you are a startup validating an MVP or an established team modernizing a platform,
                                     we focus on responsive UX, secure patterns, and code you can extend—backed by sensible
@@ -124,6 +127,24 @@ const ServiceSinglePage = ({ slug }) => {
                                     Explore our <a href="/service" title="All Ryzonix services">services</a> and{' '}
                                     <a href="/project" title="Ryzonix portfolio">portfolio</a>, or email{' '}
                                     <a href={`mailto:${SITE.email}`} className="theme-link">{SITE.email}</a>.</p>
+                                {seoBlock?.relatedServices?.length ? (
+                                    <section aria-labelledby="related-services-title">
+                                        <h2 id="related-services-title">Related services</h2>
+                                        <ul>
+                                            {seoBlock.relatedServices.map((relatedSlug) => {
+                                                const relatedService = Services.find(item => item.slug === relatedSlug);
+                                                if (!relatedService) return null;
+                                                return (
+                                                    <li key={relatedSlug}>
+                                                        <Link href={`/service-single/${relatedService.slug}`}>
+                                                            {relatedService.title}
+                                                        </Link>
+                                                    </li>
+                                                );
+                                            })}
+                                        </ul>
+                                    </section>
+                                ) : null}
                                 {isFeatured ? (
                                     <p>
                                         For Karachi teams looking for a remote product partner, read about{' '}

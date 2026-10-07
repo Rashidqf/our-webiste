@@ -10,9 +10,9 @@ import { SITE } from '../../lib/seo/site';
 import Services from '../../api/Services';
 import Logo from '/public/images/logo.png';
 
-const TITLE = `Software Development Company Serving Karachi | ${SITE.name}`;
+const TITLE = `Software Development Company in Karachi | Remote-First ${SITE.name}`;
 const DESCRIPTION =
-  'Remote software development and IT consulting for Karachi businesses. Web, custom software, mobile apps, SaaS, startup MVPs, deployment and support.';
+  'Looking for a software development company in Karachi? Ryzonix works remotely with Karachi teams on custom software, web and mobile apps, SaaS, MVPs, and ongoing support.';
 const PAGE_PATH = '/karachi';
 
 const SERVICE_CONTEXT = {
@@ -99,7 +99,7 @@ const KarachiPage = () => (
     <SeoHead
       title={TITLE}
       description={DESCRIPTION}
-      keywords="software development Karachi, web development company Karachi, mobile app development Karachi, SaaS development Karachi, MVP development Karachi, IT consulting Karachi, web development Pakistan"
+      keywords="software development company Karachi, web development company Karachi, IT consulting Karachi, software development services Karachi"
       canonicalPath={PAGE_PATH}
       jsonLd={pageSchemas}
     />
@@ -112,12 +112,13 @@ const KarachiPage = () => (
           </nav>
           <p className="hero-seo-tagline">Karachi, Pakistan · Remote-first · Worldwide</p>
           <h1 id="karachi-page-title" className="seo-content-section__title">
-            Software development for Karachi businesses
+            Software Development Company in Karachi
           </h1>
           <p className="seo-content-section__lead">
-            Ryzonix works remotely with startups, small businesses, and established teams in Karachi and
-            around the world. We help turn product plans into websites, custom software, mobile apps, and
-            SaaS products, then support the work through deployment and ongoing maintenance.
+            Ryzonix is a remote-first software development company serving businesses in Karachi and across
+            Pakistan. We work with startups, small businesses, and established teams around the world to turn
+            product plans into websites, custom software, mobile apps, and SaaS products, with support through
+            deployment and ongoing maintenance.
           </p>
           <p>
             There is no public Karachi office listed on this site. The engagement is remote: start with a
