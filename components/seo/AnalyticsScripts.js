@@ -15,8 +15,9 @@ const GSC_VERIFICATION = normalizeGscVerification(
 );
 
 const BING_VERIFICATION = process.env.NEXT_PUBLIC_BING_VERIFICATION;
+const CLARITY_ID = process.env.NEXT_PUBLIC_CLARITY_ID || "z2xud7726m";
 
-/** GA4, Search Console verification, Facebook Pixel — enable via .env */
+/** GA4, Search Console verification, Clarity, Facebook Pixel — enable via .env */
 export default function AnalyticsScripts() {
   return (
     <>
@@ -73,6 +74,18 @@ export default function AnalyticsScripts() {
             />
           </noscript>
         </>
+      ) : null}
+
+      {CLARITY_ID ? (
+        <Script id="microsoft-clarity" strategy="afterInteractive">
+          {`
+            (function(c,l,a,r,i,t,y){
+              c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+              t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i+"?ref=bwt";
+              y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            })(window, document, "clarity", "script", "${CLARITY_ID}");
+          `}
+        </Script>
       ) : null}
     </>
   );
