@@ -7,7 +7,7 @@ const http = require("http");
 const { CANONICAL_ORIGIN } = require("../lib/seo/siteUrl.cjs");
 
 const INDEXNOW_KEY =
-  process.env.INDEXNOW_KEY || "daea32186e60313c979e8b6880efa285";
+  process.env.INDEXNOW_KEY || "25bfd12b435b4db0acb0c2aa37af1de5";
 const KEY_LOCATION = `${CANONICAL_ORIGIN}/${INDEXNOW_KEY}.txt`;
 const HOST = new URL(CANONICAL_ORIGIN).hostname;
 
