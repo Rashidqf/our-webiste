@@ -1,0 +1,25 @@
+{
+  "catalog_version": "1.0",
+  "publisher": {
+    "name": "Ryzonix",
+    "url": "https://www.ryzonix.pro",
+    "contact": "sales@ryzonix.pro"
+  },
+  "resources": [
+    {
+      "title": "Ryzonix Machine-Readable Documentation",
+      "type": "text/plain",
+      "url": "https://www.ryzonix.pro/llms.txt"
+    },
+    {
+      "title": "Ryzonix Full Knowledge Base",
+      "type": "text/plain",
+      "url": "https://www.ryzonix.pro/llms-full.txt"
+    },
+    {
+      "title": "XML Sitemap",
+      "type": "application/xml",
+      "url": "https://www.ryzonix.pro/sitemap.xml"
+    }
+  ]
+}

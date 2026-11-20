@@ -53,7 +53,7 @@ const Footer = (props) => {
                         </div>
                     </div>
                     <div className="item fade_bottom">
-                        <h2 className="title">Information</h2>
+                        <div className="title">Information</div>
                         <ul>
                             {footerInfoLinks.map((link) => (
                                 <li key={link.href}>
@@ -69,8 +69,8 @@ const Footer = (props) => {
                         </ul>
                     </div>
                     <div className="item widget-contact fade_bottom">
-                        <h2 className="title">{SITE.name}</h2>
-                        <h3>{SITE.locationLabel} · IT Services &amp; IT Consulting</h3>
+                        <div className="title">{SITE.name}</div>
+                        <p className="contact-sub" style={{ color: '#fff', fontSize: '18px', fontWeight: 500, textTransform: 'lowercase', marginBottom: '15px' }}>{SITE.locationLabel} · IT Services &amp; IT Consulting</p>
                         <h4><a className="theme-link" href={`mailto:${SITE.email}`}>{SITE.email}</a></h4>
                         <ul className="widget-social">
                             <li><Link href={SITE.social.facebook} target="_blank" rel="noopener noreferrer" title="Ryzonix on Facebook"><i className="ti-facebook"></i></Link></li>

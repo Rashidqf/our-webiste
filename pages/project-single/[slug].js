@@ -4,6 +4,7 @@ import Image from "next/image";
 import SeoHead from "../../components/seo/SeoHead";
 import { formatTitle } from "../../lib/seo/site";
 import { buildBreadcrumbJsonLd } from "../../lib/seo/breadcrumbs";
+import { caseStudySchema } from "../../lib/seo/schemas";
 import NavbarS2 from "../../components/NavbarS2/NavbarS2";
 import Projects from "../../api/projects";
 import Footer from "../../components/footer/Footer";
@@ -63,6 +64,7 @@ const ProjectSingle = ({ slug }) => {
                         { name: 'Portfolio', path: '/project' },
                         { name: project.title, path: `/project-single/${project.slug}` },
                     ]),
+                    caseStudySchema(project),
                 ]}
             />
             <NavbarS2 hclass={"wpo-site-header wpo-site-header-s4"} Logo={Logo} />
@@ -74,7 +76,7 @@ const ProjectSingle = ({ slug }) => {
                                 <div className="col-lg-8 col-12">
                                     <div className="section-title poort-text poort-in-right">
                                         <h1>{project.title}</h1>
-                                        <h3>{project.tagline}</h3>
+                                        <h2 className="project-tagline" style={{ fontSize: '48px', fontWeight: 500, lineHeight: '55px', letterSpacing: '-1.44px', marginBottom: '20px' }}>{project.tagline}</h2>
                                         {(project.detailIntro || []).map((para, i) => (
                                             <p key={i}>{para}</p>
                                         ))}

@@ -11,15 +11,15 @@ const MarqueeSection = (props) => {
                     <div className="item">
                         <div>
                             <Image src={StartImg} alt="" />
-                                <h2>web development</h2>
+                                <span className="marquee-item-text">web development</span>
                         </div>
                         <div>
                             <Image src={StartImg} alt="" />
-                                <h2>tech consulting</h2>
+                                <span className="marquee-item-text">tech consulting</span>
                         </div>
                         <div>
                             <Image src={StartImg} alt="" />
-                                <h2>saas &amp; mobile</h2>
+                                <span className="marquee-item-text">saas &amp; mobile</span>
                         </div>
                     </div>
 
@@ -28,15 +28,15 @@ const MarqueeSection = (props) => {
                     <div className="item">
                         <div>
                             <Image src={StartImg} alt="" />
-                                <h2>startup mvps</h2>
+                                <span className="marquee-item-text">startup mvps</span>
                         </div>
                         <div>
                             <Image src={StartImg} alt="" />
-                                <h2>secure architecture</h2>
+                                <span className="marquee-item-text">secure architecture</span>
                         </div>
                         <div>
                             <Image src={StartImg} alt="" />
-                                <h2>scalable websites</h2>
+                                <span className="marquee-item-text">scalable websites</span>
                         </div>
                     </div>
                 </div>

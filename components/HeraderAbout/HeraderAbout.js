@@ -24,8 +24,8 @@ const HeraderAbout = () => {
     return (
 
         <div className="mini-cart">
-            <button className="cart-toggle-btn" onClick={toggleProfile}>
-                <img src={Abouti.src || Abouti} alt="Open contact panel" />
+            <button className="cart-toggle-btn" onClick={toggleProfile} aria-label="Open contact information panel">
+                <img src={Abouti.src || Abouti} alt="Open contact panel" width={29} height={18} />
             </button>
             <div className={`mini-cart-content ${isProfileOpen ? 'mini-cart-content-toggle' : ""}`}>
                 <button className="mini-cart-close"><i className="ti-close" onClick={closeProfile}></i></button>

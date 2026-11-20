@@ -105,8 +105,9 @@ const BlogList = (props) => {
                       onClick={ClickHandler}
                       href={`/blog-single/${encodeURIComponent(blog.slug)}`}
                       className="read-more"
+                      aria-label={`Read article: ${blog.title2 || blog.title}`}
                     >
-                      Read More
+                      Read More <span className="visually-hidden">about {blog.title2 || blog.title}</span>
                     </Link>
                   </div>
                 </div>

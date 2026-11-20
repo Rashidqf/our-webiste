@@ -48,7 +48,7 @@ const ProjectSection = (props) => {
                                         style={{ width: "100%", height: "auto" }}
                                     />
                                     <div className="text">
-                                        <h2>{project.title}</h2>
+                                        <h3 className="project-title">{project.title}</h3>
                                         <div className="project-tags">
                                             {(project.tags || []).slice(0, 2).map((tag) => (
                                                 <span key={tag}>{tag}</span>

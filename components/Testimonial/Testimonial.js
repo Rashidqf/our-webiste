@@ -96,14 +96,14 @@ const Testimonial = (props) => {
                     </svg>
                 </div>
                 <div className="right-shape">
-                    <Image src={rightshape} alt="" />
+                    <Image src={rightshape} alt="Testimonial background shape" />
                 </div>
                 <div className="side-text-slid">
                     <div className="marquee">
-                        <h2>testimonial</h2>
+                        <span className="side-text-item">testimonial</span>
                     </div>
                     <div className="marquee">
-                        <h2>testimonial</h2>
+                        <span className="side-text-item">testimonial</span>
                     </div>
                 </div>
             </div>

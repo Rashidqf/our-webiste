@@ -5,16 +5,16 @@ const MarqueeSectionS3 = () => {
         <section className="marquee-section-s2">
             <div className="marquee_container">
                 <div className="marquee">
-                    <h2>a power house team</h2>
-                    <h2><i className="ti-arrow-top-right"></i> <span>cost effective</span> <i className="ti-arrow-top-right"></i>
-                    </h2>
-                    <h2>problem solving</h2>
+                    <span className="marquee-heading">a power house team</span>
+                    <span className="marquee-heading"><i className="ti-arrow-top-right"></i> <span>cost effective</span> <i className="ti-arrow-top-right"></i>
+                    </span>
+                    <span className="marquee-heading">problem solving</span>
                 </div>
                 <div className="marquee">
-                    <h2>a power house team</h2>
-                    <h2><i className="ti-arrow-top-right"></i> <span>cost effective</span> <i className="ti-arrow-top-right"></i>
-                    </h2>
-                    <h2>problem solving</h2>
+                    <span className="marquee-heading">a power house team</span>
+                    <span className="marquee-heading"><i className="ti-arrow-top-right"></i> <span>cost effective</span> <i className="ti-arrow-top-right"></i>
+                    </span>
+                    <span className="marquee-heading">problem solving</span>
                 </div>
 
             </div>

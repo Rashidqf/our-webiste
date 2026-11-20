@@ -7,21 +7,21 @@ function MarqueeSectionS2(props) {
         <section className="marquee-section fade_bottom">
             <div className="marquee_container">
                 <div className="marquee">
-                    <h2><Image src={StartImg} alt="" /> web development</h2>
-                    <h2><Image src={StartImg} alt="" /> tech consulting</h2>
-                    <h2><Image src={StartImg} alt="" /> startup MVPs</h2>
-                    <h2><Image src={StartImg} alt="" /> SaaS apps</h2>
-                    <h2><Image src={StartImg} alt="" /> mobile apps</h2>
-                    <h2><Image src={StartImg} alt="" /> secure &amp; scalable</h2>
+                    <span className="marquee-item-text"><Image src={StartImg} alt="" /> web development</span>
+                    <span className="marquee-item-text"><Image src={StartImg} alt="" /> tech consulting</span>
+                    <span className="marquee-item-text"><Image src={StartImg} alt="" /> startup MVPs</span>
+                    <span className="marquee-item-text"><Image src={StartImg} alt="" /> SaaS apps</span>
+                    <span className="marquee-item-text"><Image src={StartImg} alt="" /> mobile apps</span>
+                    <span className="marquee-item-text"><Image src={StartImg} alt="" /> secure &amp; scalable</span>
 
                 </div>
                 <div className="marquee">
-                    <h2><Image src={StartImg} alt="" /> full-stack</h2>
-                    <h2><Image src={StartImg} alt="" /> deployment</h2>
-                    <h2><Image src={StartImg} alt="" /> maintenance</h2>
-                    <h2><Image src={StartImg} alt="" /> responsive UI</h2>
-                    <h2><Image src={StartImg} alt="" /> clean code</h2>
-                    <h2><Image src={StartImg} alt="" /> Ryzonix</h2>
+                    <span className="marquee-item-text"><Image src={StartImg} alt="" /> full-stack</span>
+                    <span className="marquee-item-text"><Image src={StartImg} alt="" /> deployment</span>
+                    <span className="marquee-item-text"><Image src={StartImg} alt="" /> maintenance</span>
+                    <span className="marquee-item-text"><Image src={StartImg} alt="" /> responsive UI</span>
+                    <span className="marquee-item-text"><Image src={StartImg} alt="" /> clean code</span>
+                    <span className="marquee-item-text"><Image src={StartImg} alt="" /> Ryzonix</span>
                 </div>
             </div>
         </section>

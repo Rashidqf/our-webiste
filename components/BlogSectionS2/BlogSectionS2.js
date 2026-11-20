@@ -73,9 +73,10 @@ const BlogSectionS2 = () => {
                     <Link
                       onClick={ClickHandler}
                       href={`/blog-single/${encodeURIComponent(blog.slug)}`}
+                      aria-label={`Read full post: ${blog.title}`}
                     >
                       <span className="rolling-text">read more</span>
-                      <i className="ti-arrow-top-right"></i>
+                      <i className="ti-arrow-top-right" aria-hidden="true"></i>
                     </Link>
                   </div>
                 </div>

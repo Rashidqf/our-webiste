@@ -1,0 +1,10 @@
+# SEO: robots.txt — https://www.ryzonix.pro
+User-agent: *
+Allow: /
+
+Disallow: /admin
+Disallow: /private
+Disallow: /internal/
+Disallow: /api/
+
+Sitemap: https://www.ryzonix.pro/sitemap.xml

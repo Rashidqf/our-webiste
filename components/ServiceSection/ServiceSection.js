@@ -73,10 +73,10 @@ const ServiceSection = (props) => {
                                 onMouseEnter={() => handleHover(service)}>
                                 <div className="text">
                                     <span>{service.Subtitle}</span>
-                                    <h2><Link onClick={ClickHandler} href={'/service-single/[slug]'} as={`/service-single/${service.slug}`} title={`${service.title} – Ryzonix`}>{service.title}</Link></h2>
+                                    <h3 className="service-title"><Link onClick={ClickHandler} href={'/service-single/[slug]'} as={`/service-single/${service.slug}`} title={`${service.title} – Ryzonix`}>{service.title}</Link></h3>
                                 </div>
-                                <Link onClick={ClickHandler} href={'/service-single/[slug]'} as={`/service-single/${service.slug}`} className="icon">
-                                    <i className="ti-arrow-top-right"></i>
+                                <Link onClick={ClickHandler} href={'/service-single/[slug]'} as={`/service-single/${service.slug}`} className="icon" aria-label={`Learn more about ${service.title}`} title={`Learn more about ${service.title}`}>
+                                    <i className="ti-arrow-top-right" aria-hidden="true"></i>
                                 </Link>
                                 {/* <div className="image">
                                     <Image src={service.sImg} alt="" />

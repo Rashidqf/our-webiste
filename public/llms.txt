@@ -1,28 +1,35 @@
 # Ryzonix
-> Remote-first IT services and web development company. We build responsive, secure, and scalable websites, SaaS applications, startup MVPs, and mobile apps for startups, SMBs, and enterprises.
 
-## Primary pages
-- [Home](https://www.ryzonix.pro/): Custom web development services for startups and growing businesses
-- [Services](https://www.ryzonix.pro/service): Web development, tech consulting, startup MVPs, SaaS apps, mobile apps, deployment
-- [Portfolio](https://www.ryzonix.pro/project): Case studies and software projects
-- [About](https://www.ryzonix.pro/about): Company overview, team, and approach
-- [Contact](https://www.ryzonix.pro/contact): Request a quote, consultation, or project inquiry
-- [Blog](https://www.ryzonix.pro/blog): Web development, SaaS architecture, and IT consulting articles
+> Remote-first software development and IT consulting company founded in 2025. Ryzonix builds custom websites, SaaS platforms, startup MVPs, and mobile applications for startups, growing businesses, and global enterprises. Contact: sales@ryzonix.pro. Location: Remote-first, serving Karachi, Pakistan and clients worldwide. Social profiles: [LinkedIn](https://www.linkedin.com/company/ryzonix/), [Facebook](https://www.facebook.com/ryzonix.pro), [Instagram](https://www.instagram.com/ryz0nix/). Agent interaction: WebMCP tools `contactRyzonix` on /contact and `requestRyzonixServices` on /service and /project pages.
 
-## Contact
-- Email: sales@ryzonix.pro
-- Website: https://www.ryzonix.pro
-- Location: Remote-first · Worldwide
-- LinkedIn: https://www.linkedin.com/company/ryzonix/
-- Instagram: https://www.instagram.com/ryz0nix/
-- Facebook: https://www.facebook.com/ryzonix.pro
+## Primary Pages
 
-## Agent interaction
-- Contact form (WebMCP tool `contactRyzonix`): https://www.ryzonix.pro/contact
-- Service inquiry form (WebMCP tool `requestRyzonixServices`): available on /service and /project pages
+- [Home](https://www.ryzonix.pro/): Custom software, web development, and digital consulting for global teams
+- [About Us](https://www.ryzonix.pro/about): Company overview, engineering principles, tech stack, and leadership
+- [Services](https://www.ryzonix.pro/service): Full spectrum of web, mobile, SaaS, MVP, and DevOps services
+- [Portfolio](https://www.ryzonix.pro/project): Software case studies, SaaS platforms, and AI product builds
+- [Karachi Software Development](https://www.ryzonix.pro/karachi): Remote software engineering and IT consulting for Karachi businesses
+- [Blog](https://www.ryzonix.pro/blog): Software engineering, cloud architecture, and startup MVP insights
+- [Contact](https://www.ryzonix.pro/contact): Project inquiries, consultations, and quote requests
 
-## Key facts
-- Founded: 2025
-- Industry: IT Services & IT Consulting
-- Team size: 2–10
-- Specialties: custom web development, SaaS, MVP builds, mobile apps, IT consulting
+## Services
+
+- [Custom Web Development](https://www.ryzonix.pro/service-single/Web-Development): Modern responsive web apps, customer portals, and APIs
+- [Tech Consulting](https://www.ryzonix.pro/service-single/Tech-Consulting): Architecture reviews, stack selection, scalability, and security guidance
+- [Startup MVP Development](https://www.ryzonix.pro/service-single/Startup-MVPs): Rapid prototype and MVP delivery for early-stage founders
+- [SaaS Applications](https://www.ryzonix.pro/service-single/SaaS-Applications): Multi-tenant architecture, subscription billing, and cloud observability
+- [Mobile App Development](https://www.ryzonix.pro/service-single/Mobile-App-Development): Native and cross-platform iOS and Android apps with unified APIs
+- [Deployment & Maintenance](https://www.ryzonix.pro/service-single/Deployment-Maintenance): DevOps, CI/CD pipelines, cloud monitoring, backups, and SLAs
+
+## Case Studies
+
+- [Trading Automation System](https://www.ryzonix.pro/project-single/trading-automation-system): Multi-account browser automation and trading infrastructure
+- [SpeakSmart AI](https://www.ryzonix.pro/project-single/speaksmart): Real-time voice and language learning web platform
+- [Pocket Coach AI](https://www.ryzonix.pro/project-single/pocket-coach-ai): Conversational startup coaching and idea viability platform
+- [AI Recruitment Automation](https://www.ryzonix.pro/project-single/ai-powered-recruitment-automation): Middleware integrating AI embeddings with ATS workflows
+- [Daylily Shopify AI Assistant](https://www.ryzonix.pro/project-single/daylily-shopify-ai-assistant): 3D conversational sales assistant for e-commerce stores
+- [Shopify AI Product Designer](https://www.ryzonix.pro/project-single/shopify-ai-product-designer): Interactive generative merchandise design tool
+
+## Optional
+
+- [Full Documentation](https://www.ryzonix.pro/llms-full.txt): Comprehensive technical specifications, API schemas, and company overview

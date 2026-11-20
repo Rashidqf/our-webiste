@@ -1,0 +1,75 @@
+# Ryzonix — Full LLM Documentation & Machine-Readable Knowledge Base
+
+## Executive Overview
+Ryzonix is a remote-first software development and IT consulting agency founded in 2025. The company specializes in custom web development, full-lifecycle SaaS engineering, MVP development for startups, mobile applications, and DevOps consulting. Ryzonix serves businesses in Karachi, Pakistan and clients worldwide across North America, Europe, the UK, and the Middle East.
+
+- Legal Name: Ryzonix
+- Operating Domain: https://www.ryzonix.pro
+- Email: sales@ryzonix.pro
+- Founding Year: 2025
+- Team Size: 2–10 engineers, designers, and technical consultants
+- Primary Industry: IT Services, Custom Software Development & IT Consulting
+- Service Model: Remote-first, asynchronous sprint cycles, milestone pricing, dedicated engineering teams
+
+## Core Services
+
+### 1. Custom Web Development (/service-single/Web-Development)
+- Scope: High-performance marketing websites, customer dashboards, administrative portals, and secure RESTful/GraphQL APIs.
+- Stack: Next.js, React, TypeScript, Tailwind CSS, Node.js, Express, PostgreSQL, MongoDB.
+- Key Capabilities: Responsive mobile-first UI, SSR/SSG rendering, SEO optimization, web accessibility (WCAG 2.1 AA), Core Web Vitals compliance.
+
+### 2. Tech Consulting & Software Architecture (/service-single/Tech-Consulting)
+- Scope: Technical discovery, architectural assessments, framework and database evaluations, security audits, and cloud cost optimization.
+- Deliverables: Architecture diagrams, technical debt reduction roadmaps, cloud infrastructure designs, security checklists.
+
+### 3. Startup MVP Development (/service-single/Startup-MVPs)
+- Scope: Scoping, prototyping, and engineering lean first-release products for founders validating market demand.
+- Approach: Core user journey prioritization, rapid 4-8 week delivery sprints, modular codebases built for production scaling.
+
+### 4. SaaS Application Development (/service-single/SaaS-Applications)
+- Scope: Multi-tenant cloud architectures, tenant isolation, role-based access control (RBAC), subscription billing integrations (Stripe, Lemon Squeezy).
+- Key Capabilities: Webhook processing, usage metering, background job queues, observability, automated onboarding flows.
+
+### 5. Mobile App Development (/service-single/Mobile-App-Development)
+- Scope: Cross-platform mobile applications for iOS and Android sharing common backend API architectures with web products.
+- Stack: React Native, Flutter, Expo, mobile push notifications, offline data synchronization.
+
+### 6. Deployment, DevOps & Maintenance (/service-single/Deployment-Maintenance)
+- Scope: Automated CI/CD pipelines, containerization (Docker), cloud deployment (AWS, Vercel, Google Cloud), uptime monitoring, zero-downtime releases, regular dependency and security patching.
+
+## Portfolio & Selected Case Studies
+
+1. Trading Automation System (/project-single/trading-automation-system)
+   - Domain: FinTech, Browser Automation, High-Frequency Web Automation
+   - Stack: Python, WebSockets, Next.js, React, Redis, Headless Browser Infrastructure
+   - Outcome: Multi-account concurrent trade execution, real-time telemetry dashboard, sub-second latency.
+
+2. SpeakSmart (/project-single/speaksmart)
+   - Domain: EdTech, Real-Time AI Speech Analysis
+   - Stack: React, Next.js, Web Speech API, OpenAI Whisper, WebRTC
+   - Outcome: Interactive conversational language learning with immediate pronunciation and grammar scoring.
+
+3. Pocket Coach AI (/project-single/pocket-coach-ai)
+   - Domain: Business Intelligence, AI Decision Support
+   - Stack: Next.js, Python, Vector Embeddings, LLM Orchestration
+   - Outcome: Guided founder discovery, automated business model evaluation, startup viability metrics.
+
+4. AI-Powered Recruitment Automation (/project-single/ai-powered-recruitment-automation)
+   - Domain: HRTech, Intelligent Candidate Screening
+   - Stack: Python, Pinecone Vector Database, Salesforce API, Node.js
+   - Outcome: Semantic resume matching, automated candidate ranking, 70% reduction in initial applicant screening time.
+
+5. Daylily: Shopify AI Assistant (/project-single/daylily-shopify-ai-assistant)
+   - Domain: E-Commerce, Conversational Commerce
+   - Stack: Three.js (3D Avatar), Shopify Storefront API, Conversational AI
+   - Outcome: 24/7 interactive product recommendation assistant driving higher conversion and customer engagement.
+
+6. Moonline: AI Voice Agent for Restaurants (/project-single/moonline-ai-voice-agent-restaurants)
+   - Domain: Food & Beverage, Voice AI Automation
+   - Stack: Speech-to-Text, Voice Engine, NestJS, PostgreSQL
+   - Outcome: 24/7 autonomous phone call answering, reservation booking, and order-taking with zero missed calls.
+
+## Machine & Agent Interaction Protocols
+- WebMCP Contact Form Tool: `contactRyzonix` on URL `https://www.ryzonix.pro/contact`
+- WebMCP Service Request Tool: `requestRyzonixServices` on URL `https://www.ryzonix.pro/service`
+- Inquiries: Direct agent email queries to `sales@ryzonix.pro`

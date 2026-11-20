@@ -4,15 +4,16 @@ import SeoHead from '../../components/seo/SeoHead';
 import NavbarS2 from '../../components/NavbarS2/NavbarS2';
 import Footer from '../../components/footer/Footer';
 import Scrollbar from '../../components/scrollbar/scrollbar';
+import BrandBlobGlow from '../../components/icons/BrandBlobGlow';
 import { buildBreadcrumbJsonLd } from '../../lib/seo/breadcrumbs';
 import { faqPageSchema, serviceSchema, webPageSchema } from '../../lib/seo/schemas';
 import { SITE } from '../../lib/seo/site';
 import Services from '../../api/Services';
 import Logo from '/public/images/logo.png';
 
-const TITLE = `Software Development Company in Karachi | Remote-First ${SITE.name}`;
+const TITLE = `Software Development Company in Karachi | ${SITE.name}`;
 const DESCRIPTION =
-  'Looking for a software development company in Karachi? Ryzonix works remotely with Karachi teams on custom software, web and mobile apps, SaaS, MVPs, and ongoing support.';
+  'Ryzonix provides software development in Karachi, building custom web and mobile apps, SaaS platforms, MVPs, and cloud solutions for growing teams.';
 const PAGE_PATH = '/karachi';
 
 const SERVICE_CONTEXT = {
@@ -105,124 +106,189 @@ const KarachiPage = () => (
     />
     <NavbarS2 hclass="wpo-site-header wpo-site-header-s4" Logo={Logo} />
     <main>
-      <section className="seo-content-section section-padding" aria-labelledby="karachi-page-title">
+      {/* Hero Banner */}
+      <section className="seo-hero-banner" aria-labelledby="karachi-page-title">
         <div className="container">
-          <nav aria-label="Breadcrumb">
-            <Link href="/">Home</Link> <span aria-hidden="true">/</span> <span aria-current="page">Karachi</span>
+          <nav className="breadcrumb-nav" aria-label="Breadcrumb">
+            <ol>
+              <li><Link href="/">Home</Link></li>
+              <li className="active" aria-current="page">Karachi</li>
+            </ol>
           </nav>
-          <p className="hero-seo-tagline">Karachi, Pakistan · Remote-first · Worldwide</p>
-          <h1 id="karachi-page-title" className="seo-content-section__title">
-            Software Development Company in Karachi
+          <div className="section-eyebrow">
+            <span className="eyebrow-badge">
+              <span className="eyebrow-dot"></span> Remote-First · Karachi &amp; Worldwide
+            </span>
+          </div>
+          <h1 id="karachi-page-title" className="hero-h1">
+            Software Development Company in <span>Karachi</span>
           </h1>
-          <p className="seo-content-section__lead">
+          <p className="hero-lead">
             Ryzonix is a remote-first software development company serving businesses in Karachi and across
             Pakistan. We work with startups, small businesses, and established teams around the world to turn
-            product plans into websites, custom software, mobile apps, and SaaS products, with support through
-            deployment and ongoing maintenance.
+            product plans into websites, custom software, mobile apps, and SaaS products.
           </p>
-          <p>
-            There is no public Karachi office listed on this site. The engagement is remote: start with a
-            clear conversation about your users, goals, constraints, and the next useful release.
-          </p>
-          <Link href="/contact" className="theme-btn" title="Discuss a software project with Ryzonix">
-            <span className="rolling-text">Discuss your project</span>
-            <i className="ti-arrow-top-right" aria-hidden="true"></i>
-          </Link>
+          <div className="hero-actions">
+            <Link href="/contact" className="theme-btn" title="Discuss a software project with Ryzonix">
+              <span className="rolling-text">Discuss your project</span>
+              <i className="ti-arrow-top-right" aria-hidden="true"></i>
+            </Link>
+            <Link href="/project" className="theme-link" title="Explore Ryzonix portfolio">
+              <span className="rolling-text">View Case Studies</span>
+              <i className="ti-arrow-top-right"></i>
+            </Link>
+          </div>
+        </div>
+        <div className="bg-shape">
+          <BrandBlobGlow filterId="karachiHeroBlobFilter" opacity={0.25} />
         </div>
       </section>
 
-      <section className="seo-content-section seo-content-section--light section-padding" aria-labelledby="karachi-services-title">
+      {/* Services for Karachi Teams */}
+      <section className="seo-content-section section-padding" aria-labelledby="karachi-services-title">
         <div className="container">
-          <h2 id="karachi-services-title" className="seo-content-section__title">
-            Product and engineering services for Karachi teams
-          </h2>
-          <p className="seo-content-section__lead">
-            Choose support for a specific release or bring Ryzonix in earlier to clarify the technical
-            approach. Each service below links to its detailed scope.
-          </p>
-          <div className="row">
-            {Services.slice(0, 6).map((service) => (
-              <article className="col-lg-6 seo-service-block" key={service.slug}>
-                <h3>{service.title}</h3>
-                <p>{SERVICE_CONTEXT[service.slug]}</p>
-                <Link
-                  href={`/service-single/${service.slug}`}
-                  title={`${service.title} services from Ryzonix`}
-                >
-                  Explore {service.title.toLowerCase()}
-                </Link>
-              </article>
+          <div className="title scroll-text-animation" data-animation="fade_from_bottom">
+            <div className="section-eyebrow">
+              <span className="eyebrow-badge">
+                <span className="eyebrow-dot"></span> Engineering Capabilities
+              </span>
+            </div>
+            <h2 id="karachi-services-title" className="section-heading">
+              Product &amp; Engineering Services for <span>Karachi Teams</span>
+            </h2>
+            <p className="seo-content-section__lead">
+              Choose support for a specific release or bring Ryzonix in earlier to clarify the technical
+              approach. Each service below links to its detailed scope.
+            </p>
+          </div>
+
+          <div className="row g-4 seo-cards-row">
+            {Services.slice(0, 6).map((service, idx) => (
+              <div className="col-lg-6 col-12" key={service.slug}>
+                <article className="seo-service-block">
+                  <div className="seo-service-block__header">
+                    <span className="seo-service-block__num">0{idx + 1}</span>
+                    <span className="seo-service-block__badge">Service Scope</span>
+                  </div>
+                  <h3 className="seo-service-block__title">
+                    <Link href={`/service-single/${service.slug}`} title={`${service.title} services from Ryzonix`}>
+                      {service.title}
+                    </Link>
+                  </h3>
+                  <p className="seo-service-block__desc">{SERVICE_CONTEXT[service.slug]}</p>
+                  <div className="seo-service-block__footer">
+                    <Link
+                      href={`/service-single/${service.slug}`}
+                      className="theme-btn seo-service-block__cta"
+                      title={`${service.title} services from Ryzonix`}
+                    >
+                      <span className="rolling-text">Explore {service.title}</span>
+                      <i className="ti-arrow-top-right" aria-hidden="true"></i>
+                    </Link>
+                  </div>
+                </article>
+              </div>
             ))}
           </div>
-          <p>
+          <p style={{ marginTop: '24px' }}>
             Custom software work is scoped around the product rather than a fixed package. See all{' '}
             <Link href="/service">Ryzonix software development and IT services</Link> for the full service list.
           </p>
         </div>
       </section>
 
-      <section className="seo-content-section section-padding" aria-labelledby="karachi-process-title">
+      {/* Remote Process & Client Profiles */}
+      <section className="seo-content-section section-padding pt-0" aria-labelledby="karachi-process-title">
         <div className="container">
-          <h2 id="karachi-process-title" className="seo-content-section__title">
-            How remote software delivery works
-          </h2>
-          <ol>
-            <li>
-              <strong>Scope the problem.</strong> Share the product goal, target users, current stage, and
-              constraints through the contact form or email.
-            </li>
-            <li>
-              <strong>Agree the next release.</strong> Ryzonix helps define a practical scope, technical
-              direction, and milestones before implementation.
-            </li>
-            <li>
-              <strong>Build and review iteratively.</strong> Work moves through focused delivery steps with
-              online reviews and clear progress updates.
-            </li>
-            <li>
-              <strong>Launch and support.</strong> Deployment, monitoring, and maintenance can continue after
-              the initial release when the project needs it.
-            </li>
-          </ol>
-          <p>
-            Karachi teams can begin by email or the project inquiry form. The site does not publish a WhatsApp
-            number or a meeting-booking link; meeting arrangements can be agreed during the initial conversation.
-          </p>
+          <div className="row g-4">
+            <div className="col-lg-6 col-12">
+              <div className="seo-info-card h-100">
+                <h2 id="karachi-process-title">How Remote Software Delivery Works</h2>
+                <ul className="seo-service-block__benefits-list" style={{ marginTop: '16px' }}>
+                  <li>
+                    <span className="check-icon" aria-hidden="true">
+                      <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+                        <path d="M13.3334 4L6.00008 11.3333L2.66675 8" stroke="#66E0A3" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                      </svg>
+                    </span>
+                    <span className="benefit-text">
+                      <strong>Scope the problem:</strong> Share the product goal, target users, current stage, and constraints.
+                    </span>
+                  </li>
+                  <li>
+                    <span className="check-icon" aria-hidden="true">
+                      <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+                        <path d="M13.3334 4L6.00008 11.3333L2.66675 8" stroke="#66E0A3" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                      </svg>
+                    </span>
+                    <span className="benefit-text">
+                      <strong>Agree the next release:</strong> Practical milestones, technology direction, and fixed sprints before code is written.
+                    </span>
+                  </li>
+                  <li>
+                    <span className="check-icon" aria-hidden="true">
+                      <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+                        <path d="M13.3334 4L6.00008 11.3333L2.66675 8" stroke="#66E0A3" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                      </svg>
+                    </span>
+                    <span className="benefit-text">
+                      <strong>Build and review iteratively:</strong> Staging deployments, test builds, and transparent progress updates.
+                    </span>
+                  </li>
+                  <li>
+                    <span className="check-icon" aria-hidden="true">
+                      <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+                        <path d="M13.3334 4L6.00008 11.3333L2.66675 8" stroke="#66E0A3" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                      </svg>
+                    </span>
+                    <span className="benefit-text">
+                      <strong>Launch and support:</strong> CI/CD, cloud monitoring, and ongoing maintenance after the first release.
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="col-lg-6 col-12">
+              <div className="seo-info-card h-100">
+                <h2 id="karachi-fit-title">Who This Work Can Support</h2>
+                <p>
+                  The remote model suits Karachi founders shaping an MVP, small businesses improving customer
+                  experience, SaaS teams adding product capabilities, and established organizations modernizing
+                  legacy software.
+                </p>
+                <h3>Selected Portfolio Highlights</h3>
+                <ul className="seo-service-block__benefits-list" style={{ marginTop: '14px' }}>
+                  {PORTFOLIO_EXAMPLES.map((project) => (
+                    <li key={project.href}>
+                      <span className="check-icon" aria-hidden="true">
+                        <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+                          <path d="M13.3334 4L6.00008 11.3333L2.66675 8" stroke="#66E0A3" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+                      </span>
+                      <span className="benefit-text">
+                        <Link href={project.href}><strong>{project.title}</strong></Link>: {project.description}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+                <p style={{ marginTop: '14px' }}>
+                  <Link href="/project">Browse all Ryzonix portfolio projects</Link>.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section className="seo-content-section seo-content-section--light section-padding" aria-labelledby="karachi-fit-title">
+      {/* FAQs */}
+      <section className="seo-content-section seo-faq section-padding pt-0" aria-labelledby="karachi-faq-title">
         <div className="container">
-          <h2 id="karachi-fit-title" className="seo-content-section__title">
-            Who this work can support
-          </h2>
-          <p>
-            The remote model can suit Karachi founders shaping an MVP, small businesses improving a customer
-            experience, SaaS teams adding product capabilities, and established organizations modernizing
-            software. Those are the kinds of problems Ryzonix describes across its services; they are not claims
-            of named Karachi clients or local case studies.
-          </p>
-          <h3>Selected work from the wider Ryzonix portfolio</h3>
-          <p>
-            These examples show the team's product and engineering experience. They are not presented as
-            Karachi-based client projects.
-          </p>
-          <ul>
-            {PORTFOLIO_EXAMPLES.map((project) => (
-              <li key={project.href}>
-                <Link href={project.href}>{project.title}</Link>: {project.description}
-              </li>
-            ))}
-          </ul>
-          <p>
-            <Link href="/project">Browse all Ryzonix portfolio projects</Link>.
-          </p>
-        </div>
-      </section>
-
-      <section className="seo-faq section-padding" aria-labelledby="karachi-faq-title">
-        <div className="container">
-          <h2 id="karachi-faq-title">Questions from Karachi businesses</h2>
+          <div className="title">
+            <h2 id="karachi-faq-title" className="section-heading">
+              Frequently Asked <span>Questions</span>
+            </h2>
+          </div>
           <dl className="seo-faq__list">
             {KARACHI_FAQS.map((faq) => (
               <div className="seo-faq__item" key={faq.question}>
@@ -231,10 +297,17 @@ const KarachiPage = () => (
               </div>
             ))}
           </dl>
-          <p>
-            Ready to discuss a build? <Link href="/contact">Contact Ryzonix</Link> or email{' '}
-            <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.
-          </p>
+          <div className="seo-content-section__cta">
+            <h3 style={{ color: '#fff' }}>Ready to discuss a build?</h3>
+            <p>
+              Contact our team or email{' '}
+              <a href={`mailto:${SITE.email}`} style={{ color: '#66E0A3' }}>{SITE.email}</a>.
+            </p>
+            <Link href="/contact" className="theme-btn" title="Contact Ryzonix">
+              <span className="rolling-text">Get in Touch</span>
+              <i className="ti-arrow-top-right"></i>
+            </Link>
+          </div>
         </div>
       </section>
     </main>

@@ -30,8 +30,7 @@ const AboutPage = () => {
                 jsonLd={[buildBreadcrumbJsonLd([{ name: 'About', path: '/about' }])]}
             />
             <NavbarS2 hclass={'wpo-site-header wpo-site-header-s4'} Logo={Logo} />
-            <PageH1 id="about-page-h1">About Ryzonix | Web Development &amp; IT Consulting</PageH1>
-            {/* <AboutSeoIntro /> */}
+            <AboutSeoIntro />
             <About />
             <MarqueeSectionS2 />
             <FunFact />

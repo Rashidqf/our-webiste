@@ -37,8 +37,8 @@ const ServiceSectionS2 = ({ sliceStart = 3, sliceEnd = 6 }) => {
                                 <div className="text">
                                     <h2><Link onClick={ClickHandler} href={'/service-single/[slug]'} as={`/service-single/${service.slug}`}>{service.title}</Link></h2>
                                 </div>
-                                <Link onClick={ClickHandler} href={'/service-single/[slug]'} as={`/service-single/${service.slug}`} className="icon">
-                                    <i className="ti-arrow-top-right"></i>
+                                <Link onClick={ClickHandler} href={'/service-single/[slug]'} as={`/service-single/${service.slug}`} className="icon" aria-label={`Learn more about ${service.title}`} title={`Learn more about ${service.title}`}>
+                                    <i className="ti-arrow-top-right" aria-hidden="true"></i>
                                 </Link>
                                 {/* <div className="image">
                                     <Image src={service.sImg} alt="" />

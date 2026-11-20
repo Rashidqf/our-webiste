@@ -673,7 +673,8 @@
     }
 
 
-    h2 {
+    h2,
+    .marquee-item-text {
         display: inline-block;
         margin-right: 30px;
         margin-bottom: 0;
@@ -1294,7 +1295,8 @@
             animation: marquee 30s linear infinite;
         }
 
-        h2 {
+        h2,
+        .side-text-item {
             font-size: 160px;
             font-weight: 600;
             line-height: 99px;
@@ -1476,7 +1478,8 @@
         animation: marquee 30s linear infinite;
     }
 
-    h2 {
+    h2,
+    .marquee-heading {
         display: inline-block;
         margin: 0 20px;
         color: $heading-color;

@@ -32,7 +32,7 @@ const BlogSingle = ({ post, recentPosts = [] }) => {
               <div className="entry-media">
                 <Image
                   src={post.blogSingleImg}
-                  alt=""
+                  alt={post.title || "Ryzonix blog post featured image"}
                   width={1170}
                   height={600}
                   sizes="(max-width: 1200px) 100vw, 1170px"

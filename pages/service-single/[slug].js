@@ -128,21 +128,25 @@ const ServiceSinglePage = ({ slug }) => {
                                     <a href="/project" title="Ryzonix portfolio">portfolio</a>, or email{' '}
                                     <a href={`mailto:${SITE.email}`} className="theme-link">{SITE.email}</a>.</p>
                                 {seoBlock?.relatedServices?.length ? (
-                                    <section aria-labelledby="related-services-title">
-                                        <h2 id="related-services-title">Related services</h2>
-                                        <ul>
+                                    <section className="related-services-block" aria-labelledby="related-services-title">
+                                        <h2 id="related-services-title">Related Services</h2>
+                                        <div className="related-services-pills">
                                             {seoBlock.relatedServices.map((relatedSlug) => {
                                                 const relatedService = Services.find(item => item.slug === relatedSlug);
                                                 if (!relatedService) return null;
                                                 return (
-                                                    <li key={relatedSlug}>
-                                                        <Link href={`/service-single/${relatedService.slug}`}>
-                                                            {relatedService.title}
-                                                        </Link>
-                                                    </li>
+                                                    <Link 
+                                                        key={relatedSlug}
+                                                        href={`/service-single/${relatedService.slug}`}
+                                                        className="related-service-pill"
+                                                        title={`${relatedService.title} – Ryzonix`}
+                                                    >
+                                                        <span>{relatedService.title}</span>
+                                                        <i className="ti-arrow-top-right"></i>
+                                                    </Link>
                                                 );
                                             })}
-                                        </ul>
+                                        </div>
                                     </section>
                                 ) : null}
                                 {isFeatured ? (

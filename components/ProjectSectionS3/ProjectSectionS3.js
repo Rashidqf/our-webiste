@@ -52,10 +52,10 @@ const ProjectSectionS3 = (props) => {
                 <Swiper {...sliderSettings} className="project-slider-active">
                     {Projects.map((project, item) => (
                         <SwiperSlide key={`s1-${project.slug}-${item}`}>
-                            <Link onClick={ClickHandler} href={`/project-single/${project.slug}`}>
+                            <Link onClick={ClickHandler} href={`/project-single/${project.slug}`} aria-label={`View case study: ${project.title}`} title={`View case study: ${project.title}`}>
                                 <div className="project-box">
-                                    <Image src={project.pimg1} alt="" />
-                                    <Image src={project.pimg1} alt="" />
+                                    <Image src={project.pimg1} alt={`${project.title} - Ryzonix case study`} />
+                                    <Image src={project.pimg1} alt={`${project.title} - Ryzonix case study screenshot`} />
                                 </div>
                             </Link>
                         </SwiperSlide>
@@ -65,10 +65,10 @@ const ProjectSectionS3 = (props) => {
                 <Swiper {...sliderSettings} dir="rtl" className="s2 project-slider-active">
                     {Projects.map((project, item) => (
                         <SwiperSlide key={`s2-${project.slug}-${item}`}>
-                            <Link onClick={ClickHandler} href={`/project-single/${project.slug}`}>
+                            <Link onClick={ClickHandler} href={`/project-single/${project.slug}`} aria-label={`View case study: ${project.title}`} title={`View case study: ${project.title}`}>
                                 <div className="project-box">
-                                    <Image src={project.pimg1} alt="" />
-                                    <Image src={project.pimg1} alt="" />
+                                    <Image src={project.pimg1} alt={`${project.title} - Ryzonix case study`} />
+                                    <Image src={project.pimg1} alt={`${project.title} - Ryzonix case study screenshot`} />
                                 </div>
                             </Link>
                         </SwiperSlide>
