@@ -1,27 +1,50 @@
 .theme-btn {
 	background: $light-grern;
-	color: $black;
-	display: inline-block;
+	color: $dark-gray !important;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
 	padding: 15px 45px;
 	border: 0;
 	text-transform: capitalize;
+	text-decoration: none;
 	-webkit-backface-visibility: hidden;
 	z-index: 1;
 	position: relative;
 	border-radius: 40px;
 	font-size: 16px;
-	font-weight: 600;
+	font-weight: 700;
+	font-family: $heading-font;
 	transition: all .3s ease-in-out;
+
+	span {
+		color: $dark-gray !important;
+		font-weight: 700;
+	}
 
 	i {
 		position: relative;
-		bottom: -3px;
+		bottom: 0;
+		color: $dark-gray !important;
+		font-size: 15px;
+		transition: transform .3s ease-in-out;
 	}
 
 	&:hover,
 	&:focus,
 	&:active {
-		color: $dark-gray;
+		background: $white;
+		color: $dark-gray !important;
+
+		span,
+		i {
+			color: $dark-gray !important;
+		}
+
+		i {
+			transform: translate(3px, -3px);
+		}
 	}
 
 	&:hover:after {
@@ -33,7 +56,7 @@
 	}
 
 	@include media-query(767px) {
-		padding: 12px 18px;
+		padding: 12px 24px;
 		font-size: 14px;
 	}
 }

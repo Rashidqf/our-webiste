@@ -102,10 +102,72 @@
         h3 {
             font-size: 1.5rem;
             margin-bottom: 0.5rem;
+            color: $white;
+            font-family: $heading-font;
         }
 
         p {
-            margin-bottom: 1.25rem;
+            margin-bottom: 1.5rem;
+            color: #BCC0CB;
+            font-size: 1.05rem;
+        }
+
+        .theme-btn {
+            background: $light-grern !important;
+            color: #0b0f19 !important;
+            font-family: $heading-font !important;
+            font-weight: 700 !important;
+            font-size: 16px !important;
+            text-decoration: none !important;
+            display: inline-flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            gap: 10px !important;
+            padding: 15px 40px !important;
+            border-radius: 9999px !important;
+            border: 0 !important;
+            box-shadow: 0 4px 20px rgba(102, 224, 163, 0.32) !important;
+            transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+            cursor: pointer !important;
+
+            span,
+            .rolling-text,
+            .letter,
+            .block {
+                color: #0b0f19 !important;
+                font-weight: 700 !important;
+                text-decoration: none !important;
+            }
+
+            i {
+                color: #0b0f19 !important;
+                font-size: 15px !important;
+                font-weight: bold !important;
+                transition: transform 0.3s ease !important;
+                position: relative;
+                bottom: 0 !important;
+            }
+
+            &:hover,
+            &:focus,
+            &:active {
+                background: #ffffff !important;
+                color: #0b0f19 !important;
+                transform: translateY(-3px) !important;
+                box-shadow: 0 8px 28px rgba(102, 224, 163, 0.55) !important;
+
+                span,
+                .rolling-text,
+                .letter,
+                .block,
+                i {
+                    color: #0b0f19 !important;
+                }
+
+                i {
+                    transform: translate(3px, -3px) !important;
+                }
+            }
         }
     }
 }
@@ -470,13 +532,71 @@
         }
     }
 
-    a {
+    a:not(.theme-btn) {
         color: $light-grern;
         text-decoration: underline;
         text-underline-offset: 3px;
 
         &:hover {
             color: $white;
+        }
+    }
+
+    .theme-btn {
+        background: $light-grern !important;
+        color: #0b0f19 !important;
+        font-family: $heading-font !important;
+        font-weight: 700 !important;
+        font-size: 16px !important;
+        text-decoration: none !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 10px !important;
+        padding: 15px 40px !important;
+        border-radius: 9999px !important;
+        border: 0 !important;
+        box-shadow: 0 4px 20px rgba(102, 224, 163, 0.32) !important;
+        transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+        cursor: pointer !important;
+
+        span,
+        .rolling-text,
+        .letter,
+        .block {
+            color: #0b0f19 !important;
+            font-weight: 700 !important;
+            text-decoration: none !important;
+        }
+
+        i {
+            color: #0b0f19 !important;
+            font-size: 15px !important;
+            font-weight: bold !important;
+            transition: transform 0.3s ease !important;
+            position: relative;
+            bottom: 0 !important;
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+            background: #ffffff !important;
+            color: #0b0f19 !important;
+            transform: translateY(-3px) !important;
+            box-shadow: 0 8px 28px rgba(102, 224, 163, 0.55) !important;
+
+            span,
+            .rolling-text,
+            .letter,
+            .block,
+            i {
+                color: #0b0f19 !important;
+            }
+
+            i {
+                transform: translate(3px, -3px) !important;
+            }
         }
     }
 }

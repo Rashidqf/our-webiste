@@ -55,11 +55,11 @@ const ServicePage = () => {
                     </p>
                     <div className="hero-actions">
                         <Link href="/contact" onClick={ClickHandler} className="theme-btn" title="Start a project with Ryzonix">
-                            <span className="rolling-text">Start a Project</span>
+                            <span>Start a Project</span>
                             <i className="ti-arrow-top-right"></i>
                         </Link>
                         <Link href="/project" onClick={ClickHandler} className="theme-link" title="Explore Ryzonix portfolio">
-                            <span className="rolling-text">View Case Studies</span>
+                            <span>View Case Studies</span>
                             <i className="ti-arrow-top-right"></i>
                         </Link>
                     </div>

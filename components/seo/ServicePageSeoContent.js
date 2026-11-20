@@ -87,7 +87,7 @@ export default function ServicePageSeoContent() {
                     className="theme-btn seo-service-block__cta"
                     title={`${block.cta} – Ryzonix`}
                   >
-                    <span className="rolling-text">{block.cta}</span>
+                    <span>{block.cta}</span>
                     <i className="ti-arrow-top-right" aria-hidden="true"></i>
                   </Link>
                 </div>

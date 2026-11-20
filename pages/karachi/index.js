@@ -130,11 +130,11 @@ const KarachiPage = () => (
           </p>
           <div className="hero-actions">
             <Link href="/contact" className="theme-btn" title="Discuss a software project with Ryzonix">
-              <span className="rolling-text">Discuss your project</span>
+              <span>Discuss your project</span>
               <i className="ti-arrow-top-right" aria-hidden="true"></i>
             </Link>
             <Link href="/project" className="theme-link" title="Explore Ryzonix portfolio">
-              <span className="rolling-text">View Case Studies</span>
+              <span>View Case Studies</span>
               <i className="ti-arrow-top-right"></i>
             </Link>
           </div>
@@ -182,7 +182,7 @@ const KarachiPage = () => (
                       className="theme-btn seo-service-block__cta"
                       title={`${service.title} services from Ryzonix`}
                     >
-                      <span className="rolling-text">Explore {service.title}</span>
+                      <span>Explore {service.title}</span>
                       <i className="ti-arrow-top-right" aria-hidden="true"></i>
                     </Link>
                   </div>
@@ -304,7 +304,7 @@ const KarachiPage = () => (
               <a href={`mailto:${SITE.email}`} style={{ color: '#66E0A3' }}>{SITE.email}</a>.
             </p>
             <Link href="/contact" className="theme-btn" title="Contact Ryzonix">
-              <span className="rolling-text">Get in Touch</span>
+              <span>Get in Touch</span>
               <i className="ti-arrow-top-right"></i>
             </Link>
           </div>

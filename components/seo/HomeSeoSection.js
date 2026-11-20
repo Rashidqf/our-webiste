@@ -120,10 +120,10 @@ export default function HomeSeoSection() {
           </p>
 
           <div className="seo-content-section__cta">
-            <h3 style={{ color: '#fff', fontSize: '1.4rem', marginBottom: '8px' }}>Ready to build your digital presence?</h3>
-            <p style={{ color: '#BCC0CB', marginBottom: '20px' }}>Let&apos;s talk about your product roadmap, architecture, and launch goals.</p>
+            <h3>Ready to build your digital presence?</h3>
+            <p>Let&apos;s talk about your product roadmap, architecture, and launch goals.</p>
             <Link href="/contact" onClick={ClickHandler} className="theme-btn" title="Contact Ryzonix">
-              <span className="rolling-text">Let&apos;s talk</span>
+              <span>Let&apos;s Talk</span>
               <i className="ti-arrow-top-right" aria-hidden="true"></i>
             </Link>
           </div>
